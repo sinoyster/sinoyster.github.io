@@ -1,3 +1,6 @@
 [submodule "themes/niu-x2-sidebar"]
 	path = themes/niu-x2-sidebar
 	url = git@github.com:sinoyster/niu-x2-sidebar.git
+[submodule "plugins/pelican-plugins"]
+	path = plugins/pelican-plugins
+	url = git@github.com:sinoyster/pelican-plugins.git
