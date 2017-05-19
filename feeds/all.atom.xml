@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Yuk's Blog</title><link href="sinoyster.github.io/" rel="alternate"></link><link href="sinoyster.github.io/feeds/all.atom.xml" rel="self"></link><id>sinoyster.github.io/</id><updated>2010-12-05T19:30:00+08:00</updated><entry><title>My super title</title><link href="sinoyster.github.io/my-first-post.html" rel="alternate"></link><published>2010-12-04T10:20:00+08:00</published><updated>2010-12-04T19:30:00+08:00</updated><author><name>Yuk Wong</name></author><id>tag:None,2010-12-04:sinoyster.github.io/my-first-post.html</id><summary type="html">&lt;p&gt;Short version for index and feeds&lt;/p&gt;</summary><content type="html">&lt;h1&gt;This is the content of my super blog post.&lt;/h1&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Yuk's Blog</title><link href="/" rel="alternate"></link><link href="/feeds/all.atom.xml" rel="self"></link><id>/</id><updated>2010-12-05T19:30:00+08:00</updated><entry><title>My super title</title><link href="/my-first-post.html" rel="alternate"></link><published>2010-12-04T10:20:00+08:00</published><updated>2010-12-04T19:30:00+08:00</updated><author><name>Yuk Wong</name></author><id>tag:None,2010-12-04:/my-first-post.html</id><summary type="html">&lt;p&gt;Short version for index and feeds&lt;/p&gt;</summary><content type="html">&lt;h1&gt;This is the content of my super blog post.&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;特殊他&lt;/li&gt;
 &lt;li&gt;特殊他&lt;/li&gt;
@@ -8,13 +8,13 @@
 &lt;p&gt;特殊他&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;a href="sinoyster.github.io/my-attach-post.html"&gt;a link relative to the current file&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="/my-attach-post.html"&gt;a link relative to the current file&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;a href="sinoyster.github.io/pages/test.html"&gt;a link relative to the current file&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="sinoyster.github.io/my-attach-post.html"&gt;a link relative to the content root&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/pages/test.html"&gt;a link relative to the current file&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/my-attach-post.html"&gt;a link relative to the content root&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img alt="Alt Text" src="sinoyster.github.io/images/test.jpg"&gt;
-&lt;a href="sinoyster.github.io/pdfs/test.pdf"&gt;Our Menu&lt;/a&gt;&lt;/p&gt;</content><category term="pelican"></category><category term="publishing"></category></entry><entry><title>Blog1</title><link href="sinoyster.github.io/my-attach-post.html" rel="alternate"></link><published>2010-12-03T10:20:00+08:00</published><updated>2010-12-05T19:30:00+08:00</updated><author><name>Alexis Metaireau</name></author><id>tag:None,2010-12-03:sinoyster.github.io/my-attach-post.html</id><summary type="html">&lt;p&gt;Short version for index and feeds&lt;/p&gt;</summary><content type="html">&lt;h1&gt;This is the content of my super blog post.&lt;/h1&gt;
+&lt;p&gt;&lt;img alt="Alt Text" src="/images/test.jpg"&gt;
+&lt;a href="/pdfs/test.pdf"&gt;Our Menu&lt;/a&gt;&lt;/p&gt;</content><category term="pelican"></category><category term="publishing"></category></entry><entry><title>Blog1</title><link href="/my-attach-post.html" rel="alternate"></link><published>2010-12-03T10:20:00+08:00</published><updated>2010-12-05T19:30:00+08:00</updated><author><name>Alexis Metaireau</name></author><id>tag:None,2010-12-03:/my-attach-post.html</id><summary type="html">&lt;p&gt;Short version for index and feeds&lt;/p&gt;</summary><content type="html">&lt;h1&gt;This is the content of my super blog post.&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;特殊他&lt;/li&gt;
 &lt;li&gt;特殊他&lt;/li&gt;
@@ -23,7 +23,7 @@
 &lt;li&gt;特殊他&lt;/li&gt;
 &lt;li&gt;特殊他&lt;/li&gt;
 &lt;li&gt;特殊他&lt;/li&gt;
-&lt;/ul&gt;</content><category term="pelican"></category><category term="publishing"></category></entry><entry><title>zybuluo Markdown Test</title><link href="sinoyster.github.io/zyblog-post.html" rel="alternate"></link><published>2010-12-03T10:20:00+08:00</published><updated>2010-12-05T19:30:00+08:00</updated><author><name>Yuk Wong</name></author><id>tag:None,2010-12-03:sinoyster.github.io/zyblog-post.html</id><summary type="html">&lt;p&gt;Markdown Sample Page&lt;/p&gt;</summary><content type="html">&lt;h1&gt;欢迎使用 Cmd Markdown 编辑阅读器&lt;/h1&gt;
+&lt;/ul&gt;</content><category term="pelican"></category><category term="publishing"></category></entry><entry><title>zybuluo Markdown Test</title><link href="/zyblog-post.html" rel="alternate"></link><published>2010-12-03T10:20:00+08:00</published><updated>2010-12-05T19:30:00+08:00</updated><author><name>Yuk Wong</name></author><id>tag:None,2010-12-03:/zyblog-post.html</id><summary type="html">&lt;p&gt;Markdown Sample Page&lt;/p&gt;</summary><content type="html">&lt;h1&gt;欢迎使用 Cmd Markdown 编辑阅读器&lt;/h1&gt;
 &lt;hr&gt;
 &lt;p&gt;我们理解您需要更便捷更高效的工具记录思想，整理笔记、知识，并将其中承载的价值传播给他人，&lt;strong&gt;Cmd Markdown&lt;/strong&gt; 是我们给出的答案 —— 我们为记录思想和分享知识提供更专业的工具。 您可以使用 Cmd Markdown：&lt;/p&gt;
 &lt;blockquote&gt;
