@@ -4,13 +4,20 @@ from __future__ import unicode_literals
 
 AUTHOR = 'Yuk Wong'
 SITENAME = "Yuk's Blog"
-SITEURL = ''
+SITEURL = 'http://localhost:8000'
 
 PATH = 'content'
 
 TIMEZONE = 'Asia/Shanghai'
 
-DEFAULT_LANG = 'zh'
+#DEFAULT_LANG = 'en'
+DATE_FORMATS = {
+        'zh_CN': '%Y-%m-%d %H:%M:%S',
+}
+DEFAULT_DATE_FORMAT = '%Y-%m-%d %H:%M:%S'
+DEFAULT_DATE = 'fs'  # use filesystem's mtime
+LOCALE = ('zh_CN.utf8',)
+DEFAULT_LANG = u'zh_CN'
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
@@ -33,3 +40,27 @@ DEFAULT_PAGINATION = 10
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
+
+THEME = 'themes/niu-x2-sidebar'
+
+JINJA_ENVIRONMENT = {
+    'extensions': ['jinja2.ext.ExprStmtExtension', ],
+}
+STATIC_PATHS = ['images', 'pdfs']
+
+TEMPLATE_PAGES = {
+    "archives_updatedate.html": "archives_updatedate.html",
+}
+
+# plugin config
+PLUGIN_PATHS = ['./plugins/pelican-plugins']
+PLUGINS = [
+    #'gzip_cache',
+    #'update_date',
+    #'extract_headings',
+    #'sitemap',
+    'summary',
+    #'niux2_lazyload_helper',
+    #'niux2_hermit_player',
+]
+UPDATEDATE_MODE = 'metadata'
