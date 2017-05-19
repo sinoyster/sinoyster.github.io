@@ -14,7 +14,2121 @@
 &lt;li&gt;&lt;a href="https://sinoyster.github.io/my-attach-post.html"&gt;a link relative to the content root&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;img alt="Alt Text" src="https://sinoyster.github.io/images/test.jpg"&gt;
-&lt;a href="https://sinoyster.github.io/pdfs/test.pdf"&gt;Our Menu&lt;/a&gt;&lt;/p&gt;</content><category term="pelican"></category><category term="publishing"></category></entry><entry><title>zybuluo Markdown Test</title><link href="https://sinoyster.github.io/zyblog-post.html" rel="alternate"></link><published>2010-12-03T10:20:00+08:00</published><updated>2010-12-05T19:30:00+08:00</updated><author><name>Yuk Wong</name></author><id>tag:sinoyster.github.io,2010-12-03:/zyblog-post.html</id><summary type="html">&lt;p&gt;Markdown Sample Page&lt;/p&gt;</summary><content type="html">&lt;h1&gt;欢迎使用 Cmd Markdown 编辑阅读器&lt;/h1&gt;
+&lt;a href="https://sinoyster.github.io/pdfs/test.pdf"&gt;Our Menu&lt;/a&gt;&lt;/p&gt;</content><category term="pelican"></category><category term="publishing"></category></entry><entry><title>Simple Markdown Style Guide</title><link href="https://sinoyster.github.io/simple-style-guide.html" rel="alternate"></link><published>2010-12-04T10:20:00+08:00</published><updated>2010-12-04T19:30:00+08:00</updated><author><name>Yuk Wong</name></author><id>tag:sinoyster.github.io,2010-12-04:/simple-style-guide.html</id><summary type="html">&lt;p&gt;Short version for index and feeds&lt;/p&gt;</summary><content type="html">&lt;h1&gt;Markdown简明语法教程&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;说明：&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;本教程基于Markdown语言编写，项目地址位于&lt;a href="https://github.com/Melo618/Simple-Markdown-Guide"&gt;Simple-Markdown-Guide&lt;/a&gt;。&lt;/li&gt;
+&lt;li&gt;本教程定位为基础教程，更加详细的用法可参考其他资料。&lt;/li&gt;
+&lt;li&gt;本教程中代码块内的代码为Markdown的语法。&lt;/li&gt;
+&lt;li&gt;本教程中部分语法使用的是&lt;a href="https://help.github.com/articles/github-flavored-markdown/"&gt;GitHub Flavored Markdown&lt;/a&gt;，GFM语法与标准语法在不同环境中存在解析差异，本教程在使用时会加以说明。&lt;/li&gt;
+&lt;li&gt;推荐使用Haroopad(Win)、MarkdownPad(Win)和Mou(OS X)编辑器，部分编辑器中文效果欠佳，可通过自定义CSS字体解决。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;基本&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Markdown是一种用来写作的轻量级标记语言。&lt;/li&gt;
+&lt;li&gt;用标记语法，来代替常见的排版格式。&lt;/li&gt;
+&lt;li&gt;兼容 HTML代码。&lt;/li&gt;
+&lt;li&gt;特殊字符自动转换，例如&lt;code&gt;&amp;lt;&lt;/code&gt;和&lt;code&gt;&amp;amp;&lt;/code&gt;。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;字体&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;使用星号&lt;code&gt;*&lt;/code&gt;和底号&lt;code&gt;_&lt;/code&gt;表示&lt;code&gt;&amp;lt;em&amp;gt;&lt;/code&gt;标签。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;例如：&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;*斜体*
+  _斜体_&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;效果：&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;斜体&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;使用双星号&lt;code&gt;**&lt;/code&gt;和双底号&lt;code&gt;__&lt;/code&gt;表示&lt;code&gt;&amp;lt;strong&amp;gt;&lt;/code&gt;标签。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;例如：&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;**强调**
+  __强调__&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;效果：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;强调&lt;/strong&gt;&lt;/p&gt;
+&lt;h2&gt;换行&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;单一段落用空白行。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;标题&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;生成&lt;code&gt;&amp;lt;h1&amp;gt;&lt;/code&gt;-&lt;code&gt;&amp;lt;h6&amp;gt;&lt;/code&gt;标签，是通过在文字前面加上同等个数&lt;code&gt;#&lt;/code&gt;符号来实现。&lt;/li&gt;
+&lt;li&gt;出于美观，也可以使用对称的闭合式标题符号。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;例如：&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;### 这是标题
+  ### 这是标题 ###&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;效果：&lt;/p&gt;
+&lt;p&gt;### 这是标题&lt;/p&gt;
+&lt;h2&gt;列表&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;*&lt;/code&gt;，&lt;code&gt;-&lt;/code&gt;，&lt;code&gt;+&lt;/code&gt;这三个符号效果都一样，这3个符号被称为Markdown列表符号。而有序列表则使用数字接着一个英文句点（数字大小并不会影响输出序列）。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;例如：&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;* 第一行
+  * 第二行
+  * 第三行
+  6. 第四行
+  5. 第五行
+  4. 第六行&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;效果：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;第一行&lt;/li&gt;
+&lt;li&gt;第二行&lt;/li&gt;
+&lt;li&gt;第三行&lt;/li&gt;
+&lt;li&gt;第四行&lt;/li&gt;
+&lt;li&gt;第五行&lt;/li&gt;
+&lt;li&gt;第六行&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;引用&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;&amp;gt;&lt;/code&gt;符号表示引用，可简写于第一行，也可以每一行都添加。&lt;/li&gt;
+&lt;li&gt;区块的引用可以嵌套，只需要在层次数上加上同等数量的&lt;code&gt;&amp;gt;&lt;/code&gt;符号。&lt;/li&gt;
+&lt;li&gt;引用内可以使用其他Markdown语法，包括标题、列表、代码区块等。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;例如：&lt;/p&gt;
+&lt;p&gt;```&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;引用&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;引用中的引用
+  ```&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;效果：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;引用&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;引用中的引用&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;代码区块&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;`&lt;/code&gt;是表示inline代码，4个&lt;code&gt; &lt;/code&gt;（空格）来表示缩进式代码段，分别对应HTML的&lt;code&gt;&amp;lt;code&amp;gt;&lt;/code&gt;，&lt;code&gt;&amp;lt;pre&amp;gt;&lt;/code&gt;标签。也可以使用&lt;code&gt;```&lt;/code&gt;来表达围栏式代码块（&lt;strong&gt;GFM语法&lt;/strong&gt;，部分编辑器不支持），并指定他的语言类型，实现语法高亮。围栏式代码块可以大量减少缩进的使用，大规模的代码块使用非常方便。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;例如：&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;`sort()` 函数按升序对给定数组的值排序。&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;普通的缩进式代码块。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;&amp;lt;?php
+          $my_array = array('a' =&amp;gt; 'Dog', 'b' =&amp;gt; 'Cat');
+          sort($my_array);
+          print_r($my_array);
+      ?&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;带语法高亮的围栏式代码块（&lt;strong&gt;GFM语法&lt;/strong&gt;，部分编辑器不支持）。&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;  &lt;span class="sb"&gt;```php&lt;/span&gt;
+&lt;span class="sb"&gt;  &lt;/span&gt;&lt;span class="cp"&gt;&amp;lt;?php&lt;/span&gt;
+      &lt;span class="nv"&gt;$my_array&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="k"&gt;array&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;a&amp;#39;&lt;/span&gt; &lt;span class="o"&gt;=&amp;gt;&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;Dog&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;b&amp;#39;&lt;/span&gt; &lt;span class="o"&gt;=&amp;gt;&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;Cat&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+      &lt;span class="nb"&gt;sort&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nv"&gt;$my_array&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+      &lt;span class="nb"&gt;print_r&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nv"&gt;$my_array&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+  &lt;span class="cp"&gt;?&amp;gt;&lt;/span&gt;&lt;span class="sb"&gt;&lt;/span&gt;
+&lt;span class="sb"&gt;  ```&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;效果：&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;sort()&lt;/code&gt; 函数按升序对给定数组的值排序。&lt;/p&gt;
+&lt;p&gt;普通的缩进式代码块。&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;  &lt;span class="cp"&gt;&amp;lt;?php&lt;/span&gt;
+      &lt;span class="nv"&gt;$my_array&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="k"&gt;array&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;a&amp;#39;&lt;/span&gt; &lt;span class="o"&gt;=&amp;gt;&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;Dog&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;b&amp;#39;&lt;/span&gt; &lt;span class="o"&gt;=&amp;gt;&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;Cat&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+      &lt;span class="nb"&gt;sort&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nv"&gt;$my_array&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+      &lt;span class="nb"&gt;print_r&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nv"&gt;$my_array&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+  &lt;span class="cp"&gt;?&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;带语法高亮的围栏式代码块（&lt;strong&gt;GFM语法&lt;/strong&gt;，部分编辑器不支持）。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;php
+  &amp;lt;?php
+      $my_array = array('a' =&amp;gt; 'Dog', 'b' =&amp;gt; 'Cat');
+      sort($my_array);
+      print_r($my_array);
+  ?&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;h2&gt;链接&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Markdown支持两种形式的链接语法：行内式和参考式两种形式。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;行内式链接，是在方括号后面接圆括号即可。
+  例如：&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;[Melo618](http://melo618.com "Melo618的博客")&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;效果：&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://melo618.com" title="Melo618的博客"&gt;Melo618&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;参考式链接，是在链接文字的括号后面加上另一个方括号，在第二个方括号里面要填入用以辨识链接的标记。
+  例如：&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;[Melo618][blog]&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;效果：&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://melo618.com" title="Melo618的博客"&gt;Melo618&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;图片&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Markdown使用一种和链接很相似的语法来标记图片，只是多了一个&lt;code&gt;!&lt;/code&gt;在最前面，同样也允许两种样式：行内式和参考式。&lt;/li&gt;
+&lt;li&gt;目前为止，Markdown还没有办法指定图片的宽高，如果你需要的话，你可以使用普通的&lt;code&gt;&amp;lt;img&amp;gt;&lt;/code&gt;标签。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;行内式链接，是在方括号后面接圆括号即可。
+  例如：&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;![微信](http://7sbovo.com1.z0.glb.clouddn.com/simple-markdown-guide-weixin.png "微信")&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;效果：&lt;/p&gt;
+&lt;p&gt;&lt;img alt="微信" src="http://7sbovo.com1.z0.glb.clouddn.com/simple-markdown-guide-weixin.png" title="微信"&gt;&lt;/p&gt;
+&lt;p&gt;参考式链接，是在链接文字的括号后面加上另一个方括号，在第二个方括号里面要填入用以辨识链接的标记。
+  例如：&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;![微信][QR]&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;效果：&lt;/p&gt;
+&lt;p&gt;&lt;img alt="微信" src="http://7sbovo.com1.z0.glb.clouddn.com/simple-markdown-guide-weixin.png" title="微信"&gt;&lt;/p&gt;
+&lt;h2&gt;分隔线&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;使用三个以上的&lt;code&gt;*&lt;/code&gt;、&lt;code&gt;-&lt;/code&gt;来建立一个分隔线，行内不能有其他字符。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;例如：&lt;/p&gt;
+&lt;p&gt;```&lt;/p&gt;
+&lt;hr&gt;
+&lt;hr&gt;
+&lt;hr&gt;
+&lt;hr&gt;
+&lt;p&gt;```&lt;/p&gt;
+&lt;p&gt;效果：&lt;/p&gt;
+&lt;p&gt;上文&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;下文&lt;/p&gt;
+&lt;h2&gt;表格&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Markdown使用&lt;code&gt;|&lt;/code&gt;和&lt;code&gt;-&lt;/code&gt;来绘制表格，&lt;code&gt;:&lt;/code&gt;可控制左对齐、右对齐及居中。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;例如：&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;| Title   | Description                        |
+  | :------ | :--------------------------------: |
+  | Version | 0.0.1                              |
+  | Editor  | [Melo618](mailto:Editor@Email.com) |&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;效果：&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align="left"&gt;Title&lt;/th&gt;
+&lt;th align="center"&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;Version&lt;/td&gt;
+&lt;td align="center"&gt;0.0.1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;Editor&lt;/td&gt;
+&lt;td align="center"&gt;&lt;a href="mailto:Editor@Email.com"&gt;Melo618&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2&gt;特殊符号&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Markdown利用&lt;code&gt;\&lt;/code&gt;字符来转义一些在语法中有特殊意义的符号。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;推荐阅读&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://wowubuntu.com/markdown/index.html"&gt;Markdown语法说明（简体中文版）&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://daringfireball.net/projects/markdown/syntax"&gt;Markdown Syntax Documentation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://help.github.com/articles/github-flavored-markdown"&gt;GitHub Flavored Markdown&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;License&lt;/h2&gt;
+&lt;p&gt;Copyright © 2014-2015, Melo Chan. &lt;a href="http://opensource.org/licenses/MIT"&gt;MIT License&lt;/a&gt;.&lt;/p&gt;</content><category term="pelican"></category><category term="publishing"></category></entry><entry><title>Markdown Style Guide</title><link href="https://sinoyster.github.io/style-guide.html" rel="alternate"></link><published>2010-12-04T10:20:00+08:00</published><updated>2010-12-04T19:30:00+08:00</updated><author><name>Yuk Wong</name></author><id>tag:sinoyster.github.io,2010-12-04:/style-guide.html</id><summary type="html">&lt;p&gt;Short version for index and feeds&lt;/p&gt;</summary><content type="html">&lt;h2&gt;description: Readable and portable Markdown style guide.&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li toc&gt;a&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;About&lt;/h2&gt;
+&lt;p&gt;The &lt;a href="{{ site.github }}"&gt;source code is available on GitHub&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Considers &lt;a href="http://daringfireball.net/projects/markdown/syntax"&gt;original specification&lt;/a&gt;,
+&lt;a href="http://commonmark.org"&gt;CommonMark&lt;/a&gt; and other extensions.&lt;/p&gt;
+&lt;p&gt;This project is community driven, and tries to reach consensus.
+Maintainers will only step in if the community cannot reach a decision.
+Discussion will take place &lt;a href="{{ site.github }}/issues"&gt;on the issue tracker&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;A Chinese translation can be found at: &lt;a href="http://einverne.github.io/markdown-style-guide/zh.html"&gt;http://einverne.github.io/markdown-style-guide/zh.html&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;Notable users&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/gitlabhq/gitlabhq/blob/master/CONTRIBUTING.md#style-guides"&gt;GitLab&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/plasticboy/vim-markdown/blob/master/CONTRIBUTING.md#style"&gt;Vim Markdown&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Do you use this style guide? Add your name to &lt;a href="{{ site.github }}/wiki/Users"&gt;our wiki&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Are you notable? Send a pull request.&lt;/p&gt;
+&lt;p&gt;If you are a notable user:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;you can opt to be contacted before any major changes happen to the standard.
+    Please inform this on the pull request that adds you to the notable list.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;your vote on decisions will have much greater weight&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;You are more likely to be notable if your project:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;uses Markdown heavily. E.g.: Markdown engines, text editors, lots of markdown documentation, etc.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;is popular. Any popularity measure will be taken into account, e.g. GitHub stars,
+    Google Rank, etc. 2K+ GitHub stars makes for a very strong case.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Options system&lt;/h3&gt;
+&lt;p&gt;Disputed points will be given multiple alternative style options.&lt;/p&gt;
+&lt;p&gt;Each feature and option will receive a lowercase hyphen separated identifier.&lt;/p&gt;
+&lt;p&gt;Each option will have a header of form:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;# Option key:value
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;The first option header that appears in this text is the default value.&lt;/p&gt;
+&lt;p&gt;E.g., if line wrapping had 3 alternatives, we could give it the key &lt;code&gt;wrap&lt;/code&gt;,
+and for each alternative create a header:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;# Option wrap:space
+# Option wrap:no
+# Option wrap:sentence
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;When referring to this guide, specify all non-default options in a comma separated fashion:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;Use the Markdown Style Guide wrap:space, code:indented
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3&gt;Design goals&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;readable&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;portable: produces the same output, or good output, across multiple implementations.&lt;/p&gt;
+&lt;p&gt;Portability tests are carried out with the &lt;a href="https://github.com/karlcow/markdown-testsuite"&gt;Markdown Test Suite&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;easy to write and modify later&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;diff friendly&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;easy to remember and implement on editors&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;provide rationale behind difficult choices.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Readability vs writability&lt;/h4&gt;
+&lt;p&gt;Many design choices come down to:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;do you want to write fast&lt;/li&gt;
+&lt;li&gt;or do you want people to read fast&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;There may be use cases in which either is preferred:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;for source code, readability becomes more important,
+    as programmers are going to open the files on their editors often.&lt;/p&gt;
+&lt;p&gt;Editor features like syntax highlighting and line wrapping
+can greatly reduce problems, but it is of course better if people
+don't need to change their editors at all.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;for forums like Stack Overflow, people will very rarely read the source,
+    only the rendered output. So it might be better to optimize writing speed.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The current style is inconsistent with either of those optimizations. For now,
+we propose two sets of options (profiles) which optimize either one: readability
+and writability profiles.&lt;/p&gt;
+&lt;h5&gt;Readability profile&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;wrap:space&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;list-marker:asterisk&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;code:indented&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5&gt;Writability profile&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;wrap:no&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;list-marker:hyphen&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;code:fenced&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Typographic conventions&lt;/h3&gt;
+&lt;p&gt;When this style guide needs to represent multiple adjacent spaces,
+or spaces at the beginning or ending of code blocks, this will be mentioned
+explicitly in prose, and a dot will be used to make the space visible.&lt;/p&gt;
+&lt;p&gt;E.g.:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;a&lt;/code&gt;, space, &lt;code&gt;b&lt;/code&gt;:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;a b
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;code&gt;a&lt;/code&gt;, 2 spaces, &lt;code&gt;b&lt;/code&gt;:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;a..b
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;space, &lt;code&gt;ab&lt;/code&gt;:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="na"&gt;.ab&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;code&gt;ab&lt;/code&gt;, space:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;ab.
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3&gt;Alternatives&lt;/h3&gt;
+&lt;p&gt;&lt;a href="https://github.com/google/styleguide/blob/3591b2e540cbcb07423e02d20eee482165776603/docguide/style.md"&gt;google/styleguide&lt;/a&gt;
+by Google.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/carwin/markdown-styleguide/tree/9121c77bd177a3ade6713d50ab1228782d7c02a7"&gt;carwin/markdown-styleguide&lt;/a&gt;.
+This guide was originally forked from it. It has been extended considerably,
+some decisions were modified, and no original lines remain.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://tirania.org/blog/archive/2014/Sep-30.html"&gt;http://tirania.org/blog/archive/2014/Sep-30.html&lt;/a&gt; by Miguel de Icaza (GNOME, Mono). Short.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/slang800/markdown-styleguide"&gt;https://github.com/slang800/markdown-styleguide&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;Lint tools&lt;/h3&gt;
+&lt;p&gt;Asked on Stack Exchange: &lt;a href="http://softwarerecs.stackexchange.com/questions/7138/markdown-lint-tool/"&gt;http://softwarerecs.stackexchange.com/questions/7138/markdown-lint-tool/&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/wooorm/mdast-lint"&gt;https://github.com/wooorm/mdast-lint&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/mivok/markdownlint"&gt;https://github.com/mivok/markdownlint&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/slang800/tidy-markdown"&gt;https://github.com/slang800/tidy-markdown&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;General rules&lt;/h2&gt;
+&lt;h3&gt;File&lt;/h3&gt;
+&lt;h4&gt;File extension&lt;/h4&gt;
+&lt;p&gt;Use &lt;code&gt;.md&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Rationale: why not &lt;code&gt;.mkd&lt;/code&gt; or &lt;code&gt;.markdown&lt;/code&gt;?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;shorter&lt;/li&gt;
+&lt;li&gt;more popular&lt;/li&gt;
+&lt;li&gt;does not have important conflicts&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;File name&lt;/h4&gt;
+&lt;p&gt;Prefer to base the file name on the top-header level:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;replace upper case letters with lower case&lt;/li&gt;
+&lt;li&gt;strip articles &lt;code&gt;the&lt;/code&gt;, &lt;code&gt;a&lt;/code&gt;, &lt;code&gt;an&lt;/code&gt; from the start&lt;/li&gt;
+&lt;li&gt;replace punctuation and white space characters by hyphens&lt;/li&gt;
+&lt;li&gt;replace consecutive hyphens by a single hyphen&lt;/li&gt;
+&lt;li&gt;strip surrounding hyphens&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Good:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;file-name.md
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Bad, multiple consecutive hyphens:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;file--name.md
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Bad, surrounding hyphens:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;-file-name-.md
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Rationale: why not underscore or camel case? Hyphens are the most popular URL separator today,
+and markdown files are most often used in contexts where:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;there are hyphen separated HTML files in the same project, possibly the same directory as the markdown files.&lt;/li&gt;
+&lt;li&gt;filenames will be used directly on URLs. E.g.: GitHub blobs.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Whitespaces&lt;/h3&gt;
+&lt;h4&gt;Newlines&lt;/h4&gt;
+&lt;p&gt;&lt;em&gt;Don't&lt;/em&gt; use 2 or more consecutive empty lines, that is,
+more than two consecutive newline characters,
+except where they must appear literally such as in code blocks.&lt;/p&gt;
+&lt;p&gt;End files with a newline character, and &lt;em&gt;don't&lt;/em&gt; leave empty lines at the end of the file.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Don't&lt;/em&gt; use trailing whitespace unless it has a function such as indicating a line break.&lt;/p&gt;
+&lt;p&gt;Good:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;- list
+- list
+
+# Header
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Good, code block:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;The markup language X requires you to use triple newlines to separate paragraphs:
+
+    p1
+
+
+    p2
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Bad:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;- list
+- list
+
+
+# Header
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Rationale: multiple empty lines occupy more vertical screen space,
+and do not significantly improve readability.&lt;/p&gt;
+&lt;h4&gt;Spaces after sentences&lt;/h4&gt;
+&lt;h5 id="option-space-sentence-1"&gt;Option space-sentence:1&lt;/h5&gt;
+&lt;p&gt;Use a single space after sentences.&lt;/p&gt;
+&lt;p&gt;Bad, 2 spaces:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;First sentence.  Second sentence.
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Good:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;First sentence. Second sentence.
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Rationale: advantages over &lt;code&gt;space-sentence:2&lt;/code&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;easier to edit&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;usually not necessary if you use &lt;code&gt;wrap:inner-sentence&lt;/code&gt; or &lt;code&gt;wrap:sentence&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;space-sentence:2&lt;/code&gt; gives a false sense of readability
+    as it is ignored on the HTML output&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;more popular&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Advantages of &lt;code&gt;space-sentence:2&lt;/code&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;easier to see where sentences end&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id="option-space-sentence-2"&gt;Option space-sentence:2&lt;/h5&gt;
+&lt;p&gt;Bad, single space:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;First sentence. Second sentence.
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Good:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;First sentence.  Second sentence.
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3&gt;Line wrapping&lt;/h3&gt;
+&lt;h4 id="option-wrap-inner-sentence"&gt;Option wrap:inner-sentence&lt;/h4&gt;
+&lt;p&gt;Try to keep lines under 80 characters by breaking large paragraphs logically at points such as:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;sentences: after a period &lt;code&gt;.&lt;/code&gt;, question &lt;code&gt;?&lt;/code&gt; or exclamation mark &lt;code&gt;!&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="http://www.oxforddictionaries.com/words/clauses"&gt;clauses&lt;/a&gt;:
+    after words like &lt;code&gt;and&lt;/code&gt;, &lt;code&gt;which&lt;/code&gt;, &lt;code&gt;if ... then&lt;/code&gt;, commas &lt;code&gt;,&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;large &lt;a href="http://www.oxforddictionaries.com/words/phrases"&gt;phrases&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;It is acceptable to have a line longer than 80 characters,
+but keep in mind that long sentences are less readable
+and look worse in tools such as &lt;code&gt;git diff&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Set your editor to wrap lines visually for Markdown in case a large line is present.&lt;/p&gt;
+&lt;p&gt;Good:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;This is a very very very very very very very very very very very very very long not wrapped sentence.
+Second sentence of of the paragraph,
+third sentence of a paragraph
+and the fourth one.
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Rationale:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Diffs look better, since a change to a clause shows up as a single diff line.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Occasional visual wrapping does not significantly reduce the readability of Markdown,
+    since the only language feature that can be indented to indicate hierarchy are nested lists.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;At some point GitHub translated single newlines to line breaks in READMEs,
+    and still does so on comments.
+    Currently there is no major engine which does it, so it is safe to use newlines.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Some tools are not well adapted for long lines, e.g. Vim and &lt;code&gt;git diff&lt;/code&gt; will not wrap lines by default.
+    This can be configured however via &lt;code&gt;git config --global core.pager 'less -r'&lt;/code&gt; for Git and &lt;code&gt;set wrap&lt;/code&gt; for Vim.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Downsides:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;requires considerable writer effort, specially when modifying code.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Markdown does not look like the rendered output, in which there are no line breaks.&lt;/p&gt;
+&lt;p&gt;Manual line breaking can make the Markdown more readable than the rendered output,
+which is bad because it gives a false sense of readability encouraging less
+readable long paragraphs.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Requires users of programming text editors like Vim, which are usually configured to not wrap,
+    to toggle visual wrapping on. This can be automated, but
+    &lt;a href="https://github.com/editorconfig/editorconfig/issues/168"&gt;EditorConfig gave it WONTFIX&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Breaks some email systems, which always break a line on a single newline, and&lt;br&gt;
+    make your email&lt;br&gt;
+    look&lt;br&gt;
+    something like this.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id="option-wrap-no"&gt;Option wrap:no&lt;/h4&gt;
+&lt;p&gt;Don't wrap lines.&lt;/p&gt;
+&lt;p&gt;Rationale: very easy to edit. But diffs on huge lines are hard to read.&lt;/p&gt;
+&lt;h4 id="option-wrap-space"&gt;Option wrap:space&lt;/h4&gt;
+&lt;p&gt;Always wrap at the end of the first word that exceeds 80 characters.&lt;/p&gt;
+&lt;p&gt;Rationale: source code becomes is very readable and text editors support it automatically.
+But diffs will look bad, and changing lines will be hard.&lt;/p&gt;
+&lt;h4 id="option-wrap-sentence"&gt;Option wrap:sentence&lt;/h4&gt;
+&lt;p&gt;Rationale: similar advantages as &lt;code&gt;wrap:inner-sentence&lt;/code&gt;,
+but easier for people to follow since the rule is simple:
+break after the period. But may produce long lines with hard to read diffs.&lt;/p&gt;
+&lt;p&gt;Notable occurrence: &lt;a href="https://raw.githubusercontent.com/progit/progit2/5c285553c0605342339284981a9bb8a6c4e7c18e/book/01-introduction/1-introduction.asc"&gt;ProGit 2&lt;/a&gt;.&lt;/p&gt;
+&lt;h3&gt;Code&lt;/h3&gt;
+&lt;h4&gt;Dollar signs in shell code&lt;/h4&gt;
+&lt;p&gt;&lt;em&gt;Don't&lt;/em&gt; prefix shell code with dollar signs &lt;code&gt;$&lt;/code&gt;
+unless you will be showing the command output on the same code block.&lt;/p&gt;
+&lt;p&gt;If the goal is to clarify what the language is, do it on the preceding paragraph.&lt;/p&gt;
+&lt;p&gt;Rationale: harder to copy paste, noisier to read.&lt;/p&gt;
+&lt;p&gt;Good:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;echo a
+echo a &amp;gt; file
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Bad:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ &lt;span class="nb"&gt;echo&lt;/span&gt; a
+$ &lt;span class="nb"&gt;echo&lt;/span&gt; a &amp;gt; file
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Good, shows output:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ &lt;span class="nb"&gt;echo&lt;/span&gt; a
+a
+$ &lt;span class="nb"&gt;echo&lt;/span&gt; a &amp;gt; file
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Good, language specified on preceding paragraph:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;Use the following Bash code:
+
+echo a
+echo a &amp;gt; file
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h4&gt;What to mark as code&lt;/h4&gt;
+&lt;p&gt;Use code blocks or inline code for:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;executables. E.g.:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;`gcc` is the best compiler available.
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Differentiate between tool and the name of related projects. E.g.: &lt;code&gt;gcc&lt;/code&gt; vs GCC.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;file paths&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;version numbers&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;capitalized explanation of abbreviations:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;xinetd stands for `eXtended Internet daemon`
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;other terms related to computers that you don't want to add to your dictionary&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Don't mark as code:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;names of projects. E.g.: GCC&lt;/li&gt;
+&lt;li&gt;names of libraries. E.g.: libc, glibc&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Spelling and grammar&lt;/h4&gt;
+&lt;p&gt;Use correct spelling and grammar.&lt;/p&gt;
+&lt;p&gt;Prefer writing in English, and in particular American English.
+Rationale: American English speakers have the largest GDP,
+specially in the computing industry.&lt;/p&gt;
+&lt;p&gt;Use markup like URL or code on words which you do not want to add to your dictionary
+so that spell checkers can ignore them automatically.&lt;/p&gt;
+&lt;p&gt;Beware of case sensitive spelling errors, in particular for project, brand names or abbreviations:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Good: URL, LinkedIn, DoS attack&lt;/li&gt;
+&lt;li&gt;Bad: &lt;code&gt;url&lt;/code&gt;, &lt;code&gt;Linkedin&lt;/code&gt;, &lt;code&gt;dos attack&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;When in doubt, prefer the same abbreviation as used on Wikipedia.&lt;/p&gt;
+&lt;p&gt;Avoid informal contractions:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Good: biography, repository, directory&lt;/li&gt;
+&lt;li&gt;Bad: &lt;code&gt;bio&lt;/code&gt;, &lt;code&gt;repo&lt;/code&gt;, &lt;code&gt;dir&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Block elements&lt;/h2&gt;
+&lt;h3&gt;Line breaks&lt;/h3&gt;
+&lt;p&gt;Avoid line breaks, as they don't have generally accepted semantic meaning.&lt;/p&gt;
+&lt;p&gt;In the rare case you absolutely need them, end a lines with exactly two spaces.&lt;/p&gt;
+&lt;h3&gt;Headers&lt;/h3&gt;
+&lt;h4 id="option-header-atx"&gt;Option header:atx&lt;/h4&gt;
+&lt;p&gt;Bad:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="gh"&gt;Header 1&lt;/span&gt;
+&lt;span class="gh"&gt;========&lt;/span&gt;
+
+&lt;span class="gh"&gt;Header 2&lt;/span&gt;
+&lt;span class="gh"&gt;--------&lt;/span&gt;
+
+### Header 3
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Good:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;# Header 1
+
+## Header 2
+
+### Header 3
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Rationale: advantages over Setex:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;easier to write because in Setex you have to match
+    the number of characters in both lines for it to look good&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;works for all levels, while Setex only goes up to level 2&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;occupy only one screen line, while Setex occupies 2&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Advantages of Setex&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;more visible. Not very important if you have syntax highlighting.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Include a single space between the &lt;code&gt;#&lt;/code&gt; and the text of the header.&lt;/p&gt;
+&lt;p&gt;Bad:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;#Header
+
+#..Header
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Good:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;# Header
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;em&gt;Don't&lt;/em&gt; use the closing &lt;code&gt;#&lt;/code&gt; character.&lt;/p&gt;
+&lt;p&gt;Bad:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;# Header #
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Good:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;# Header
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Rationale: easier to maintain.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;em&gt;Don't&lt;/em&gt; add spaces before the number sign &lt;code&gt;#&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Bad:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;.# Header
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Good:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;# Header
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id="option-header-setex"&gt;Option header:setex&lt;/h4&gt;
+&lt;p&gt;Bad:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;# Header 1
+
+## Header 2
+
+### Header 3
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Good:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="gh"&gt;Header 1&lt;/span&gt;
+&lt;span class="gh"&gt;========&lt;/span&gt;
+
+&lt;span class="gh"&gt;Header 2&lt;/span&gt;
+&lt;span class="gh"&gt;--------&lt;/span&gt;
+
+### Header 3
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;hr&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;em&gt;Don't&lt;/em&gt; skip header levels.&lt;/p&gt;
+&lt;p&gt;Bad:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;# Header 1
+
+### Header 3
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Good:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;# Header 1
+
+## Header 2
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Surround headers by a single empty line except at the beginning of the file.&lt;/p&gt;
+&lt;p&gt;Bad:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;Before.
+# Header 1
+
+## Header 2
+After.
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Good:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;Before.
+
+# Header 1
+
+## Header 2
+
+After.
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Bad:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;Before.
+Header 1
+========
+
+## Header 2
+-----------
+After.
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Good:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;Before.
+
+Header 1
+========
+
+## Header 2
+-----------
+
+After.
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;em&gt;Avoid&lt;/em&gt; using two headers with the same content in the same markdown file.&lt;/p&gt;
+&lt;p&gt;Rationale: many markdown engines generate IDs for headers based on the header content.&lt;/p&gt;
+&lt;p&gt;Bad:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;# Dogs
+
+## Anatomy
+
+# Cats
+
+## Anatomy
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Good:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;# Dogs
+
+## Anatomy of the dog
+
+# Cats
+
+## Anatomy of the cat
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Top-level header&lt;/h4&gt;
+&lt;p&gt;If you target HTML output, write your documents so that it will have one
+and only one &lt;code&gt;h1&lt;/code&gt; element as the first thing in it that serves as the title of the document.
+This is the HTML top-level header.&lt;/p&gt;
+&lt;p&gt;How this &lt;code&gt;h1&lt;/code&gt; is produced may vary depending on your exact technology stack:
+some stacks may generate it from metadata, for example Jekyll through the front-matter.&lt;/p&gt;
+&lt;p&gt;Storing the top-level header as metadata has the advantage that it can be reused elsewhere more easily,
+e.g. on a global index, but the downside of lower portability.&lt;/p&gt;
+&lt;p&gt;If your target stack does not generate the top-level header in another way,
+include it in your markdown file. E.g., GitHub.&lt;/p&gt;
+&lt;p&gt;Top-level headers on index-like files such as &lt;code&gt;README.md&lt;/code&gt; or &lt;code&gt;index.md&lt;/code&gt;
+should serve as a title for their parent directory.&lt;/p&gt;
+&lt;p&gt;Downsides of top-level headers:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;take up one header level. This means that there are only 5 header levels left,
+    and each new header will have one extra &lt;code&gt;#&lt;/code&gt;, which looks worse and is harder to write.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;duplicate filename information, which most often can already be seen on a URL.
+    In most cases, the filename can be trivially converted to a top-level,
+    e.g.: &lt;code&gt;some-filename.md&lt;/code&gt; to &lt;code&gt;Some filename&lt;/code&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Advantages of top-level headers:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;more readable than URL's, especially for non-technically inclined users.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Header case&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Use an upper case letter as the first letter of a header,
+    unless it is a word that always starts with lowercase letters, e.g. computer code.&lt;/p&gt;
+&lt;p&gt;Good:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;# Header
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Good, computer code that always starts with lower case:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;# int main
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Bad:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;# header
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The other letters have the same case they would have in the middle of a sentence.&lt;/p&gt;
+&lt;p&gt;Good:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;# The header of the example
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Bad:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;# The Header of the Example
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;As an exception, &lt;a href="http://en.wikipedia.org/wiki/Title_case#Title_case"&gt;title case&lt;/a&gt;
+may be optionally used for the &lt;a href="#top-level-header"&gt;top-level header&lt;/a&gt;.
+Use this exception sparingly, in cases where typographical perfection is important,
+e.g.: &lt;code&gt;README&lt;/code&gt; of a project.&lt;/p&gt;
+&lt;p&gt;Rationale: why not &lt;a href="http://en.wikipedia.org/wiki/Title_case#Title_case"&gt;Title case&lt;/a&gt; for all headers?
+It requires too much effort to decide if edge-case words should be upper case or not.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;End of a header&lt;/h4&gt;
+&lt;p&gt;Indicate the end of a header's content that is not followed by a new header by an horizontal rule:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;# Header
+
+Content
+
+---
+
+Outside header.
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h4&gt;Header length&lt;/h4&gt;
+&lt;p&gt;Keep headers as short as possible.&lt;/p&gt;
+&lt;p&gt;Instead of using a huge sentence, make the header a summary to the huge sentence,
+and write the huge sentence as the first paragraph beneath the header.&lt;/p&gt;
+&lt;p&gt;Rationale: it is easier to refer to the header later,
+specially if automatic IDs or a TOC are generated by the implementation.&lt;/p&gt;
+&lt;p&gt;Good:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;# Huge header
+
+Huge header that talks about a complex subject.
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Bad:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;# Huge header that talks about a complex subject
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h4&gt;Punctuation at the end of headers&lt;/h4&gt;
+&lt;p&gt;&lt;em&gt;Don't&lt;/em&gt; add a trailing colon &lt;code&gt;:&lt;/code&gt; to headers.&lt;/p&gt;
+&lt;p&gt;Rationale: every header is an introduction to what is about to come next,
+which is exactly the function of the colon.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Don't&lt;/em&gt; add a trailing period &lt;code&gt;.&lt;/code&gt; to headers.&lt;/p&gt;
+&lt;p&gt;Rationale: every header consists of a single short sentence,
+so there is not need to add a sentence separator to it.&lt;/p&gt;
+&lt;p&gt;Good:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;# How to do make omelet
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Bad:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;# How to do make omelet:
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Bad:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;# How to do make omelet.
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h4&gt;Header synonyms&lt;/h4&gt;
+&lt;p&gt;Headers serve as an index for users searching for keywords.&lt;/p&gt;
+&lt;p&gt;For this reason, you may want to give multiple keyword possibilities for a given header.&lt;/p&gt;
+&lt;p&gt;To do so, simply create a synonym header with empty content just before its main header.&lt;/p&gt;
+&lt;p&gt;E.g.:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;# Purchase
+
+# Buy
+
+You give money and get something in return.
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Every empty header with the same level as the following one is assumed to be a synonym.
+This is not the case if levels are different:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;# Animals
+
+## Dog
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3&gt;Blockquotes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Follow the greater than marker &lt;code&gt;&amp;gt;&lt;/code&gt; by one space.&lt;/p&gt;
+&lt;p&gt;Good:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&amp;gt; a
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Bad:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&amp;gt;a
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Bad, 2 spaces:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&amp;gt;  a
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Use a greater than sign for every line, including wrapped.&lt;/p&gt;
+&lt;p&gt;Bad:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&amp;gt; Long line
+that was wrapped.
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Good:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&amp;gt; Long line
+&amp;gt; that was wrapped.
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;em&gt;Don't&lt;/em&gt; use empty lines inside a single block quote.&lt;/p&gt;
+&lt;p&gt;Good:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&amp;gt; a
+&amp;gt;
+&amp;gt; b
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Bad:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&amp;gt; a
+
+&amp;gt; b
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Lists&lt;/h3&gt;
+&lt;h4&gt;Marker&lt;/h4&gt;
+&lt;h5&gt;Unordered&lt;/h5&gt;
+&lt;h6 id="option-list-marker-hyphen"&gt;Option list-marker:hyphen&lt;/h6&gt;
+&lt;p&gt;Use the hyphen marker.&lt;/p&gt;
+&lt;p&gt;Good:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;- a
+- b
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Bad:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;* a
+* b
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;!-- --&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;+ a
++ b
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Rationale:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;asterisk &lt;code&gt;*&lt;/code&gt; can be confused with bold or italic markers.&lt;/li&gt;
+&lt;li&gt;plus sign &lt;code&gt;+&lt;/code&gt; is not popular&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Downsides:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;*&lt;/code&gt; and &lt;code&gt;+&lt;/code&gt; are more visible. &lt;code&gt;*&lt;/code&gt; is more visible&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h6 id="option-list-marker-asterisk"&gt;Option list-marker:asterisk&lt;/h6&gt;
+&lt;p&gt;Use &lt;code&gt;*&lt;/code&gt;.&lt;/p&gt;
+&lt;h6 id="option-list-marker-plus"&gt;Option list-marker:plus&lt;/h6&gt;
+&lt;p&gt;Use &lt;code&gt;+&lt;/code&gt;.&lt;/p&gt;
+&lt;h5&gt;Ordered&lt;/h5&gt;
+&lt;p&gt;Prefer lists only with the marker &lt;code&gt;1.&lt;/code&gt; for ordered lists,
+unless you intend to refer to items by their number in the same markdown file or externally.&lt;/p&gt;
+&lt;p&gt;Prefer unordered lists unless you intent to refer to items by their number.&lt;/p&gt;
+&lt;p&gt;Best, we will never refer to the items of this list by their number:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;- a
+- c
+- b
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Better, only &lt;code&gt;1.&lt;/code&gt;:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;1. a
+1. c
+1. b
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Worse, we will never refer to the items of this list by their number:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;1. a
+2. c
+3. b
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Acceptable, refer to them in the text:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;The ouput of the `ls` command is of the form:
+
+    drwx------  2 ciro ciro        4096 Jul  5  2013 dir0
+    drwx------  4 ciro ciro        4096 Apr 27 08:00 dir1
+    1           2
+
+Where:
+
+1. permissions
+2. number of files directory contains
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Acceptable, meant to be referred by number from outside of the markdown file:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;Terms of use.
+
+1. I will not do anything illegal.
+2. I will not do anything that can harm the website.
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Rationale:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;If you want to change a list item in the middle of the list,
+    you don't have to modify all items that follow it.&lt;/p&gt;
+&lt;p&gt;Diffs will show only the significant line which was modified.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Content stays aligned without extra effort if the numbers reach 2 digits. E.g.: the following is not aligned:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;9. a
+10. b
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;References break when a new list item is added. To reduce this problem:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;keep references close to the list so authors are less likely to forget to update them&lt;/li&gt;
+&lt;li&gt;when referring from an external document, always refer to an specific version of the markdown file&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Spaces after list marker&lt;/h4&gt;
+&lt;h5 id="option-list-space-mixed"&gt;Option list-space:mixed&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;If the content of every item of the list is fits in a single paragraph, use &lt;strong&gt;1&lt;/strong&gt; space.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Otherwise, for every item of the list:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;use &lt;strong&gt;3&lt;/strong&gt; spaces for unordered lists.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;use &lt;strong&gt;2&lt;/strong&gt; spaces for ordered lists.
+    One less than for unordered because the marker is 2 chars long.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Bad, every item is one line long:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;-   a
+-   b
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Good:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;- a
+- b
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Bad, every item is one line long:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;1.  a
+1.  b
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Good:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;1. a
+1. b
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Bad: item is longer than one line:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;- item that
+  is wrapped
+
+- item 2
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Good:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;-   item that
+    is wrapped
+
+-   item 2
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Bad: item is longer than one line:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;- a
+
+  par
+
+- b
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Good:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;-   a
+
+    par
+
+-   b
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h5 id="option-list-space-1"&gt;Option list-space:1&lt;/h5&gt;
+&lt;p&gt;Always add one space to the list marker.&lt;/p&gt;
+&lt;p&gt;Bad, 3 spaces:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;-   a
+
+    b
+
+-   c
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Good:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;- a
+
+  b
+
+- c
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Bad, 2 spaces:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;1.  a
+
+    b
+
+1.  c
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Good:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;1. a
+
+   b
+
+1. c
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h5&gt;Rationale: list-space mixed vs 1&lt;/h5&gt;
+&lt;p&gt;The advantages of &lt;code&gt;list-space:1&lt;/code&gt; are that&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;it removes the decision of how many spaces you should put after the list marker:
+    it is always one.&lt;/p&gt;
+&lt;p&gt;We could choose to always have list content indented as:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;-   a
+-   b
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;but that is ugly.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;You never need to change the indentation of the entire list because of a new item.&lt;/p&gt;
+&lt;p&gt;This may happen in &lt;code&gt;list-space:mixed&lt;/code&gt; if you have:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;- a
+- b
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;and will add a multi-line item:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;-   a
+
+-   b
+
+-   c
+
+    d
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Note how &lt;code&gt;a&lt;/code&gt; and &lt;code&gt;b&lt;/code&gt; were changed because of &lt;code&gt;c&lt;/code&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The disadvantages of &lt;code&gt;list-space:1&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;creates three indentation levels for the language:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;4 for indented code blocks&lt;/li&gt;
+&lt;li&gt;3 for ordered lists&lt;/li&gt;
+&lt;li&gt;2 for unordered lists&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;That means that you cannot easily configure your editor indent level to deal with all cases
+when you want to change the indentation level of multiple list item lines.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Is not implemented consistently across editors.&lt;/p&gt;
+&lt;p&gt;In particular what should happen at:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;- a
+
+        code
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;This (2 spaces):&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&amp;lt;pre&amp;gt;&amp;lt;code&amp;gt;  code
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Or no spaces:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&amp;lt;pre&amp;gt;&amp;lt;code&amp;gt;code
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Likely the original markdown said no spaces:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;To put a code block within a list item, the code block
+needs to be indented twice — 8 spaces or two tabs&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;But many implementations did otherwise.&lt;/p&gt;
+&lt;p&gt;CommonMark &lt;a href="http://spec.commonmark.org/0.12/#example-176"&gt;adds the 2 spaces&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Indentation of content inside lists&lt;/h4&gt;
+&lt;p&gt;The indentation level of what comes inside list and of further list items
+must be the same as the first list item.&lt;/p&gt;
+&lt;p&gt;Bad:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;-   item that
+  is wrapped
+
+-   item 2
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Good:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;-   item that
+    is wrapped
+
+-   item 2
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Bad:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;-   item 1
+
+  Content 1
+
+-   item 2
+
+      Content 2
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Good (if it matches your spaces after list marker style):&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;-   item 1
+
+    Content 1
+
+-   item 2
+
+    Content 2
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Bad:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;- item 1
+
+    Content 1
+
+- item 2
+
+    Content 2
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Good (if it matches your spaces after list marker style):&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;- item 1
+
+  Content 1
+
+- item 2
+
+  Content 2
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Avoid starting a list item directly with indented code blocks because that is not consistently implemented.
+&lt;a href="http://spec.commonmark.org/0.12/#example-176"&gt;CommonMark states that&lt;/a&gt; a single space is assumed in that case:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;-     code
+
+  a
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h4&gt;Empty lines inside lists&lt;/h4&gt;
+&lt;p&gt;If every item of a list is a single line long, don't add empty lines between items.
+Otherwise, add empty lines between every item.&lt;/p&gt;
+&lt;p&gt;Bad, single lines:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;- item 1
+
+- item 2
+
+- item 3
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Good:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;- item 1
+- item 2
+- item 3
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Bad, multiple lines:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;-   item that
+    is wrapped
+-   item 2
+-   item 3
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Good:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;-   item that
+    is wrapped
+
+-   item 2
+
+-   item 3
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Bad, multiple lines:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;-   item 1
+
+    Paragraph.
+
+-   item 2
+-   item 3
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Good:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;-   item 1.
+
+    Paragraph.
+
+-   item 2
+
+-   item 3
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Bad, multiple lines:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;-   item 1
+
+    - item 11
+    - item 12
+    - item 13
+
+-   item 2
+-   item 3
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Good:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;-   item 1
+
+    - item 11
+    - item 12
+    - item 13
+
+-   item 2
+
+-   item 3
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Rationale: it is hard to tell where multi-line list items start and end without empty lines.&lt;/p&gt;
+&lt;h4&gt;Empty lines around lists&lt;/h4&gt;
+&lt;p&gt;Surround lists by one empty line.&lt;/p&gt;
+&lt;p&gt;Bad:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;Before.
+- item
+- item
+After.
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Good:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;Before.
+
+- list
+- list
+
+After.
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h4&gt;Case of first letter of list item&lt;/h4&gt;
+&lt;p&gt;Each list item has the same case as it would have if it were concatenated with the sentence that comes before the list.&lt;/p&gt;
+&lt;p&gt;Good:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;I want to eat:
+
+- apples
+- bananas
+- grapes
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;because it could be replaced with:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;I want to eat apples
+I want to eat babanas
+I want to eat grapes
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Good:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;To ride a bike you have to:
+
+- get on top of the bike. This step is easy.
+- put your foot on the pedal.
+- push t the pedal. This is the most fun part.
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;because it could be replaced with:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;To ride a bike you have to get on top of the bike. This step is easy.
+To ride a bike you have to put your foot on the pedal.
+To ride a bike you have to push the pedal. This is the most fun part.
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Good:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;# How to ride a bike
+
+- Get on top of the bike.
+- Put your feet on the pedal.
+- Make the pedal turn.
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;because it could be replaced with:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;# How to ride a bike
+
+Get on top of the bike.
+Put your feet on the pedal.
+Push the the pedal.
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h4&gt;Punctuation at the end of list items&lt;/h4&gt;
+&lt;p&gt;Punctuate at the end of list items if either it:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;contains multiple sentences or paragraphs&lt;/li&gt;
+&lt;li&gt;starts with an upper case letter&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Otherwise, omit the punctuation if it would be a period.&lt;/p&gt;
+&lt;p&gt;Bad, single sentences:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;- apple.
+- banana.
+- orange.
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Good:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;- apple
+- banana
+- orange
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Idem:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;- go to the market
+- then buy some fruit
+- finally eat the fruit
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Good, not terminated by period but by other punctuation.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;- go to the marked
+- then buy fruit?
+- of course!
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Bad, multiple sentences:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;- go to the market
+- then buy some fruit. Bad for wallet
+- finally eat the fruit. Good for tummy
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Good:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;- go to the market
+- then buy some fruit. Bad for wallet.
+- finally eat the fruit. Good for tummy.
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Note: nothing forbids one list item from ending in period while another in the same list does not.&lt;/p&gt;
+&lt;p&gt;Bad, multiple paragraphs:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;-   go to the market
+
+-   then buy some fruit
+
+    Bad for wallet
+
+-   finally eat the fruit
+
+    Good for tummy
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Good:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;-   go to the market
+
+-   then buy some fruit.
+
+    Bad for wallet.
+
+-   finally eat the fruit.
+
+    Good for tummy.
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Bad, starts with upper case:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;- Go to the market
+- Then buy some fruit
+- Finally eat the fruit
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Good:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;- Go to the market.
+- Then buy some fruit.
+- Finally eat the fruit.
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3&gt;Definition lists&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;Avoid&lt;/em&gt; the definition list extension since it is not present
+in many implementations nor in CommonMark.&lt;/p&gt;
+&lt;p&gt;Instead, use either:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;formated lists:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;format the item be defined as either of bold, link or code&lt;/li&gt;
+&lt;li&gt;separate the item from the definition with a colon and a space &lt;code&gt;:.&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;don't align definitions as it is harder to maintain and does not show on the HTML output&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Good:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;- **apple**: red fruit
+- **dog**: noisy animal
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Good:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;-   **apple**: red fruit.
+
+    Very tasty.
+
+-   **dog**: noisy animal.
+
+    Not tasty.
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Good:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;- [apple](http://apple.com): red fruit
+- [dot](http://dog.com): red fruit
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Good:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;- `-f`: force
+- `-r`: recursive
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Bad, no colon:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;- **apple** red fruit
+- **dog** noisy animal
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Bad, space between term and colon:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;- **apple** : red fruit
+- **dog** : noisy animal
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Bad, definitions aligned:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;- **apple**: red fruit
+- **dog**:   noisy animal
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;headers.&lt;/p&gt;
+&lt;p&gt;Good:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;# Apple
+
+Red fruit
+
+# Dog
+
+Noisy animal
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Code blocks&lt;/h3&gt;
+&lt;h4 id="option-code-fenced"&gt;Option code:fenced&lt;/h4&gt;
+&lt;p&gt;Only use fenced code blocks.&lt;/p&gt;
+&lt;p&gt;Comparison to indented code blocks:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;disadvantage: not part of the original markdown, thus less portable, but added to CommonMark.&lt;/li&gt;
+&lt;li&gt;advantage: many implementations, including GitHub's, allow to specify the code language with it&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;em&gt;Don't&lt;/em&gt; indent fenced code blocks.&lt;/p&gt;
+&lt;p&gt;Always specify the language of the code is applicable.&lt;/p&gt;
+&lt;p&gt;Good:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;```ruby
+a = 1
+```
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Bad:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;```
+a = 1
+```
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h4 id="option-code-indented"&gt;Option code:indented&lt;/h4&gt;
+&lt;p&gt;Only use indented code blocks.&lt;/p&gt;
+&lt;p&gt;Indent indented code blocks with 4 spaces.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Code blocks must be surrounded by one empty line.&lt;/p&gt;
+&lt;p&gt;Prefer to end the phrase before a code block with a colon &lt;code&gt;:&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Good:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;Use this code to blow up your PC:
+
+    sudo rm -rf /
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Bad, no colon&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;Use this code to blow up your PC
+
+    sudo rm -rf /
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3&gt;Horizontal rules&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;Don't&lt;/em&gt; use horizontal rules except to indicate the &lt;a href="#end-of-a-header"&gt;End of a header&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Rationale:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;headers are better section separators since they say what a section is about.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;horizontal rules don't have a generally accepted semantic meaning.
+    This guide gives them one.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Use 3 hyphens without spaces:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;---
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3&gt;Tables&lt;/h3&gt;
+&lt;p&gt;Extension.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Surround tables by one empty line.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Don't indent tables.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Surround every line of the table by pipes.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Align all border pipes vertically.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Separate header from body by hyphens except at the aligned pipes &lt;code&gt;|&lt;/code&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Pipes &lt;code&gt;|&lt;/code&gt; must be surrounded by a space, except for outer pipes
+    which only get one space internally, and pipes of the hyphen separator line.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Column width is determined by the longest cell in the column.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Good table:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;Before.
+
+| h    | Long header |
+|------|-------------|
+| abc  | def         |
+| abc2 | def2        |
+
+After.
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Rationale:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;unaligned tables tables are easier to write, but aligned tables are more readable,
+    and people read code much more often than they edit it.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;preceding pipes make it easier to determine where a table starts and ends.
+    Trailing pipes make it look better because of symmetry.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;there exist tools which help keeping the table aligned.
+    For example, Vim has the &lt;a href="https://github.com/godlygeek/tabular"&gt;Tabular plugin&lt;/a&gt;
+    which allows to align the entire table with &lt;code&gt;:Tabular /|&lt;/code&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;why no spaces around pipes of the hyphen separator line, i.e.: &lt;code&gt;|---|&lt;/code&gt; instead of &lt;code&gt;| - |&lt;/code&gt;?
+    No spaces looks better, works on GitHub. Downside: harder to implement automatic alignment in editors,
+    as it requires a special rule for the separator line.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Separate consecutive elements&lt;/h3&gt;
+&lt;p&gt;Separate consecutive:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;lists&lt;/li&gt;
+&lt;li&gt;indented code blocks&lt;/li&gt;
+&lt;li&gt;blockquotes&lt;/li&gt;
+&lt;li&gt;list followed by external code block&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;with an empty HTML comment &lt;code&gt;&amp;lt;!-- --&amp;gt;&lt;/code&gt;.&lt;/p&gt;
+&lt;!-- --&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;- list 1
+- list 1
+
+&amp;lt;!-- --&amp;gt;
+
+- list 2
+- list 2
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;!-- --&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;    code 1
+    code 1
+
+&amp;lt;!-- --&amp;gt;
+
+    code 2
+    code 2
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;!-- --&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&amp;gt; blockquote 1
+&amp;gt; blockquote 1
+
+&amp;lt;!-- --&amp;gt;
+
+&amp;gt; blockquote 2
+&amp;gt; blockquote 2
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;!-- --&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;- list
+- list
+
+&amp;lt;!-- --&amp;gt;
+
+    code outside list
+    code outside list
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;Span elements&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;Don't&lt;/em&gt; use inner spaces.&lt;/p&gt;
+&lt;p&gt;Good:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;**bold**
+`code`
+[link](http://a.com)
+[text][name]
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Bad:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;** bold **
+` code `
+[ link ]( http://a.com )
+[text] [name]
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;For inline code in which the space is crucial:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;explain in writing that the spaces must be there&lt;/li&gt;
+&lt;li&gt;add something after the space if possible&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Good:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;Use the hyphen marker followed by one space `- a`  for unordered lists.
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Rationale: most browsers don't render the surrounding spaces nor add them to the clipboard on copy.&lt;/p&gt;
+&lt;h3&gt;Links&lt;/h3&gt;
+&lt;h4&gt;Reference-style links&lt;/h4&gt;
+&lt;p&gt;Links:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;use the trailing &lt;code&gt;[]&lt;/code&gt; on implicit links.&lt;/p&gt;
+&lt;p&gt;Good:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;[a][]
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Bad:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;[a]
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Rationale: while omitting &lt;code&gt;[]&lt;/code&gt; works on most major implementations,
+it is not specified in the documentation not implemented in the original markdown.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Definitions:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;must be the last thing on the file&lt;/li&gt;
+&lt;li&gt;must be sorted alphabetically by the ID&lt;/li&gt;
+&lt;li&gt;don't enclose URLs by angle brackets&lt;/li&gt;
+&lt;li&gt;align URLs and link names as in a table&lt;/li&gt;
+&lt;li&gt;link IDs use only lowercase letters. Rationale: they are case insensitive,&lt;/li&gt;
+&lt;li&gt;lowercase only is easier to write, and the readability gain of mixed case is not very big.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Good:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;id2&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;     &lt;span class="nl"&gt;http&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="c1"&gt;//long-url.com&lt;/span&gt;
+&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="kt"&gt;long&lt;/span&gt; &lt;span class="kt"&gt;id&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nl"&gt;http&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="c1"&gt;//a.com        &amp;quot;name 1&amp;quot;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Bad, not ordered by id:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;[b]: http://a.com
+[a]: http://b.com
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Bad, not aligned:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="kt"&gt;id&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nl"&gt;http&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="c1"&gt;//id.com&lt;/span&gt;
+&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="kt"&gt;long&lt;/span&gt; &lt;span class="kt"&gt;id&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nl"&gt;http&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="c1"&gt;//long-id.com&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h4&gt;Single or double quote titles&lt;/h4&gt;
+&lt;p&gt;Use double quotes, &lt;em&gt;not&lt;/em&gt; single quotes.&lt;/p&gt;
+&lt;p&gt;Rationale: single quotes do not work in all major implementations, double quotes do.&lt;/p&gt;
+&lt;h3&gt;Emphasis&lt;/h3&gt;
+&lt;h4&gt;Bold&lt;/h4&gt;
+&lt;p&gt;Use double asterisk format: &lt;code&gt;**bold**&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Rationale: more common and readable than the double underline &lt;code&gt;__bold__&lt;/code&gt; form.&lt;/p&gt;
+&lt;h4&gt;Italic&lt;/h4&gt;
+&lt;p&gt;Use single asterisk format: &lt;code&gt;*italic*&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Rationale:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;more common and readable than the underscore form&lt;/li&gt;
+&lt;li&gt;consistent with the bold format, which also uses asterisks&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Uppercase for emphasis&lt;/h4&gt;
+&lt;p&gt;&lt;em&gt;Don't&lt;/em&gt; use uppercase for emphasis: use emphasis constructs like &lt;strong&gt;bold&lt;/strong&gt; or &lt;em&gt;italic&lt;/em&gt; instead.&lt;/p&gt;
+&lt;p&gt;Rationale: CSS has &lt;code&gt;text-transform:uppercase&lt;/code&gt; which can easily achieve the same effect consistently
+across the entire website if you really want uppercase letters.&lt;/p&gt;
+&lt;h4&gt;Emphasis vs headers&lt;/h4&gt;
+&lt;p&gt;&lt;em&gt;Don't&lt;/em&gt; use emphasis elements (bold or italics) to introduce a multi line named section: use headers instead.&lt;/p&gt;
+&lt;p&gt;Rationale: that is exactly the semantic meaning of headers,
+and not necessarily that of emphasis elements. As a consequence,
+many implementations add useful behaviors to headers and not to emphasis elements,
+such as automatic &lt;code&gt;id&lt;/code&gt; to make it easier to refer to the header later on.&lt;/p&gt;
+&lt;p&gt;Good:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;# How to make omelets
+
+Break an egg.
+
+...
+
+# How to bake bread
+
+Open the flour sack.
+
+...
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Bad:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;**How to make omelets:**
+
+Break an egg.
+
+...
+
+**How to bake bread:**
+
+Open the flour sack.
+
+...
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3&gt;Automatic links&lt;/h3&gt;
+&lt;h4&gt;Automatic links without angle brackets&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;em&gt;Don't&lt;/em&gt; use automatic links without angle brackets.&lt;/p&gt;
+&lt;p&gt;Good:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&amp;lt;http://a.com&amp;gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Bad:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;http://a.com
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Rationale: it is an extension, &lt;code&gt;&amp;lt;&amp;gt;&lt;/code&gt; is easy to type and saner.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;If you want literal links which are not autolinks, enclose them in code blocks. E.g.:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;`http://not-a-link.com`
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Rationale: many tools automatically interpret any word starting with &lt;code&gt;http&lt;/code&gt; as a link.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Content of automatic links&lt;/h4&gt;
+&lt;p&gt;All automatic links must start with the string &lt;code&gt;http&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;In particular, &lt;em&gt;don't&lt;/em&gt; use relative automatic links.
+Use bracket links instead for that purpose.&lt;/p&gt;
+&lt;p&gt;Good:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;[file.html](file.html)
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Bad:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&amp;lt;file.html&amp;gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Good:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&amp;lt;https://github.com&amp;gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Bad:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&amp;lt;github.com&amp;gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Rationale: it is hard to differentiate automatic links from HTML tags.
+What if you want a relative link to a file called &lt;code&gt;script&lt;/code&gt;?&lt;/p&gt;
+&lt;h4&gt;Email automatic links&lt;/h4&gt;
+&lt;p&gt;&lt;em&gt;Don't&lt;/em&gt; use email autolinks &lt;code&gt;&amp;lt;address@example.com&amp;gt;&lt;/code&gt;. Use raw HTML instead.&lt;/p&gt;
+&lt;p&gt;Rationale: the original markdown specification states it:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;"performs a bit of randomized decimal and hex entity-encoding
+to help obscure your address from address-harvesting spambots".&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Therefore, the output is random, ugly, and as the spec itself mentions:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;but an address published in this way will probably eventually start receiving spam&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;{% include_relative LICENSE.md %}&lt;/p&gt;</content><category term="pelican"></category><category term="publishing"></category></entry><entry><title>zybuluo Markdown Test</title><link href="https://sinoyster.github.io/zyblog-post.html" rel="alternate"></link><published>2010-12-03T10:20:00+08:00</published><updated>2010-12-05T19:30:00+08:00</updated><author><name>Yuk Wong</name></author><id>tag:sinoyster.github.io,2010-12-03:/zyblog-post.html</id><summary type="html">&lt;p&gt;Markdown Sample Page&lt;/p&gt;</summary><content type="html">&lt;h1&gt;欢迎使用 Cmd Markdown 编辑阅读器&lt;/h1&gt;
 &lt;hr&gt;
 &lt;p&gt;我们理解您需要更便捷更高效的工具记录思想，整理笔记、知识，并将其中承载的价值传播给他人，&lt;strong&gt;Cmd Markdown&lt;/strong&gt; 是我们给出的答案 —— 我们为记录思想和分享知识提供更专业的工具。 您可以使用 Cmd Markdown：&lt;/p&gt;
 &lt;blockquote&gt;
