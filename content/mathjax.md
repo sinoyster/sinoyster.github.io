@@ -1,7 +1,7 @@
 Title: Math Render Plugin For Pelican
 Date: 2010-12-04 10:20
 Modified: 2010-12-04 19:30
-Category: post
+Category: demo
 Tags:  markdown
 Slug:  mathjax-pelican
 Authors: Yuk Wong
