@@ -1,7 +1,7 @@
 Title: My super title
 Date: 2010-12-04 10:20
 Modified: 2010-12-04 19:30
-Category: Python
+Category: Demo
 Tags: pelican, publishing
 Slug: my-first-post
 Authors: Yuk Wong

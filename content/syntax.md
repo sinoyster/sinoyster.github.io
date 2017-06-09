@@ -1,5 +1,13 @@
 ---
 title: Markdown Syntax Guide
+Date: 2010-01-01 10:20
+Modified: 2010-12-05 19:30
+Category: demo
+Tags: 测试, publishing
+Slug: md-syntax-guide
+Authors: Yuk Wong
+Summary: Short version for index and feeds
+
 
 description: Readable and portable Markdown style guide.
 ---

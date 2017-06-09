@@ -1,7 +1,7 @@
 Title: MathJAX Test
 Date: 2010-12-04 10:20
 Modified: 2010-12-04 19:30
-Category: markdown
+Category: demo
 Tags: pelican, math
 Slug: md-mathjax
 Authors: Yuk Wong

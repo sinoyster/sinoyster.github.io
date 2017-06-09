@@ -1,7 +1,7 @@
 Title: zybuluo Markdown Test
 Date: 2010-12-03 10:20
 Modified: 2010-12-05 19:30
-Category: Python
+Category: demo
 Tags: pelican, publishing
 Slug: zyblog-post
 Authors: Yuk Wong

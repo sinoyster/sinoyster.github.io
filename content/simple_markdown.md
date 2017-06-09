@@ -1,7 +1,7 @@
 title: Simple Markdown Style Guide
 Date: 2010-12-04 10:20
 Modified: 2010-12-04 19:30
-Category: Python
+Category: demo
 Tags: pelican, publishing
 Slug: simple-style-guide
 Authors: Yuk Wong

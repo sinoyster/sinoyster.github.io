@@ -1,7 +1,7 @@
 Title: Markdown Chinese Syntax 
 Date: 2010-12-04 10:20
 Modified: 2010-12-04 19:30
-Category: markdown
+Category: demo
 Tags: pelican, publishing
 Slug: md-cn-syntax
 Authors: Yuk Wong
