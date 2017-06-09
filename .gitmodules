@@ -7,3 +7,6 @@
 [submodule "plugins/ipynb"]
 	path = plugins/ipynb
 	url = git@github.com:sinoyster/pelican-ipynb.git
+[submodule "plugins/extract_headings"]
+	path = plugins/extract_headings
+	url = git@github.com:sinoyster/extract_headings.git

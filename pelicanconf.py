@@ -46,6 +46,19 @@ MARKUP = ('md', 'ipynb')
 
 THEME = 'themes/niu-x2-sidebar'
 
+from  hashlib import md5
+def my_slugify(value, sep):
+    m = md5(value.encode('UTF-8'))
+    #m.update(value.encode("UTF-8"))
+    return "toc_{}".format(m.hexdigest())
+MY_SLUGIFY_FUNC = my_slugify
+
+JINJA_ENVIRONMENT = {
+    'extensions': ['jinja2.ext.ExprStmtExtension',   ],
+}
+
+
+
 JINJA_ENVIRONMENT = {
     'extensions': ['jinja2.ext.ExprStmtExtension', ],
 }
@@ -58,11 +71,11 @@ TEMPLATE_PAGES = {
 # plugin config
 PLUGIN_PATHS = ['./plugins/pelican-plugins', './plugins']
 PLUGINS = [
-    #'gzip_cache',
+    'gzip_cache',
     #'update_date',
-    #'extract_headings',
+    'extract_headings',
     #'sitemap',
-    #'summary',
+    'summary',
     'render_math',
     'ipynb.markup',
     #'niux2_lazyload_helper',
