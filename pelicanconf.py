@@ -41,6 +41,9 @@ DEFAULT_PAGINATION = 10
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
 
+MARKUP = ('md', 'ipynb')
+
+
 THEME = 'themes/niu-x2-sidebar'
 
 JINJA_ENVIRONMENT = {
@@ -53,13 +56,15 @@ TEMPLATE_PAGES = {
 }
 
 # plugin config
-PLUGIN_PATHS = ['./plugins/pelican-plugins']
+PLUGIN_PATHS = ['./plugins/pelican-plugins', './plugins']
 PLUGINS = [
     #'gzip_cache',
     #'update_date',
     #'extract_headings',
     #'sitemap',
-    'summary',
+    #'summary',
+    'render_math',
+    'ipynb.markup',
     #'niux2_lazyload_helper',
     #'niux2_hermit_player',
 ]

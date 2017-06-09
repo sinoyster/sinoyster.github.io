@@ -4,3 +4,6 @@
 [submodule "plugins/pelican-plugins"]
 	path = plugins/pelican-plugins
 	url = git@github.com:sinoyster/pelican-plugins.git
+[submodule "plugins/ipynb"]
+	path = plugins/ipynb
+	url = git@github.com:sinoyster/pelican-ipynb.git
