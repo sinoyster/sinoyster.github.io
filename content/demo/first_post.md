@@ -15,8 +15,8 @@ Summary: Short version for index and feeds
 * 特殊他
 
 * [a link relative to the current file]({filename}attach.md)
-* [a link relative to the current file]({filename}pages/test.md)
-* [a link relative to the content root]({filename}/attach.md)
+* [a link relative to the current file]({filename}/pages/test.md)
+* [a link relative to the content root]({filename}/demo/attach.md)
 
 
 ![Alt Text]({filename}/images/test.jpg)
