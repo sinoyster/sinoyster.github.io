@@ -57,11 +57,6 @@ JINJA_ENVIRONMENT = {
     'extensions': ['jinja2.ext.ExprStmtExtension',   ],
 }
 
-
-
-JINJA_ENVIRONMENT = {
-    'extensions': ['jinja2.ext.ExprStmtExtension', ],
-}
 STATIC_PATHS = ['images', 'pdfs']
 
 TEMPLATE_PAGES = {
