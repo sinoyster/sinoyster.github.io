@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Yuk's Blog - post</title><link href="https://sinoyster.github.io/" rel="alternate"></link><link href="https://sinoyster.github.io/feeds/post.atom.xml" rel="self"></link><id>https://sinoyster.github.io/</id><updated>2010-12-04T19:30:00+08:00</updated><entry><title>Math Render Plugin For Pelican</title><link href="https://sinoyster.github.io/articles/2010/12/04/mathjax-pelican.html" rel="alternate"></link><published>2010-12-04T10:20:00+08:00</published><updated>2010-12-04T19:30:00+08:00</updated><author><name>Yuk Wong</name></author><id>tag:sinoyster.github.io,2010-12-04:/articles/2010/12/04/mathjax-pelican.html</id><summary type="html">&lt;h1 id="toc_5b5dd929fb44a8bbd6513331dffdee39"&gt;Math Render Plugin For Pelican&lt;/h1&gt;
+&lt;p&gt;This plugin gives pelican the ability to render mathematics. It accomplishes
+this by using the &lt;a href="http://www.mathjax.org/"&gt;MathJax&lt;/a&gt; javascript engine.&lt;/p&gt;
+&lt;p&gt;The plugin also ensures that Typogrify and recognized math "play" nicely together, by
+ensuring &lt;a href="https://github.com/mintchaos/typogrify"&gt;Typogrify&lt;/a&gt; does not alter math content.&lt;/p&gt;
+&lt;p&gt;Both Markdown and reStructuredText is supported.&lt;/p&gt;
+&lt;h2 id="toc_5a2ebfb8baa378cfcfcba58bbb1380c2"&gt;Requirements …&lt;/h2&gt;</summary><content type="html">&lt;h1 id="toc_5b5dd929fb44a8bbd6513331dffdee39"&gt;Math Render Plugin For Pelican&lt;/h1&gt;
+&lt;p&gt;This plugin gives pelican the ability to render mathematics. It accomplishes
+this by using the &lt;a href="http://www.mathjax.org/"&gt;MathJax&lt;/a&gt; javascript engine.&lt;/p&gt;
+&lt;p&gt;The plugin also ensures that Typogrify and recognized math "play" nicely together, by
+ensuring &lt;a href="https://github.com/mintchaos/typogrify"&gt;Typogrify&lt;/a&gt; does not alter math content.&lt;/p&gt;
+&lt;p&gt;Both Markdown and reStructuredText is supported.&lt;/p&gt;
+&lt;h2 id="toc_5a2ebfb8baa378cfcfcba58bbb1380c2"&gt;Requirements&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Pelican version &lt;em&gt;3.6&lt;/em&gt; or above is required.&lt;/li&gt;
+&lt;li&gt;Typogrify version &lt;em&gt;2.0.7&lt;/em&gt; or higher is needed for Typogrify to play
+    "nicely" with this plugin. If this version is not available, Typogrify
+    will be disabled for the entire site.&lt;/li&gt;
+&lt;li&gt;BeautifulSoup4 is required to correct summaries. If BeautifulSoup4 is
+    not installed, summary processing will be ignored, even if specified
+    in user settings.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="toc_7cd8fb6e31cc946c078d2740c76a9899"&gt;Installation&lt;/h2&gt;
+&lt;p&gt;To enable, ensure that &lt;code&gt;render_math&lt;/code&gt; plugin is accessible.
+Then add the following to settings.py:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;PLUGINS = ["render_math"]
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Your site is now capable of rendering math math using the mathjax JavaScript
+engine. No alterations to the template is needed, just use and enjoy!&lt;/p&gt;
+&lt;p&gt;However, if you wish, you can set the &lt;code&gt;auto_insert&lt;/code&gt; setting to &lt;code&gt;False&lt;/code&gt; which
+will disable the mathjax script from being automatically inserted into the
+content. You would only want to do this if you had control over the template
+and wanted to insert the script manually.&lt;/p&gt;
+&lt;h3 id="toc_982352a832ab70419affd398b471cf64"&gt;Typogrify&lt;/h3&gt;
+&lt;p&gt;In the past, using &lt;a href="https://github.com/mintchaos/typogrify"&gt;Typgogrify&lt;/a&gt; would
+alter the math contents resulting in math that could not be rendered by MathJax.
+The only option was to ensure that Typogrify was disabled in the settings.&lt;/p&gt;
+&lt;p&gt;The problem has been rectified in this plugin, but it requires at a minimum
+&lt;a href="https://pypi.python.org/pypi/typogrify"&gt;Typogrify version 2.0.7&lt;/a&gt; (or higher).
+If this version is not present, the plugin will disable Typogrify for the entire
+site.&lt;/p&gt;
+&lt;h3 id="toc_c59833d85381af514065beac5716489f"&gt;BeautifulSoup4&lt;/h3&gt;
+&lt;p&gt;Pelican creates summaries by truncating the contents to a specified user length.
+The truncation process is oblivious to any math and can therefore destroy
+the math output in the summary.&lt;/p&gt;
+&lt;p&gt;To restore math, &lt;a href="https://pypi.python.org/pypi/beautifulsoup4/4.4.0"&gt;BeautifulSoup4&lt;/a&gt;
+is used. If it is not installed, no summary processing will happen.&lt;/p&gt;
+&lt;h2 id="toc_c64518704ce0c0d5501a45763f464276"&gt;Usage&lt;/h2&gt;
+&lt;h3 id="toc_7df96b18c230f90ada0a9e2307226338"&gt;Templates&lt;/h3&gt;
+&lt;p&gt;No alteration is needed to a template for this plugin to work. Just install
+the plugin and start writing your Math. &lt;/p&gt;
+&lt;h3 id="toc_f4f70727dc34561dfde1a3c529b6205c"&gt;Settings&lt;/h3&gt;
+&lt;p&gt;Certain MathJax rendering options can be set. These options 
+are in a dictionary variable called &lt;code&gt;MATH_JAX&lt;/code&gt; in the pelican
+settings file.&lt;/p&gt;
+&lt;p&gt;The dictionary can be set with the following keys:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;align&lt;/code&gt;: [string] controls how displayed math will be aligned. Can be set to either
+&lt;code&gt;'left'&lt;/code&gt;, &lt;code&gt;'right'&lt;/code&gt; or &lt;code&gt;'center'&lt;/code&gt;. &lt;strong&gt;Default Value&lt;/strong&gt;: &lt;code&gt;'center'&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;auto_insert&lt;/code&gt;: [boolean] will insert the mathjax script into content that it is
+detected to have math in it. Setting it to false is not recommended.
+&lt;strong&gt;Default Value&lt;/strong&gt;: &lt;code&gt;True&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;indent&lt;/code&gt;: [string] if &lt;code&gt;align&lt;/code&gt; not set to &lt;code&gt;'center'&lt;/code&gt;, then this controls the indent
+level. &lt;strong&gt;Default Value&lt;/strong&gt;: &lt;code&gt;'0em'&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;show_menu&lt;/code&gt;: [boolean] controls whether the mathjax contextual menu is shown.
+&lt;strong&gt;Default Value&lt;/strong&gt;: &lt;code&gt;True&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;process_escapes&lt;/code&gt;: [boolean] controls whether mathjax processes escape sequences.
+&lt;strong&gt;Default Value&lt;/strong&gt;: &lt;code&gt;True&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;mathjax_font&lt;/code&gt;: [string] will force mathjax to use the chosen font. Current choices
+for the font is &lt;code&gt;sanserif&lt;/code&gt;, &lt;code&gt;typewriter&lt;/code&gt; or &lt;code&gt;fraktur&lt;/code&gt;. If this is not set, it will
+use the default font settings. &lt;strong&gt;Default Value&lt;/strong&gt;: &lt;code&gt;default&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;latex_preview&lt;/code&gt;: [string] controls the preview message users are shown while mathjax is
+rendering LaTex. If set to &lt;code&gt;'Tex'&lt;/code&gt;, then the TeX code is used as the preview 
+(which will be visible until it is processed by MathJax). &lt;strong&gt;Default Value&lt;/strong&gt;: &lt;code&gt;'Tex'&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;color&lt;/code&gt;: [string] controls the color of the mathjax rendered font. &lt;strong&gt;Default Value&lt;/strong&gt;: &lt;code&gt;'inherit'&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;linebreak_automatic&lt;/code&gt;: [boolean] If set, Mathjax will try to &lt;em&gt;intelligently&lt;/em&gt; break up displayed math
+(Note: It will not work for inline math). This is very useful for a responsive site. It
+is turned off by default due to it potentially being CPU expensive. &lt;strong&gt;Default Value&lt;/strong&gt;: &lt;code&gt;False&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;tex_extensions&lt;/code&gt;: [list] a list of &lt;a href="http://docs.mathjax.org/en/latest/tex.html#tex-and-latex-extensions"&gt;latex extensions&lt;/a&gt;
+accepted by mathjax. &lt;strong&gt;Default Value&lt;/strong&gt;: &lt;code&gt;[]&lt;/code&gt; (empty list)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;responsive&lt;/code&gt;: [boolean] tries to make displayed math render responsively. It does by determining if the width
+is less than &lt;code&gt;responsive_break&lt;/code&gt; (see below) and if so, sets &lt;code&gt;align&lt;/code&gt; to &lt;code&gt;left&lt;/code&gt;, &lt;code&gt;indent&lt;/code&gt; to &lt;code&gt;0em&lt;/code&gt; and &lt;code&gt;linebreak_automatic&lt;/code&gt; to &lt;code&gt;True&lt;/code&gt;.
+&lt;strong&gt;Default Value&lt;/strong&gt;: &lt;code&gt;False&lt;/code&gt; (defaults to &lt;code&gt;False&lt;/code&gt; for backward compatibility)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;responsive_break&lt;/code&gt;: [integer] a number (in pixels) representing the width breakpoint that is used
+when setting &lt;code&gt;responsive_align&lt;/code&gt; to &lt;code&gt;True&lt;/code&gt;. &lt;strong&gt;Default Value&lt;/strong&gt;: 768&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;process_summary&lt;/code&gt;: [boolean] ensures math will render in summaries and fixes math in that were cut off.
+Requires &lt;a href="http://www.crummy.com/software/BeautifulSoup/bs4/doc/"&gt;BeautifulSoup4&lt;/a&gt; be installed. &lt;strong&gt;Default Value&lt;/strong&gt;: &lt;code&gt;True&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;message_style&lt;/code&gt;: [string] This value controls the verbosity of the messages in the lower left-hand corner. Set it to &lt;code&gt;None&lt;/code&gt; to eliminate all messages.
+&lt;strong&gt;Default Value&lt;/strong&gt;: normal&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id="toc_5bef3d2da1c7a3409f0bf5b5acf077ce"&gt;Settings Examples&lt;/h4&gt;
+&lt;p&gt;Make math render in blue and displaymath align to the left:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;MATH_JAX = {'color':'blue','align':left}
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Use the &lt;a href="http://docs.mathjax.org/en/latest/tex.html#color"&gt;color&lt;/a&gt; and
+&lt;a href="http://docs.mathjax.org/en/latest/tex.html#mhchem"&gt;mhchem&lt;/a&gt; extensions:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;MATH_JAX = {'tex_extensions': ['color.js','mhchem.js']}
+&lt;/pre&gt;&lt;/div&gt;
+&lt;h4 id="toc_7c2f159968a8555d21b92973ec36db9c"&gt;Resulting HTML&lt;/h4&gt;
+&lt;p&gt;Inlined math is wrapped in &lt;code&gt;span&lt;/code&gt; tags, while displayed math is wrapped in &lt;code&gt;div&lt;/code&gt; tags.
+These tags will have a class attribute that is set to &lt;code&gt;math&lt;/code&gt; which 
+can be used by template designers to alter the display of the math.&lt;/p&gt;
+&lt;h2 id="toc_2182a74bab7188d959e795d9301e87ff"&gt;Markdown&lt;/h2&gt;
+&lt;p&gt;This plugin implements a custom extension for markdown resulting in math
+being a "first class citizen" for Pelican. &lt;/p&gt;
+&lt;h3 id="toc_1b82415ae2a71ec642d5a7bee06b160b"&gt;Inlined Math&lt;/h3&gt;
+&lt;p&gt;Math between &lt;code&gt;$&lt;/code&gt;..&lt;code&gt;$&lt;/code&gt;, for example, &lt;code&gt;$&lt;/code&gt;x^2&lt;code&gt;$&lt;/code&gt;, will be rendered inline
+with respect to the current html block. Note: To use inline math, there
+must &lt;em&gt;not&lt;/em&gt; be any whitespace before the ending &lt;code&gt;$&lt;/code&gt;. So for example:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Relevant inline math&lt;/strong&gt;: &lt;code&gt;$e=mc^2$&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Will not render as inline math&lt;/strong&gt;: &lt;code&gt;$40 vs $50&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="toc_87c91640dbe3d77875f300c436cea132"&gt;Displayed Math&lt;/h3&gt;
+&lt;p&gt;Math between &lt;code&gt;$$&lt;/code&gt;..&lt;code&gt;$$&lt;/code&gt; will be rendered "block style", for example, &lt;code&gt;$$&lt;/code&gt;x^2&lt;code&gt;$$&lt;/code&gt;, will be rendered centered in a
+new paragraph.&lt;/p&gt;
+&lt;h4 id="toc_4858cf440cb01f1e330cad1d460a0cef"&gt;Other Latex  Display Math commands&lt;/h4&gt;
+&lt;p&gt;The other LaTeX commands which usually invoke display math mode from text mode
+are supported,
+and are automatically treated like &lt;code&gt;$$&lt;/code&gt;-style displayed math 
+in that they are rendered "block" style on their own lines.
+For example, &lt;code&gt;begin{equation}&lt;/code&gt; x^2 &lt;code&gt;\end{equation}&lt;/code&gt;,
+will be rendered in its own block with a right justified equation number
+at the top of the block. This equation number can be referenced in the document.
+To do this, use a &lt;code&gt;label&lt;/code&gt; inside of the equation format and then refer to that label
+using &lt;code&gt;ref&lt;/code&gt;. For example: &lt;code&gt;begin{equation}&lt;/code&gt; &lt;code&gt;\label{eq}&lt;/code&gt; X^2 &lt;code&gt;\end{equation}&lt;/code&gt;. 
+Now refer to that equation number by &lt;code&gt;$&lt;/code&gt;\ref{eq}&lt;code&gt;$&lt;/code&gt;.&lt;/p&gt;
+&lt;h2 id="toc_f650657a67c9b1250753c667f4989efe"&gt;reStructuredText&lt;/h2&gt;
+&lt;p&gt;If there is math detected in reStructuredText document, the plugin will automatically
+set the &lt;a href="http://docutils.sourceforge.net/docs/user/config.html#math-output"&gt;math_output&lt;/a&gt; configuration setting to &lt;code&gt;MathJax&lt;/code&gt;.&lt;/p&gt;
+&lt;h3 id="TOC_956924d5dd506c2864915ed3fc276e42"&gt;Inlined Math&lt;/h3&gt;
+&lt;p&gt;Inlined math needs to use the &lt;a href="http://docutils.sourceforge.net/docs/ref/rst/roles.html#math"&gt;math role&lt;/a&gt;:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;The area of a circle is :math:`A_\text{c} = (\pi/4) d^2`.
+&lt;/pre&gt;&lt;/div&gt;
+&lt;h3 id="TOC_d1d45eb6d0dcbcd7c0628e58d49c1bb9"&gt;Displayed Math&lt;/h3&gt;
+&lt;p&gt;Displayed math uses the &lt;a href="http://docutils.sourceforge.net/docs/ref/rst/directives.html#math"&gt;math block&lt;/a&gt;:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;..&lt;/span&gt; &lt;span class="ow"&gt;math&lt;/span&gt;&lt;span class="p"&gt;::&lt;/span&gt;
+
+  α_t(i) = P(O_1, O_2, … O_t, q_t = S_i λ)
+&lt;/pre&gt;&lt;/div&gt;</content><category term="markdown"></category></entry></feed>

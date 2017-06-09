@@ -38,6 +38,28 @@
                             </a>
                         </li>
                         <!-- category dropdown list -->
+                        <li class="dropdown">
+                           <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <i class="icon-folder-open"></i>Category<b class="caret"></b>
+                           </a>
+                           <ul class="dropdown-menu">
+                               <li><a href="https://sinoyster.github.io/category/blog.html">
+                                      <i class=""></i>博客
+                                      (2)</a></li>
+                               <li><a href="https://sinoyster.github.io/category/markdown.html">
+                                   <i class="icon-folder-close"></i>markdown
+                                      (2)</a></li>
+                               <li><a href="https://sinoyster.github.io/category/misc.html">
+                                   <i class="icon-folder-close"></i>misc
+                                      (1)</a></li>
+                               <li><a href="https://sinoyster.github.io/category/post.html">
+                                   <i class="icon-folder-close"></i>post
+                                      (1)</a></li>
+                               <li><a href="https://sinoyster.github.io/category/python.html">
+                                   <i class="icon-folder-close"></i>Python
+                                      (4)</a></li>
+                           </ul>
+                        </li>
                         <!--  self defined dropdown list -->
                         </ul>
                         
@@ -89,8 +111,12 @@
         <script type="text/javascript">
             
             var tc = TagCloud.create();
-            tc.add('pelican', 6, 'https://sinoyster.github.io/tag/pelican.html', null);
+            tc.add('markdown', 1, 'https://sinoyster.github.io/tag/markdown.html', null);
+            tc.add('pelican', 7, 'https://sinoyster.github.io/tag/pelican.html', null);
+            tc.add('pandas', 1, 'https://sinoyster.github.io/tag/pandas.html', null);
             tc.add('publishing', 6, 'https://sinoyster.github.io/tag/publishing.html', null);
+            tc.add('math', 1, 'https://sinoyster.github.io/tag/math.html', null);
+            tc.add('ipynb', 1, 'https://sinoyster.github.io/tag/ipynb.html', null);
             tc.loadEffector('CountSize');tc.loadEffector('CountSize');
 
             function tag_filter() {

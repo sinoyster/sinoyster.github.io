@@ -1,0 +1,1723 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="pelican, publishing">
+        <meta name="description" content="Short version for index and feeds">
+        <title>Markdown Style Guide - Yuk's Blog</title>
+        <link rel="shortcut icon" type="image/x-icon" href="/favicon.png">
+        <link rel="stylesheet" href="https://sinoyster.github.io/theme/css/bootstrap.min.css" type="text/css" />
+        <link rel="stylesheet" href="https://sinoyster.github.io/theme/font-icons/style.min.css" type="text/css" />
+        <link rel="stylesheet" href="https://sinoyster.github.io/theme/css/niu2.min.css" type="text/css" />
+        <link rel="canonical" href="https://sinoyster.github.io/articles/2010/12/04/style-guide.html" />
+        <script type="text/javascript">window.onload=function(){};</script>
+        <!--[if lt IE 9]>
+            <script src="https://sinoyster.github.io/theme/js/html5shiv.js"></script>
+            <script src="https://sinoyster.github.io/theme/js/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body> 
+        <div id="body-header">
+            <div class="navbar navbar-inverse navbar-fixed-top">
+                <div class="col-md-12">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="https://sinoyster.github.io">
+                            <i class="icon-home"></i>Yuk's Blog
+                        </a>
+                    </div>
+                    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+                        <ul class="nav navbar-nav">
+                        <li><a href="https://sinoyster.github.io/tags.html">
+                                <i class="icon-tag"></i>Tag</a>
+                        </li>
+                        <li><a href="https://sinoyster.github.io/archives.html">
+                                <i class="icon-archive"></i>Archive
+                            </a>
+                        </li>
+                        <!-- category dropdown list -->
+                        <li class="dropdown">
+                           <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <i class="icon-folder-open"></i>Category<b class="caret"></b>
+                           </a>
+                           <ul class="dropdown-menu">
+                               <li><a href="https://sinoyster.github.io/category/blog.html">
+                                      <i class=""></i>博客
+                                      (2)</a></li>
+                               <li><a href="https://sinoyster.github.io/category/markdown.html">
+                                   <i class="icon-folder-close"></i>markdown
+                                      (2)</a></li>
+                               <li><a href="https://sinoyster.github.io/category/misc.html">
+                                   <i class="icon-folder-close"></i>misc
+                                      (1)</a></li>
+                               <li><a href="https://sinoyster.github.io/category/post.html">
+                                   <i class="icon-folder-close"></i>post
+                                      (1)</a></li>
+                               <li><a href="https://sinoyster.github.io/category/python.html">
+                                   <i class="icon-folder-close"></i>Python
+                                      (4)</a></li>
+                           </ul>
+                        </li>
+                        <!--  self defined dropdown list -->
+                        </ul>
+                        
+                        <!-- right nav bar -->
+                        <ul class="nav navbar-nav navbar-right">
+                        <!-- google custom search -->
+                       </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <div id="body-content">
+            <div class="col-md-8 col-md-offset-2">
+                <h1 id="content-heading">Markdown Style Guide</h1>
+            </div>
+            <div id="niu2-left-container" class="col-md-6 col-md-offset-2">
+                <div id="niu2-main-content">
+                    <h2 id="toc_5eabb11eaf0a671a2b9b2ea653ce0ea4">description: Readable and portable Markdown style guide.</h2>
+<ul>
+<li toc="">a</li>
+</ul>
+<h2 id="toc_8f7f4c1ce7a4f933663d10543562b096">About</h2>
+<p>The <a href="{{ site.github }}">source code is available on GitHub</a>.</p>
+<p>Considers <a href="http://daringfireball.net/projects/markdown/syntax">original specification</a>,
+<a href="http://commonmark.org">CommonMark</a> and other extensions.</p>
+<p>This project is community driven, and tries to reach consensus.
+Maintainers will only step in if the community cannot reach a decision.
+Discussion will take place <a href="{{ site.github }}/issues">on the issue tracker</a>.</p>
+<p>A Chinese translation can be found at: <a href="http://einverne.github.io/markdown-style-guide/zh.html">http://einverne.github.io/markdown-style-guide/zh.html</a></p>
+<h3 id="toc_a564c6d9587a735727a441c30414abde">Notable users</h3>
+<ul>
+<li><a href="https://github.com/gitlabhq/gitlabhq/blob/master/CONTRIBUTING.md#style-guides">GitLab</a></li>
+<li><a href="https://github.com/plasticboy/vim-markdown/blob/master/CONTRIBUTING.md#style">Vim Markdown</a></li>
+</ul>
+<p>Do you use this style guide? Add your name to <a href="{{ site.github }}/wiki/Users">our wiki</a>.</p>
+<p>Are you notable? Send a pull request.</p>
+<p>If you are a notable user:</p>
+<ul>
+<li>
+<p>you can opt to be contacted before any major changes happen to the standard.
+    Please inform this on the pull request that adds you to the notable list.</p>
+</li>
+<li>
+<p>your vote on decisions will have much greater weight</p>
+</li>
+</ul>
+<p>You are more likely to be notable if your project:</p>
+<ul>
+<li>
+<p>uses Markdown heavily. E.g.: Markdown engines, text editors, lots of markdown documentation, etc.</p>
+</li>
+<li>
+<p>is popular. Any popularity measure will be taken into account, e.g. GitHub stars,
+    Google Rank, etc. 2K+ GitHub stars makes for a very strong case.</p>
+</li>
+</ul>
+<h3 id="toc_186abb602161441aed0a80226c80c044">Options system</h3>
+<p>Disputed points will be given multiple alternative style options.</p>
+<p>Each feature and option will receive a lowercase hyphen separated identifier.</p>
+<p>Each option will have a header of form:</p>
+<div class="highlight"><pre><span></span># Option key:value
+</pre></div>
+<p>The first option header that appears in this text is the default value.</p>
+<p>E.g., if line wrapping had 3 alternatives, we could give it the key <code>wrap</code>,
+and for each alternative create a header:</p>
+<div class="highlight"><pre><span></span># Option wrap:space
+# Option wrap:no
+# Option wrap:sentence
+</pre></div>
+<p>When referring to this guide, specify all non-default options in a comma separated fashion:</p>
+<div class="highlight"><pre><span></span>Use the Markdown Style Guide wrap:space, code:indented
+</pre></div>
+<h3 id="toc_09b957bb9f47c92b77b11a1dae13cfb0">Design goals</h3>
+<ul>
+<li>
+<p>readable</p>
+</li>
+<li>
+<p>portable: produces the same output, or good output, across multiple implementations.</p>
+<p>Portability tests are carried out with the <a href="https://github.com/karlcow/markdown-testsuite">Markdown Test Suite</a>.</p>
+</li>
+<li>
+<p>easy to write and modify later</p>
+</li>
+<li>
+<p>diff friendly</p>
+</li>
+<li>
+<p>easy to remember and implement on editors</p>
+</li>
+<li>
+<p>provide rationale behind difficult choices.</p>
+</li>
+</ul>
+<h4 id="toc_bfc0e9119e4f67986ac777fa4950982a">Readability vs writability</h4>
+<p>Many design choices come down to:</p>
+<ul>
+<li>do you want to write fast</li>
+<li>or do you want people to read fast</li>
+</ul>
+<p>There may be use cases in which either is preferred:</p>
+<ul>
+<li>
+<p>for source code, readability becomes more important,
+    as programmers are going to open the files on their editors often.</p>
+<p>Editor features like syntax highlighting and line wrapping
+can greatly reduce problems, but it is of course better if people
+don't need to change their editors at all.</p>
+</li>
+<li>
+<p>for forums like Stack Overflow, people will very rarely read the source,
+    only the rendered output. So it might be better to optimize writing speed.</p>
+</li>
+</ul>
+<p>The current style is inconsistent with either of those optimizations. For now,
+we propose two sets of options (profiles) which optimize either one: readability
+and writability profiles.</p>
+<h5 id="toc_2903a902000dc6bcd449ccd98cb7f8d6">Readability profile</h5>
+<ul>
+<li><code>wrap:space</code></li>
+<li><code>list-marker:asterisk</code></li>
+<li><code>code:indented</code></li>
+</ul>
+<h5 id="toc_23ba931a95b107ff0996816b20a2f52d">Writability profile</h5>
+<ul>
+<li><code>wrap:no</code></li>
+<li><code>list-marker:hyphen</code></li>
+<li><code>code:fenced</code></li>
+</ul>
+<h3 id="toc_94f59174ceba1ac4eee1a699a56afd89">Typographic conventions</h3>
+<p>When this style guide needs to represent multiple adjacent spaces,
+or spaces at the beginning or ending of code blocks, this will be mentioned
+explicitly in prose, and a dot will be used to make the space visible.</p>
+<p>E.g.:</p>
+<p><code>a</code>, space, <code>b</code>:</p>
+<div class="highlight"><pre><span></span>a b
+</pre></div>
+<p><code>a</code>, 2 spaces, <code>b</code>:</p>
+<div class="highlight"><pre><span></span>a..b
+</pre></div>
+<p>space, <code>ab</code>:</p>
+<div class="highlight"><pre><span></span><span class="na">.ab</span>
+</pre></div>
+<p><code>ab</code>, space:</p>
+<div class="highlight"><pre><span></span>ab.
+</pre></div>
+<h3 id="toc_ccf847bbe927621373e2891eca80bf93">Alternatives</h3>
+<p><a href="https://github.com/google/styleguide/blob/3591b2e540cbcb07423e02d20eee482165776603/docguide/style.md">google/styleguide</a>
+by Google.</p>
+<p><a href="https://github.com/carwin/markdown-styleguide/tree/9121c77bd177a3ade6713d50ab1228782d7c02a7">carwin/markdown-styleguide</a>.
+This guide was originally forked from it. It has been extended considerably,
+some decisions were modified, and no original lines remain.</p>
+<p><a href="http://tirania.org/blog/archive/2014/Sep-30.html">http://tirania.org/blog/archive/2014/Sep-30.html</a> by Miguel de Icaza (GNOME, Mono). Short.</p>
+<p><a href="https://github.com/slang800/markdown-styleguide">https://github.com/slang800/markdown-styleguide</a></p>
+<h3 id="toc_1a2894c4066b77cdf116e5f45a44a165">Lint tools</h3>
+<p>Asked on Stack Exchange: <a href="http://softwarerecs.stackexchange.com/questions/7138/markdown-lint-tool/">http://softwarerecs.stackexchange.com/questions/7138/markdown-lint-tool/</a></p>
+<ul>
+<li><a href="https://github.com/wooorm/mdast-lint">https://github.com/wooorm/mdast-lint</a></li>
+<li><a href="https://github.com/mivok/markdownlint">https://github.com/mivok/markdownlint</a></li>
+<li><a href="https://github.com/slang800/tidy-markdown">https://github.com/slang800/tidy-markdown</a></li>
+</ul>
+<h2 id="toc_cea60dab84c5773acb3cccbe71f79950">General rules</h2>
+<h3 id="toc_0b27918290ff5323bea1e3b78a9cf04e">File</h3>
+<h4 id="toc_e890db27ea11209ef49b6cc61a177448">File extension</h4>
+<p>Use <code>.md</code>.</p>
+<p>Rationale: why not <code>.mkd</code> or <code>.markdown</code>?</p>
+<ul>
+<li>shorter</li>
+<li>more popular</li>
+<li>does not have important conflicts</li>
+</ul>
+<h4 id="toc_34082694d21dbdcfc31e6e32d9fb2b9f">File name</h4>
+<p>Prefer to base the file name on the top-header level:</p>
+<ul>
+<li>replace upper case letters with lower case</li>
+<li>strip articles <code>the</code>, <code>a</code>, <code>an</code> from the start</li>
+<li>replace punctuation and white space characters by hyphens</li>
+<li>replace consecutive hyphens by a single hyphen</li>
+<li>strip surrounding hyphens</li>
+</ul>
+<p>Good:</p>
+<div class="highlight"><pre><span></span>file-name.md
+</pre></div>
+<p>Bad, multiple consecutive hyphens:</p>
+<div class="highlight"><pre><span></span>file--name.md
+</pre></div>
+<p>Bad, surrounding hyphens:</p>
+<div class="highlight"><pre><span></span>-file-name-.md
+</pre></div>
+<p>Rationale: why not underscore or camel case? Hyphens are the most popular URL separator today,
+and markdown files are most often used in contexts where:</p>
+<ul>
+<li>there are hyphen separated HTML files in the same project, possibly the same directory as the markdown files.</li>
+<li>filenames will be used directly on URLs. E.g.: GitHub blobs.</li>
+</ul>
+<h3 id="toc_ffeaae637d363e4ff033463b6f3d4da8">Whitespaces</h3>
+<h4 id="toc_e26f4c51383991ba48559a215e0e7a0a">Newlines</h4>
+<p><em>Don't</em> use 2 or more consecutive empty lines, that is,
+more than two consecutive newline characters,
+except where they must appear literally such as in code blocks.</p>
+<p>End files with a newline character, and <em>don't</em> leave empty lines at the end of the file.</p>
+<p><em>Don't</em> use trailing whitespace unless it has a function such as indicating a line break.</p>
+<p>Good:</p>
+<div class="highlight"><pre><span></span>- list
+- list
+
+# Header
+</pre></div>
+<p>Good, code block:</p>
+<div class="highlight"><pre><span></span>The markup language X requires you to use triple newlines to separate paragraphs:
+
+    p1
+
+
+    p2
+</pre></div>
+<p>Bad:</p>
+<div class="highlight"><pre><span></span>- list
+- list
+
+
+# Header
+</pre></div>
+<p>Rationale: multiple empty lines occupy more vertical screen space,
+and do not significantly improve readability.</p>
+<h4 id="toc_64631cb97420723c00781e32dd422fb5">Spaces after sentences</h4>
+<h5 id="toc_c314e391de494ccc4bd1f3feda09f193">Option space-sentence:1</h5>
+<p>Use a single space after sentences.</p>
+<p>Bad, 2 spaces:</p>
+<div class="highlight"><pre><span></span>First sentence.  Second sentence.
+</pre></div>
+<p>Good:</p>
+<div class="highlight"><pre><span></span>First sentence. Second sentence.
+</pre></div>
+<p>Rationale: advantages over <code>space-sentence:2</code>:</p>
+<ul>
+<li>
+<p>easier to edit</p>
+</li>
+<li>
+<p>usually not necessary if you use <code>wrap:inner-sentence</code> or <code>wrap:sentence</code></p>
+</li>
+<li>
+<p><code>space-sentence:2</code> gives a false sense of readability
+    as it is ignored on the HTML output</p>
+</li>
+<li>
+<p>more popular</p>
+</li>
+</ul>
+<p>Advantages of <code>space-sentence:2</code>:</p>
+<ul>
+<li>easier to see where sentences end</li>
+</ul>
+<h5 id="toc_f1d71b1e09b815f195186095799374e0">Option space-sentence:2</h5>
+<p>Bad, single space:</p>
+<div class="highlight"><pre><span></span>First sentence. Second sentence.
+</pre></div>
+<p>Good:</p>
+<div class="highlight"><pre><span></span>First sentence.  Second sentence.
+</pre></div>
+<h3 id="toc_c8501eee9fb58f59b14b15544af342c9">Line wrapping</h3>
+<h4 id="toc_2805ad100aef735376566fac096c6e3f">Option wrap:inner-sentence</h4>
+<p>Try to keep lines under 80 characters by breaking large paragraphs logically at points such as:</p>
+<ul>
+<li>
+<p>sentences: after a period <code>.</code>, question <code>?</code> or exclamation mark <code>!</code></p>
+</li>
+<li>
+<p><a href="http://www.oxforddictionaries.com/words/clauses">clauses</a>:
+    after words like <code>and</code>, <code>which</code>, <code>if ... then</code>, commas <code>,</code></p>
+</li>
+<li>
+<p>large <a href="http://www.oxforddictionaries.com/words/phrases">phrases</a></p>
+</li>
+</ul>
+<p>It is acceptable to have a line longer than 80 characters,
+but keep in mind that long sentences are less readable
+and look worse in tools such as <code>git diff</code>.</p>
+<p>Set your editor to wrap lines visually for Markdown in case a large line is present.</p>
+<p>Good:</p>
+<div class="highlight"><pre><span></span>This is a very very very very very very very very very very very very very long not wrapped sentence.
+Second sentence of of the paragraph,
+third sentence of a paragraph
+and the fourth one.
+</pre></div>
+<p>Rationale:</p>
+<ul>
+<li>
+<p>Diffs look better, since a change to a clause shows up as a single diff line.</p>
+</li>
+<li>
+<p>Occasional visual wrapping does not significantly reduce the readability of Markdown,
+    since the only language feature that can be indented to indicate hierarchy are nested lists.</p>
+</li>
+<li>
+<p>At some point GitHub translated single newlines to line breaks in READMEs,
+    and still does so on comments.
+    Currently there is no major engine which does it, so it is safe to use newlines.</p>
+</li>
+<li>
+<p>Some tools are not well adapted for long lines, e.g. Vim and <code>git diff</code> will not wrap lines by default.
+    This can be configured however via <code>git config --global core.pager 'less -r'</code> for Git and <code>set wrap</code> for Vim.</p>
+</li>
+</ul>
+<p>Downsides:</p>
+<ul>
+<li>
+<p>requires considerable writer effort, specially when modifying code.</p>
+</li>
+<li>
+<p>Markdown does not look like the rendered output, in which there are no line breaks.</p>
+<p>Manual line breaking can make the Markdown more readable than the rendered output,
+which is bad because it gives a false sense of readability encouraging less
+readable long paragraphs.</p>
+</li>
+<li>
+<p>Requires users of programming text editors like Vim, which are usually configured to not wrap,
+    to toggle visual wrapping on. This can be automated, but
+    <a href="https://github.com/editorconfig/editorconfig/issues/168">EditorConfig gave it WONTFIX</a></p>
+</li>
+<li>
+<p>Breaks some email systems, which always break a line on a single newline, and<br>
+    make your email<br>
+    look<br>
+    something like this.</br></br></br></p>
+</li>
+</ul>
+<h4 id="toc_5ebb96ae411dc4c4914e54928cfe9359">Option wrap:no</h4>
+<p>Don't wrap lines.</p>
+<p>Rationale: very easy to edit. But diffs on huge lines are hard to read.</p>
+<h4 id="toc_bfca7085e709a45fdb03482b01550dda">Option wrap:space</h4>
+<p>Always wrap at the end of the first word that exceeds 80 characters.</p>
+<p>Rationale: source code becomes is very readable and text editors support it automatically.
+But diffs will look bad, and changing lines will be hard.</p>
+<h4 id="toc_22f9afc6110c886a7d5cbabb2b466974">Option wrap:sentence</h4>
+<p>Rationale: similar advantages as <code>wrap:inner-sentence</code>,
+but easier for people to follow since the rule is simple:
+break after the period. But may produce long lines with hard to read diffs.</p>
+<p>Notable occurrence: <a href="https://raw.githubusercontent.com/progit/progit2/5c285553c0605342339284981a9bb8a6c4e7c18e/book/01-introduction/1-introduction.asc">ProGit 2</a>.</p>
+<h3 id="toc_ca0dbad92a874b2f69b549293387925e">Code</h3>
+<h4 id="toc_2aa4f7d6968438f00c30a041b996f30b">Dollar signs in shell code</h4>
+<p><em>Don't</em> prefix shell code with dollar signs <code>$</code>
+unless you will be showing the command output on the same code block.</p>
+<p>If the goal is to clarify what the language is, do it on the preceding paragraph.</p>
+<p>Rationale: harder to copy paste, noisier to read.</p>
+<p>Good:</p>
+<div class="highlight"><pre><span></span>echo a
+echo a &gt; file
+</pre></div>
+<p>Bad:</p>
+<div class="highlight"><pre><span></span>$ <span class="nb">echo</span> a
+$ <span class="nb">echo</span> a &gt; file
+</pre></div>
+<p>Good, shows output:</p>
+<div class="highlight"><pre><span></span>$ <span class="nb">echo</span> a
+a
+$ <span class="nb">echo</span> a &gt; file
+</pre></div>
+<p>Good, language specified on preceding paragraph:</p>
+<div class="highlight"><pre><span></span>Use the following Bash code:
+
+echo a
+echo a &gt; file
+</pre></div>
+<h4 id="toc_e1c1171c16c380fe751913e997d97ff1">What to mark as code</h4>
+<p>Use code blocks or inline code for:</p>
+<ul>
+<li>
+<p>executables. E.g.:</p>
+<div class="highlight"><pre><span></span>`gcc` is the best compiler available.
+</pre></div>
+<p>Differentiate between tool and the name of related projects. E.g.: <code>gcc</code> vs GCC.</p>
+</li>
+<li>
+<p>file paths</p>
+</li>
+<li>
+<p>version numbers</p>
+</li>
+<li>
+<p>capitalized explanation of abbreviations:</p>
+<div class="highlight"><pre><span></span>xinetd stands for `eXtended Internet daemon`
+</pre></div>
+</li>
+<li>
+<p>other terms related to computers that you don't want to add to your dictionary</p>
+</li>
+</ul>
+<p>Don't mark as code:</p>
+<ul>
+<li>names of projects. E.g.: GCC</li>
+<li>names of libraries. E.g.: libc, glibc</li>
+</ul>
+<h4 id="toc_0aaf313e77b2054b1506ebc6eb60edb8">Spelling and grammar</h4>
+<p>Use correct spelling and grammar.</p>
+<p>Prefer writing in English, and in particular American English.
+Rationale: American English speakers have the largest GDP,
+specially in the computing industry.</p>
+<p>Use markup like URL or code on words which you do not want to add to your dictionary
+so that spell checkers can ignore them automatically.</p>
+<p>Beware of case sensitive spelling errors, in particular for project, brand names or abbreviations:</p>
+<ul>
+<li>Good: URL, LinkedIn, DoS attack</li>
+<li>Bad: <code>url</code>, <code>Linkedin</code>, <code>dos attack</code></li>
+</ul>
+<p>When in doubt, prefer the same abbreviation as used on Wikipedia.</p>
+<p>Avoid informal contractions:</p>
+<ul>
+<li>Good: biography, repository, directory</li>
+<li>Bad: <code>bio</code>, <code>repo</code>, <code>dir</code></li>
+</ul>
+<h2 id="toc_f385ebef3c01db6bd5034abd9f974147">Block elements</h2>
+<h3 id="toc_ee4e8c96014380f63c11e3ee5394b3af">Line breaks</h3>
+<p>Avoid line breaks, as they don't have generally accepted semantic meaning.</p>
+<p>In the rare case you absolutely need them, end a lines with exactly two spaces.</p>
+<h3 id="toc_883d7615c4d2de3fa1218f1298c46d0e">Headers</h3>
+<h4 id="toc_539ebebced9e796a1543c48c1974f2db">Option header:atx</h4>
+<p>Bad:</p>
+<div class="highlight"><pre><span></span><span class="gh">Header 1</span>
+<span class="gh">========</span>
+
+<span class="gh">Header 2</span>
+<span class="gh">--------</span>
+
+### Header 3
+</pre></div>
+<p>Good:</p>
+<div class="highlight"><pre><span></span># Header 1
+
+## Header 2
+
+### Header 3
+</pre></div>
+<ul>
+<li>
+<p>Rationale: advantages over Setex:</p>
+<ul>
+<li>
+<p>easier to write because in Setex you have to match
+    the number of characters in both lines for it to look good</p>
+</li>
+<li>
+<p>works for all levels, while Setex only goes up to level 2</p>
+</li>
+<li>
+<p>occupy only one screen line, while Setex occupies 2</p>
+</li>
+</ul>
+<p>Advantages of Setex</p>
+<ul>
+<li>more visible. Not very important if you have syntax highlighting.</li>
+</ul>
+</li>
+<li>
+<p>Include a single space between the <code>#</code> and the text of the header.</p>
+<p>Bad:</p>
+<div class="highlight"><pre><span></span>#Header
+
+#..Header
+</pre></div>
+<p>Good:</p>
+<div class="highlight"><pre><span></span># Header
+</pre></div>
+</li>
+<li>
+<p><em>Don't</em> use the closing <code>#</code> character.</p>
+<p>Bad:</p>
+<div class="highlight"><pre><span></span># Header #
+</pre></div>
+<p>Good:</p>
+<div class="highlight"><pre><span></span># Header
+</pre></div>
+<p>Rationale: easier to maintain.</p>
+</li>
+<li>
+<p><em>Don't</em> add spaces before the number sign <code>#</code>.</p>
+<p>Bad:</p>
+<div class="highlight"><pre><span></span>.# Header
+</pre></div>
+<p>Good:</p>
+<div class="highlight"><pre><span></span># Header
+</pre></div>
+</li>
+</ul>
+<h4 id="toc_75bb025227227375335085dcb27e942f">Option header:setex</h4>
+<p>Bad:</p>
+<div class="highlight"><pre><span></span># Header 1
+
+## Header 2
+
+### Header 3
+</pre></div>
+<p>Good:</p>
+<div class="highlight"><pre><span></span><span class="gh">Header 1</span>
+<span class="gh">========</span>
+
+<span class="gh">Header 2</span>
+<span class="gh">--------</span>
+
+### Header 3
+</pre></div>
+<hr>
+<ul>
+<li>
+<p><em>Don't</em> skip header levels.</p>
+<p>Bad:</p>
+<div class="highlight"><pre><span></span># Header 1
+
+### Header 3
+</pre></div>
+<p>Good:</p>
+<div class="highlight"><pre><span></span># Header 1
+
+## Header 2
+</pre></div>
+</li>
+<li>
+<p>Surround headers by a single empty line except at the beginning of the file.</p>
+<p>Bad:</p>
+<div class="highlight"><pre><span></span>Before.
+# Header 1
+
+## Header 2
+After.
+</pre></div>
+<p>Good:</p>
+<div class="highlight"><pre><span></span>Before.
+
+# Header 1
+
+## Header 2
+
+After.
+</pre></div>
+<p>Bad:</p>
+<div class="highlight"><pre><span></span>Before.
+Header 1
+========
+
+## Header 2
+-----------
+After.
+</pre></div>
+<p>Good:</p>
+<div class="highlight"><pre><span></span>Before.
+
+Header 1
+========
+
+## Header 2
+-----------
+
+After.
+</pre></div>
+</li>
+<li>
+<p><em>Avoid</em> using two headers with the same content in the same markdown file.</p>
+<p>Rationale: many markdown engines generate IDs for headers based on the header content.</p>
+<p>Bad:</p>
+<div class="highlight"><pre><span></span># Dogs
+
+## Anatomy
+
+# Cats
+
+## Anatomy
+</pre></div>
+<p>Good:</p>
+<div class="highlight"><pre><span></span># Dogs
+
+## Anatomy of the dog
+
+# Cats
+
+## Anatomy of the cat
+</pre></div>
+</li>
+</ul>
+<h4 id="toc_cd2a642785571ebb64b4c71cb235f779">Top-level header</h4>
+<p>If you target HTML output, write your documents so that it will have one
+and only one <code>h1</code> element as the first thing in it that serves as the title of the document.
+This is the HTML top-level header.</p>
+<p>How this <code>h1</code> is produced may vary depending on your exact technology stack:
+some stacks may generate it from metadata, for example Jekyll through the front-matter.</p>
+<p>Storing the top-level header as metadata has the advantage that it can be reused elsewhere more easily,
+e.g. on a global index, but the downside of lower portability.</p>
+<p>If your target stack does not generate the top-level header in another way,
+include it in your markdown file. E.g., GitHub.</p>
+<p>Top-level headers on index-like files such as <code>README.md</code> or <code>index.md</code>
+should serve as a title for their parent directory.</p>
+<p>Downsides of top-level headers:</p>
+<ul>
+<li>
+<p>take up one header level. This means that there are only 5 header levels left,
+    and each new header will have one extra <code>#</code>, which looks worse and is harder to write.</p>
+</li>
+<li>
+<p>duplicate filename information, which most often can already be seen on a URL.
+    In most cases, the filename can be trivially converted to a top-level,
+    e.g.: <code>some-filename.md</code> to <code>Some filename</code>.</p>
+</li>
+</ul>
+<p>Advantages of top-level headers:</p>
+<ul>
+<li>more readable than URL's, especially for non-technically inclined users.</li>
+</ul>
+<h4 id="toc_96c424f963fdf08d2eba417dd6efd150">Header case</h4>
+<ul>
+<li>
+<p>Use an upper case letter as the first letter of a header,
+    unless it is a word that always starts with lowercase letters, e.g. computer code.</p>
+<p>Good:</p>
+<div class="highlight"><pre><span></span># Header
+</pre></div>
+<p>Good, computer code that always starts with lower case:</p>
+<div class="highlight"><pre><span></span># int main
+</pre></div>
+<p>Bad:</p>
+<div class="highlight"><pre><span></span># header
+</pre></div>
+</li>
+<li>
+<p>The other letters have the same case they would have in the middle of a sentence.</p>
+<p>Good:</p>
+<div class="highlight"><pre><span></span># The header of the example
+</pre></div>
+<p>Bad:</p>
+<div class="highlight"><pre><span></span># The Header of the Example
+</pre></div>
+<p>As an exception, <a href="http://en.wikipedia.org/wiki/Title_case#Title_case">title case</a>
+may be optionally used for the <a href="#top-level-header">top-level header</a>.
+Use this exception sparingly, in cases where typographical perfection is important,
+e.g.: <code>README</code> of a project.</p>
+<p>Rationale: why not <a href="http://en.wikipedia.org/wiki/Title_case#Title_case">Title case</a> for all headers?
+It requires too much effort to decide if edge-case words should be upper case or not.</p>
+</li>
+</ul>
+<h4 id="toc_ce63a55b5dae9196edba7901f24209c9">End of a header</h4>
+<p>Indicate the end of a header's content that is not followed by a new header by an horizontal rule:</p>
+<div class="highlight"><pre><span></span># Header
+
+Content
+
+---
+
+Outside header.
+</pre></div>
+<h4 id="toc_526ebc903ccb192f8bbc13cf2d9a0f0b">Header length</h4>
+<p>Keep headers as short as possible.</p>
+<p>Instead of using a huge sentence, make the header a summary to the huge sentence,
+and write the huge sentence as the first paragraph beneath the header.</p>
+<p>Rationale: it is easier to refer to the header later,
+specially if automatic IDs or a TOC are generated by the implementation.</p>
+<p>Good:</p>
+<div class="highlight"><pre><span></span># Huge header
+
+Huge header that talks about a complex subject.
+</pre></div>
+<p>Bad:</p>
+<div class="highlight"><pre><span></span># Huge header that talks about a complex subject
+</pre></div>
+<h4 id="toc_f322a106128aac2def6041a6ae3b7677">Punctuation at the end of headers</h4>
+<p><em>Don't</em> add a trailing colon <code>:</code> to headers.</p>
+<p>Rationale: every header is an introduction to what is about to come next,
+which is exactly the function of the colon.</p>
+<p><em>Don't</em> add a trailing period <code>.</code> to headers.</p>
+<p>Rationale: every header consists of a single short sentence,
+so there is not need to add a sentence separator to it.</p>
+<p>Good:</p>
+<div class="highlight"><pre><span></span># How to do make omelet
+</pre></div>
+<p>Bad:</p>
+<div class="highlight"><pre><span></span># How to do make omelet:
+</pre></div>
+<p>Bad:</p>
+<div class="highlight"><pre><span></span># How to do make omelet.
+</pre></div>
+<h4 id="toc_5092cf60b8ca20437bb6cda17b913ffb">Header synonyms</h4>
+<p>Headers serve as an index for users searching for keywords.</p>
+<p>For this reason, you may want to give multiple keyword possibilities for a given header.</p>
+<p>To do so, simply create a synonym header with empty content just before its main header.</p>
+<p>E.g.:</p>
+<div class="highlight"><pre><span></span># Purchase
+
+# Buy
+
+You give money and get something in return.
+</pre></div>
+<p>Every empty header with the same level as the following one is assumed to be a synonym.
+This is not the case if levels are different:</p>
+<div class="highlight"><pre><span></span># Animals
+
+## Dog
+</pre></div>
+<h3 id="toc_d9418010ca129e22d7ef979b901a8b41">Blockquotes</h3>
+<ul>
+<li>
+<p>Follow the greater than marker <code>&gt;</code> by one space.</p>
+<p>Good:</p>
+<div class="highlight"><pre><span></span>&gt; a
+</pre></div>
+<p>Bad:</p>
+<div class="highlight"><pre><span></span>&gt;a
+</pre></div>
+<p>Bad, 2 spaces:</p>
+<div class="highlight"><pre><span></span>&gt;  a
+</pre></div>
+</li>
+<li>
+<p>Use a greater than sign for every line, including wrapped.</p>
+<p>Bad:</p>
+<div class="highlight"><pre><span></span>&gt; Long line
+that was wrapped.
+</pre></div>
+<p>Good:</p>
+<div class="highlight"><pre><span></span>&gt; Long line
+&gt; that was wrapped.
+</pre></div>
+</li>
+<li>
+<p><em>Don't</em> use empty lines inside a single block quote.</p>
+<p>Good:</p>
+<div class="highlight"><pre><span></span>&gt; a
+&gt;
+&gt; b
+</pre></div>
+<p>Bad:</p>
+<div class="highlight"><pre><span></span>&gt; a
+
+&gt; b
+</pre></div>
+</li>
+</ul>
+<h3 id="toc_691d1860ec58dd973e803e209697d065">Lists</h3>
+<h4 id="toc_0235c996b43b3799573658df41ef82f2">Marker</h4>
+<h5 id="toc_288d468c5e0969f26a310773eda65603">Unordered</h5>
+<h6 id="toc_462e1efeb25c846d8e48994b8cb12b34">Option list-marker:hyphen</h6>
+<p>Use the hyphen marker.</p>
+<p>Good:</p>
+<div class="highlight"><pre><span></span>- a
+- b
+</pre></div>
+<p>Bad:</p>
+<div class="highlight"><pre><span></span>* a
+* b
+</pre></div>
+<!-- -->
+<div class="highlight"><pre><span></span>+ a
++ b
+</pre></div>
+<p>Rationale:</p>
+<ul>
+<li>asterisk <code>*</code> can be confused with bold or italic markers.</li>
+<li>plus sign <code>+</code> is not popular</li>
+</ul>
+<p>Downsides:</p>
+<ul>
+<li><code>*</code> and <code>+</code> are more visible. <code>*</code> is more visible</li>
+</ul>
+<h6 id="toc_0343cf72eda58a0a0992690a613c3ea6">Option list-marker:asterisk</h6>
+<p>Use <code>*</code>.</p>
+<h6 id="toc_8b051936daae9f3d2c7f6fc0557bfdac">Option list-marker:plus</h6>
+<p>Use <code>+</code>.</p>
+<h5 id="toc_26e09a1ee1517389c7b07f42df65561a">Ordered</h5>
+<p>Prefer lists only with the marker <code>1.</code> for ordered lists,
+unless you intend to refer to items by their number in the same markdown file or externally.</p>
+<p>Prefer unordered lists unless you intent to refer to items by their number.</p>
+<p>Best, we will never refer to the items of this list by their number:</p>
+<div class="highlight"><pre><span></span>- a
+- c
+- b
+</pre></div>
+<p>Better, only <code>1.</code>:</p>
+<div class="highlight"><pre><span></span>1. a
+1. c
+1. b
+</pre></div>
+<p>Worse, we will never refer to the items of this list by their number:</p>
+<div class="highlight"><pre><span></span>1. a
+2. c
+3. b
+</pre></div>
+<p>Acceptable, refer to them in the text:</p>
+<div class="highlight"><pre><span></span>The ouput of the `ls` command is of the form:
+
+    drwx------  2 ciro ciro        4096 Jul  5  2013 dir0
+    drwx------  4 ciro ciro        4096 Apr 27 08:00 dir1
+    1           2
+
+Where:
+
+1. permissions
+2. number of files directory contains
+</pre></div>
+<p>Acceptable, meant to be referred by number from outside of the markdown file:</p>
+<div class="highlight"><pre><span></span>Terms of use.
+
+1. I will not do anything illegal.
+2. I will not do anything that can harm the website.
+</pre></div>
+<p>Rationale:</p>
+<ul>
+<li>
+<p>If you want to change a list item in the middle of the list,
+    you don't have to modify all items that follow it.</p>
+<p>Diffs will show only the significant line which was modified.</p>
+</li>
+<li>
+<p>Content stays aligned without extra effort if the numbers reach 2 digits. E.g.: the following is not aligned:</p>
+<div class="highlight"><pre><span></span>9. a
+10. b
+</pre></div>
+</li>
+<li>
+<p>References break when a new list item is added. To reduce this problem:</p>
+<ul>
+<li>keep references close to the list so authors are less likely to forget to update them</li>
+<li>when referring from an external document, always refer to an specific version of the markdown file</li>
+</ul>
+</li>
+</ul>
+<h4 id="toc_f506d9f908061e351ef33a74806de20c">Spaces after list marker</h4>
+<h5 id="toc_12bb571fb0b0fe4da73ed20ca3887b2e">Option list-space:mixed</h5>
+<ul>
+<li>
+<p>If the content of every item of the list is fits in a single paragraph, use <strong>1</strong> space.</p>
+</li>
+<li>
+<p>Otherwise, for every item of the list:</p>
+<ul>
+<li>
+<p>use <strong>3</strong> spaces for unordered lists.</p>
+</li>
+<li>
+<p>use <strong>2</strong> spaces for ordered lists.
+    One less than for unordered because the marker is 2 chars long.</p>
+</li>
+</ul>
+</li>
+</ul>
+<p>Bad, every item is one line long:</p>
+<div class="highlight"><pre><span></span>-   a
+-   b
+</pre></div>
+<p>Good:</p>
+<div class="highlight"><pre><span></span>- a
+- b
+</pre></div>
+<p>Bad, every item is one line long:</p>
+<div class="highlight"><pre><span></span>1.  a
+1.  b
+</pre></div>
+<p>Good:</p>
+<div class="highlight"><pre><span></span>1. a
+1. b
+</pre></div>
+<p>Bad: item is longer than one line:</p>
+<div class="highlight"><pre><span></span>- item that
+  is wrapped
+
+- item 2
+</pre></div>
+<p>Good:</p>
+<div class="highlight"><pre><span></span>-   item that
+    is wrapped
+
+-   item 2
+</pre></div>
+<p>Bad: item is longer than one line:</p>
+<div class="highlight"><pre><span></span>- a
+
+  par
+
+- b
+</pre></div>
+<p>Good:</p>
+<div class="highlight"><pre><span></span>-   a
+
+    par
+
+-   b
+</pre></div>
+<h5 id="toc_0b4c028d8e671c4e7798c430c07e8ffe">Option list-space:1</h5>
+<p>Always add one space to the list marker.</p>
+<p>Bad, 3 spaces:</p>
+<div class="highlight"><pre><span></span>-   a
+
+    b
+
+-   c
+</pre></div>
+<p>Good:</p>
+<div class="highlight"><pre><span></span>- a
+
+  b
+
+- c
+</pre></div>
+<p>Bad, 2 spaces:</p>
+<div class="highlight"><pre><span></span>1.  a
+
+    b
+
+1.  c
+</pre></div>
+<p>Good:</p>
+<div class="highlight"><pre><span></span>1. a
+
+   b
+
+1. c
+</pre></div>
+<h5 id="toc_10e2abaea43cca114d1406d01deb3256">Rationale: list-space mixed vs 1</h5>
+<p>The advantages of <code>list-space:1</code> are that</p>
+<ul>
+<li>
+<p>it removes the decision of how many spaces you should put after the list marker:
+    it is always one.</p>
+<p>We could choose to always have list content indented as:</p>
+<div class="highlight"><pre><span></span>-   a
+-   b
+</pre></div>
+<p>but that is ugly.</p>
+</li>
+<li>
+<p>You never need to change the indentation of the entire list because of a new item.</p>
+<p>This may happen in <code>list-space:mixed</code> if you have:</p>
+<div class="highlight"><pre><span></span>- a
+- b
+</pre></div>
+<p>and will add a multi-line item:</p>
+<div class="highlight"><pre><span></span>-   a
+
+-   b
+
+-   c
+
+    d
+</pre></div>
+<p>Note how <code>a</code> and <code>b</code> were changed because of <code>c</code>.</p>
+</li>
+</ul>
+<p>The disadvantages of <code>list-space:1</code></p>
+<ul>
+<li>
+<p>creates three indentation levels for the language:</p>
+<ul>
+<li>4 for indented code blocks</li>
+<li>3 for ordered lists</li>
+<li>2 for unordered lists</li>
+</ul>
+<p>That means that you cannot easily configure your editor indent level to deal with all cases
+when you want to change the indentation level of multiple list item lines.</p>
+</li>
+<li>
+<p>Is not implemented consistently across editors.</p>
+<p>In particular what should happen at:</p>
+<div class="highlight"><pre><span></span>- a
+
+        code
+</pre></div>
+<p>This (2 spaces):</p>
+<div class="highlight"><pre><span></span>&lt;pre&gt;&lt;code&gt;  code
+</pre></div>
+<p>Or no spaces:</p>
+<div class="highlight"><pre><span></span>&lt;pre&gt;&lt;code&gt;code
+</pre></div>
+<p>Likely the original markdown said no spaces:</p>
+<blockquote>
+<p>To put a code block within a list item, the code block
+needs to be indented twice — 8 spaces or two tabs</p>
+</blockquote>
+<p>But many implementations did otherwise.</p>
+<p>CommonMark <a href="http://spec.commonmark.org/0.12/#example-176">adds the 2 spaces</a>.</p>
+</li>
+</ul>
+<h4 id="toc_45e514157322401cc6154f69bdd74379">Indentation of content inside lists</h4>
+<p>The indentation level of what comes inside list and of further list items
+must be the same as the first list item.</p>
+<p>Bad:</p>
+<div class="highlight"><pre><span></span>-   item that
+  is wrapped
+
+-   item 2
+</pre></div>
+<p>Good:</p>
+<div class="highlight"><pre><span></span>-   item that
+    is wrapped
+
+-   item 2
+</pre></div>
+<p>Bad:</p>
+<div class="highlight"><pre><span></span>-   item 1
+
+  Content 1
+
+-   item 2
+
+      Content 2
+</pre></div>
+<p>Good (if it matches your spaces after list marker style):</p>
+<div class="highlight"><pre><span></span>-   item 1
+
+    Content 1
+
+-   item 2
+
+    Content 2
+</pre></div>
+<p>Bad:</p>
+<div class="highlight"><pre><span></span>- item 1
+
+    Content 1
+
+- item 2
+
+    Content 2
+</pre></div>
+<p>Good (if it matches your spaces after list marker style):</p>
+<div class="highlight"><pre><span></span>- item 1
+
+  Content 1
+
+- item 2
+
+  Content 2
+</pre></div>
+<p>Avoid starting a list item directly with indented code blocks because that is not consistently implemented.
+<a href="http://spec.commonmark.org/0.12/#example-176">CommonMark states that</a> a single space is assumed in that case:</p>
+<div class="highlight"><pre><span></span>-     code
+
+  a
+</pre></div>
+<h4 id="toc_c792898f980021255ecca5afdf345739">Empty lines inside lists</h4>
+<p>If every item of a list is a single line long, don't add empty lines between items.
+Otherwise, add empty lines between every item.</p>
+<p>Bad, single lines:</p>
+<div class="highlight"><pre><span></span>- item 1
+
+- item 2
+
+- item 3
+</pre></div>
+<p>Good:</p>
+<div class="highlight"><pre><span></span>- item 1
+- item 2
+- item 3
+</pre></div>
+<p>Bad, multiple lines:</p>
+<div class="highlight"><pre><span></span>-   item that
+    is wrapped
+-   item 2
+-   item 3
+</pre></div>
+<p>Good:</p>
+<div class="highlight"><pre><span></span>-   item that
+    is wrapped
+
+-   item 2
+
+-   item 3
+</pre></div>
+<p>Bad, multiple lines:</p>
+<div class="highlight"><pre><span></span>-   item 1
+
+    Paragraph.
+
+-   item 2
+-   item 3
+</pre></div>
+<p>Good:</p>
+<div class="highlight"><pre><span></span>-   item 1.
+
+    Paragraph.
+
+-   item 2
+
+-   item 3
+</pre></div>
+<p>Bad, multiple lines:</p>
+<div class="highlight"><pre><span></span>-   item 1
+
+    - item 11
+    - item 12
+    - item 13
+
+-   item 2
+-   item 3
+</pre></div>
+<p>Good:</p>
+<div class="highlight"><pre><span></span>-   item 1
+
+    - item 11
+    - item 12
+    - item 13
+
+-   item 2
+
+-   item 3
+</pre></div>
+<p>Rationale: it is hard to tell where multi-line list items start and end without empty lines.</p>
+<h4 id="toc_86cb6dec44f0fd775034305dcda5bf01">Empty lines around lists</h4>
+<p>Surround lists by one empty line.</p>
+<p>Bad:</p>
+<div class="highlight"><pre><span></span>Before.
+- item
+- item
+After.
+</pre></div>
+<p>Good:</p>
+<div class="highlight"><pre><span></span>Before.
+
+- list
+- list
+
+After.
+</pre></div>
+<h4 id="toc_71c5367c9e9c4df2aed07c887865ce8d">Case of first letter of list item</h4>
+<p>Each list item has the same case as it would have if it were concatenated with the sentence that comes before the list.</p>
+<p>Good:</p>
+<div class="highlight"><pre><span></span>I want to eat:
+
+- apples
+- bananas
+- grapes
+</pre></div>
+<p>because it could be replaced with:</p>
+<div class="highlight"><pre><span></span>I want to eat apples
+I want to eat babanas
+I want to eat grapes
+</pre></div>
+<p>Good:</p>
+<div class="highlight"><pre><span></span>To ride a bike you have to:
+
+- get on top of the bike. This step is easy.
+- put your foot on the pedal.
+- push t the pedal. This is the most fun part.
+</pre></div>
+<p>because it could be replaced with:</p>
+<div class="highlight"><pre><span></span>To ride a bike you have to get on top of the bike. This step is easy.
+To ride a bike you have to put your foot on the pedal.
+To ride a bike you have to push the pedal. This is the most fun part.
+</pre></div>
+<p>Good:</p>
+<div class="highlight"><pre><span></span># How to ride a bike
+
+- Get on top of the bike.
+- Put your feet on the pedal.
+- Make the pedal turn.
+</pre></div>
+<p>because it could be replaced with:</p>
+<div class="highlight"><pre><span></span># How to ride a bike
+
+Get on top of the bike.
+Put your feet on the pedal.
+Push the the pedal.
+</pre></div>
+<h4 id="toc_0cf581888a1bbf9366aff8f6f8b3a017">Punctuation at the end of list items</h4>
+<p>Punctuate at the end of list items if either it:</p>
+<ul>
+<li>contains multiple sentences or paragraphs</li>
+<li>starts with an upper case letter</li>
+</ul>
+<p>Otherwise, omit the punctuation if it would be a period.</p>
+<p>Bad, single sentences:</p>
+<div class="highlight"><pre><span></span>- apple.
+- banana.
+- orange.
+</pre></div>
+<p>Good:</p>
+<div class="highlight"><pre><span></span>- apple
+- banana
+- orange
+</pre></div>
+<p>Idem:</p>
+<div class="highlight"><pre><span></span>- go to the market
+- then buy some fruit
+- finally eat the fruit
+</pre></div>
+<p>Good, not terminated by period but by other punctuation.</p>
+<div class="highlight"><pre><span></span>- go to the marked
+- then buy fruit?
+- of course!
+</pre></div>
+<p>Bad, multiple sentences:</p>
+<div class="highlight"><pre><span></span>- go to the market
+- then buy some fruit. Bad for wallet
+- finally eat the fruit. Good for tummy
+</pre></div>
+<p>Good:</p>
+<div class="highlight"><pre><span></span>- go to the market
+- then buy some fruit. Bad for wallet.
+- finally eat the fruit. Good for tummy.
+</pre></div>
+<p>Note: nothing forbids one list item from ending in period while another in the same list does not.</p>
+<p>Bad, multiple paragraphs:</p>
+<div class="highlight"><pre><span></span>-   go to the market
+
+-   then buy some fruit
+
+    Bad for wallet
+
+-   finally eat the fruit
+
+    Good for tummy
+</pre></div>
+<p>Good:</p>
+<div class="highlight"><pre><span></span>-   go to the market
+
+-   then buy some fruit.
+
+    Bad for wallet.
+
+-   finally eat the fruit.
+
+    Good for tummy.
+</pre></div>
+<p>Bad, starts with upper case:</p>
+<div class="highlight"><pre><span></span>- Go to the market
+- Then buy some fruit
+- Finally eat the fruit
+</pre></div>
+<p>Good:</p>
+<div class="highlight"><pre><span></span>- Go to the market.
+- Then buy some fruit.
+- Finally eat the fruit.
+</pre></div>
+<h3 id="toc_58252a77255e71effbcc9e34e1dbd4fa">Definition lists</h3>
+<p><em>Avoid</em> the definition list extension since it is not present
+in many implementations nor in CommonMark.</p>
+<p>Instead, use either:</p>
+<ul>
+<li>
+<p>formated lists:</p>
+<ul>
+<li>format the item be defined as either of bold, link or code</li>
+<li>separate the item from the definition with a colon and a space <code>:.</code></li>
+<li>don't align definitions as it is harder to maintain and does not show on the HTML output</li>
+</ul>
+<p>Good:</p>
+<div class="highlight"><pre><span></span>- **apple**: red fruit
+- **dog**: noisy animal
+</pre></div>
+<p>Good:</p>
+<div class="highlight"><pre><span></span>-   **apple**: red fruit.
+
+    Very tasty.
+
+-   **dog**: noisy animal.
+
+    Not tasty.
+</pre></div>
+<p>Good:</p>
+<div class="highlight"><pre><span></span>- [apple](http://apple.com): red fruit
+- [dot](http://dog.com): red fruit
+</pre></div>
+<p>Good:</p>
+<div class="highlight"><pre><span></span>- `-f`: force
+- `-r`: recursive
+</pre></div>
+<p>Bad, no colon:</p>
+<div class="highlight"><pre><span></span>- **apple** red fruit
+- **dog** noisy animal
+</pre></div>
+<p>Bad, space between term and colon:</p>
+<div class="highlight"><pre><span></span>- **apple** : red fruit
+- **dog** : noisy animal
+</pre></div>
+<p>Bad, definitions aligned:</p>
+<div class="highlight"><pre><span></span>- **apple**: red fruit
+- **dog**:   noisy animal
+</pre></div>
+</li>
+<li>
+<p>headers.</p>
+<p>Good:</p>
+<div class="highlight"><pre><span></span># Apple
+
+Red fruit
+
+# Dog
+
+Noisy animal
+</pre></div>
+</li>
+</ul>
+<h3 id="toc_e2905352b3de41df4b4b62046bb7976f">Code blocks</h3>
+<h4 id="toc_6435eb1182477fd9ea04577b2938d772">Option code:fenced</h4>
+<p>Only use fenced code blocks.</p>
+<p>Comparison to indented code blocks:</p>
+<ul>
+<li>disadvantage: not part of the original markdown, thus less portable, but added to CommonMark.</li>
+<li>advantage: many implementations, including GitHub's, allow to specify the code language with it</li>
+</ul>
+<p><em>Don't</em> indent fenced code blocks.</p>
+<p>Always specify the language of the code is applicable.</p>
+<p>Good:</p>
+<div class="highlight"><pre><span></span>```ruby
+a = 1
+```
+</pre></div>
+<p>Bad:</p>
+<div class="highlight"><pre><span></span>```
+a = 1
+```
+</pre></div>
+<h4 id="toc_c409443c453664764df3a8e8a0004c7e">Option code:indented</h4>
+<p>Only use indented code blocks.</p>
+<p>Indent indented code blocks with 4 spaces.</p>
+<hr>
+<p>Code blocks must be surrounded by one empty line.</p>
+<p>Prefer to end the phrase before a code block with a colon <code>:</code>.</p>
+<p>Good:</p>
+<div class="highlight"><pre><span></span>Use this code to blow up your PC:
+
+    sudo rm -rf /
+</pre></div>
+<p>Bad, no colon</p>
+<div class="highlight"><pre><span></span>Use this code to blow up your PC
+
+    sudo rm -rf /
+</pre></div>
+<h3 id="toc_2345f1d2bc314020e1b2d1d66561c0b3">Horizontal rules</h3>
+<p><em>Don't</em> use horizontal rules except to indicate the <a href="#end-of-a-header">End of a header</a>.</p>
+<p>Rationale:</p>
+<ul>
+<li>
+<p>headers are better section separators since they say what a section is about.</p>
+</li>
+<li>
+<p>horizontal rules don't have a generally accepted semantic meaning.
+    This guide gives them one.</p>
+</li>
+</ul>
+<p>Use 3 hyphens without spaces:</p>
+<div class="highlight"><pre><span></span>---
+</pre></div>
+<h3 id="toc_651ae5789ab776f2fcaf80b5e62801dc">Tables</h3>
+<p>Extension.</p>
+<ul>
+<li>
+<p>Surround tables by one empty line.</p>
+</li>
+<li>
+<p>Don't indent tables.</p>
+</li>
+<li>
+<p>Surround every line of the table by pipes.</p>
+</li>
+<li>
+<p>Align all border pipes vertically.</p>
+</li>
+<li>
+<p>Separate header from body by hyphens except at the aligned pipes <code>|</code>.</p>
+</li>
+<li>
+<p>Pipes <code>|</code> must be surrounded by a space, except for outer pipes
+    which only get one space internally, and pipes of the hyphen separator line.</p>
+</li>
+<li>
+<p>Column width is determined by the longest cell in the column.</p>
+</li>
+</ul>
+<p>Good table:</p>
+<div class="highlight"><pre><span></span>Before.
+
+| h    | Long header |
+|------|-------------|
+| abc  | def         |
+| abc2 | def2        |
+
+After.
+</pre></div>
+<p>Rationale:</p>
+<ul>
+<li>
+<p>unaligned tables tables are easier to write, but aligned tables are more readable,
+    and people read code much more often than they edit it.</p>
+</li>
+<li>
+<p>preceding pipes make it easier to determine where a table starts and ends.
+    Trailing pipes make it look better because of symmetry.</p>
+</li>
+<li>
+<p>there exist tools which help keeping the table aligned.
+    For example, Vim has the <a href="https://github.com/godlygeek/tabular">Tabular plugin</a>
+    which allows to align the entire table with <code>:Tabular /|</code>.</p>
+</li>
+<li>
+<p>why no spaces around pipes of the hyphen separator line, i.e.: <code>|---|</code> instead of <code>| - |</code>?
+    No spaces looks better, works on GitHub. Downside: harder to implement automatic alignment in editors,
+    as it requires a special rule for the separator line.</p>
+</li>
+</ul>
+<h3 id="toc_b54a6ed8b3bc121aaf7094d26690a6fa">Separate consecutive elements</h3>
+<p>Separate consecutive:</p>
+<ul>
+<li>lists</li>
+<li>indented code blocks</li>
+<li>blockquotes</li>
+<li>list followed by external code block</li>
+</ul>
+<p>with an empty HTML comment <code>&lt;!-- --&gt;</code>.</p>
+<!-- -->
+<div class="highlight"><pre><span></span>- list 1
+- list 1
+
+&lt;!-- --&gt;
+
+- list 2
+- list 2
+</pre></div>
+<!-- -->
+<div class="highlight"><pre><span></span>    code 1
+    code 1
+
+&lt;!-- --&gt;
+
+    code 2
+    code 2
+</pre></div>
+<!-- -->
+<div class="highlight"><pre><span></span>&gt; blockquote 1
+&gt; blockquote 1
+
+&lt;!-- --&gt;
+
+&gt; blockquote 2
+&gt; blockquote 2
+</pre></div>
+<!-- -->
+<div class="highlight"><pre><span></span>- list
+- list
+
+&lt;!-- --&gt;
+
+    code outside list
+    code outside list
+</pre></div>
+<h2 id="toc_cd06f8e174cb1e0677d57564bf012811">Span elements</h2>
+<p><em>Don't</em> use inner spaces.</p>
+<p>Good:</p>
+<div class="highlight"><pre><span></span>**bold**
+`code`
+[link](http://a.com)
+[text][name]
+</pre></div>
+<p>Bad:</p>
+<div class="highlight"><pre><span></span>** bold **
+` code `
+[ link ]( http://a.com )
+[text] [name]
+</pre></div>
+<p>For inline code in which the space is crucial:</p>
+<ul>
+<li>explain in writing that the spaces must be there</li>
+<li>add something after the space if possible</li>
+</ul>
+<p>Good:</p>
+<div class="highlight"><pre><span></span>Use the hyphen marker followed by one space `- a`  for unordered lists.
+</pre></div>
+<p>Rationale: most browsers don't render the surrounding spaces nor add them to the clipboard on copy.</p>
+<h3 id="toc_bd908db5ccb07777ced8023dffc802f4">Links</h3>
+<h4 id="toc_6af410dfc00476058ec329cd491a6fe4">Reference-style links</h4>
+<p>Links:</p>
+<ul>
+<li>
+<p>use the trailing <code>[]</code> on implicit links.</p>
+<p>Good:</p>
+<div class="highlight"><pre><span></span>[a][]
+</pre></div>
+<p>Bad:</p>
+<div class="highlight"><pre><span></span>[a]
+</pre></div>
+<p>Rationale: while omitting <code>[]</code> works on most major implementations,
+it is not specified in the documentation not implemented in the original markdown.</p>
+</li>
+</ul>
+<p>Definitions:</p>
+<ul>
+<li>must be the last thing on the file</li>
+<li>must be sorted alphabetically by the ID</li>
+<li>don't enclose URLs by angle brackets</li>
+<li>align URLs and link names as in a table</li>
+<li>link IDs use only lowercase letters. Rationale: they are case insensitive,</li>
+<li>lowercase only is easier to write, and the readability gain of mixed case is not very big.</li>
+</ul>
+<p>Good:</p>
+<div class="highlight"><pre><span></span><span class="p">[</span><span class="n">id2</span><span class="p">]</span><span class="o">:</span>     <span class="nl">http</span><span class="p">:</span><span class="c1">//long-url.com</span>
+<span class="p">[</span><span class="kt">long</span> <span class="kt">id</span><span class="p">]</span><span class="o">:</span> <span class="nl">http</span><span class="p">:</span><span class="c1">//a.com        "name 1"</span>
+</pre></div>
+<p>Bad, not ordered by id:</p>
+<div class="highlight"><pre><span></span>[b]: http://a.com
+[a]: http://b.com
+</pre></div>
+<p>Bad, not aligned:</p>
+<div class="highlight"><pre><span></span><span class="p">[</span><span class="kt">id</span><span class="p">]</span><span class="o">:</span> <span class="nl">http</span><span class="p">:</span><span class="c1">//id.com</span>
+<span class="p">[</span><span class="kt">long</span> <span class="kt">id</span><span class="p">]</span><span class="o">:</span> <span class="nl">http</span><span class="p">:</span><span class="c1">//long-id.com</span>
+</pre></div>
+<h4 id="toc_e6533cef5c69ed97dcf36e1bbfd86c8a">Single or double quote titles</h4>
+<p>Use double quotes, <em>not</em> single quotes.</p>
+<p>Rationale: single quotes do not work in all major implementations, double quotes do.</p>
+<h3 id="toc_43268d52aef2fbd0ba6661b51da1001a">Emphasis</h3>
+<h4 id="toc_114c3050111d8b8ddd830b99ccebd246">Bold</h4>
+<p>Use double asterisk format: <code>**bold**</code>.</p>
+<p>Rationale: more common and readable than the double underline <code>__bold__</code> form.</p>
+<h4 id="toc_1d874710ccdcd46b95397049d2e7500c">Italic</h4>
+<p>Use single asterisk format: <code>*italic*</code>.</p>
+<p>Rationale:</p>
+<ul>
+<li>more common and readable than the underscore form</li>
+<li>consistent with the bold format, which also uses asterisks</li>
+</ul>
+<h4 id="toc_f03df4621d26d644288db3b391436235">Uppercase for emphasis</h4>
+<p><em>Don't</em> use uppercase for emphasis: use emphasis constructs like <strong>bold</strong> or <em>italic</em> instead.</p>
+<p>Rationale: CSS has <code>text-transform:uppercase</code> which can easily achieve the same effect consistently
+across the entire website if you really want uppercase letters.</p>
+<h4 id="toc_fa79cf37de787f84b91e3c9c9a70915c">Emphasis vs headers</h4>
+<p><em>Don't</em> use emphasis elements (bold or italics) to introduce a multi line named section: use headers instead.</p>
+<p>Rationale: that is exactly the semantic meaning of headers,
+and not necessarily that of emphasis elements. As a consequence,
+many implementations add useful behaviors to headers and not to emphasis elements,
+such as automatic <code>id</code> to make it easier to refer to the header later on.</p>
+<p>Good:</p>
+<div class="highlight"><pre><span></span># How to make omelets
+
+Break an egg.
+
+...
+
+# How to bake bread
+
+Open the flour sack.
+
+...
+</pre></div>
+<p>Bad:</p>
+<div class="highlight"><pre><span></span>**How to make omelets:**
+
+Break an egg.
+
+...
+
+**How to bake bread:**
+
+Open the flour sack.
+
+...
+</pre></div>
+<h3 id="toc_2f93bc67c4ef49cf279bc95bd783fe91">Automatic links</h3>
+<h4 id="toc_b54ac6912e117ab3682124487bebae99">Automatic links without angle brackets</h4>
+<ul>
+<li>
+<p><em>Don't</em> use automatic links without angle brackets.</p>
+<p>Good:</p>
+<div class="highlight"><pre><span></span>&lt;http://a.com&gt;
+</pre></div>
+<p>Bad:</p>
+<div class="highlight"><pre><span></span>http://a.com
+</pre></div>
+<p>Rationale: it is an extension, <code>&lt;&gt;</code> is easy to type and saner.</p>
+</li>
+<li>
+<p>If you want literal links which are not autolinks, enclose them in code blocks. E.g.:</p>
+<div class="highlight"><pre><span></span>`http://not-a-link.com`
+</pre></div>
+<p>Rationale: many tools automatically interpret any word starting with <code>http</code> as a link.</p>
+</li>
+</ul>
+<h4 id="toc_eac488c16fd0abcf1f0af70ac7c55a4c">Content of automatic links</h4>
+<p>All automatic links must start with the string <code>http</code>.</p>
+<p>In particular, <em>don't</em> use relative automatic links.
+Use bracket links instead for that purpose.</p>
+<p>Good:</p>
+<div class="highlight"><pre><span></span>[file.html](file.html)
+</pre></div>
+<p>Bad:</p>
+<div class="highlight"><pre><span></span>&lt;file.html&gt;
+</pre></div>
+<p>Good:</p>
+<div class="highlight"><pre><span></span>&lt;https://github.com&gt;
+</pre></div>
+<p>Bad:</p>
+<div class="highlight"><pre><span></span>&lt;github.com&gt;
+</pre></div>
+<p>Rationale: it is hard to differentiate automatic links from HTML tags.
+What if you want a relative link to a file called <code>script</code>?</p>
+<h4 id="toc_bea26ea847dd54a01fdc118f7f4b9b88">Email automatic links</h4>
+<p><em>Don't</em> use email autolinks <code>&lt;address@example.com&gt;</code>. Use raw HTML instead.</p>
+<p>Rationale: the original markdown specification states it:</p>
+<blockquote>
+<p>"performs a bit of randomized decimal and hex entity-encoding
+to help obscure your address from address-harvesting spambots".</p>
+</blockquote>
+<p>Therefore, the output is random, ugly, and as the spec itself mentions:</p>
+<blockquote>
+<p>but an address published in this way will probably eventually start receiving spam</p>
+</blockquote>
+<p>{% include_relative LICENSE.md %}</p></hr></hr>
+                </div>
+                <div id="content-comments">
+                </div>
+
+            </div>
+            <div class="niu2-right-container col-md-2 with-left-border">
+                <div id="niu2-sidebar-meta" class="niu2-sidebar">
+                    <div class="niu2-sidebar-label"><i class="icon-calendar"></i>Published:</div>
+                    <div class="niu2-sidebar-value">2010-12-04 10:20</div>
+                    <div class="niu2-sidebar-label"><i class="icon-open-folder"></i>Category:</div>
+                    <div class="niu2-sidebar-value"><a href="https://sinoyster.github.io/category/python.html">Python</a></div>
+                    <div class="niu2-sidebar-label"><i class="icon-tag"></i>Tag:</div>
+                    <div class="niu2-sidebar-inter-value niu2-sidebar-tag"><a href="https://sinoyster.github.io/tag/pelican.html">pelican</a><sup>7</sup></div>
+                    <div class="niu2-sidebar-inter-value niu2-sidebar-tag"><a href="https://sinoyster.github.io/tag/publishing.html">publishing</a><sup>6</sup></div>
+                </div>
+
+                <div id="niu2-sidebar-toc" class="niu2-sidebar with-left-border" data-status="closed">
+                    <div class="niu2-sidebar-label">
+                        <i id="niu2-sidebar-toc-ctrl" class="icon-open-tocs"></i>TOC
+                    </div>
+                    <ul id="niu2-sidebar-toc-list">
+                        <li><a href="#content-heading">Markdown Style Guide</a></li>
+                        <li><a href='#toc_5eabb11eaf0a671a2b9b2ea653ce0ea4'>description: Readable and portable Markdown style guide.</a></li><li><a href='#toc_8f7f4c1ce7a4f933663d10543562b096'>About</a><ul><li><a href='#toc_a564c6d9587a735727a441c30414abde'>Notable users</a></li><li><a href='#toc_186abb602161441aed0a80226c80c044'>Options system</a></li><li><a href='#toc_09b957bb9f47c92b77b11a1dae13cfb0'>Design goals</a><ul><li><a href='#toc_bfc0e9119e4f67986ac777fa4950982a'>Readability vs writability</a><ul><li><a href='#toc_2903a902000dc6bcd449ccd98cb7f8d6'>Readability profile</a></li><li><a href='#toc_23ba931a95b107ff0996816b20a2f52d'>Writability profile</a></li></ul></li></ul></li><li><a href='#toc_94f59174ceba1ac4eee1a699a56afd89'>Typographic conventions</a></li><li><a href='#toc_ccf847bbe927621373e2891eca80bf93'>Alternatives</a></li><li><a href='#toc_1a2894c4066b77cdf116e5f45a44a165'>Lint tools</a></li></ul></li><li><a href='#toc_cea60dab84c5773acb3cccbe71f79950'>General rules</a><ul><li><a href='#toc_0b27918290ff5323bea1e3b78a9cf04e'>File</a><ul><li><a href='#toc_e890db27ea11209ef49b6cc61a177448'>File extension</a></li><li><a href='#toc_34082694d21dbdcfc31e6e32d9fb2b9f'>File name</a></li></ul></li><li><a href='#toc_ffeaae637d363e4ff033463b6f3d4da8'>Whitespaces</a><ul><li><a href='#toc_e26f4c51383991ba48559a215e0e7a0a'>Newlines</a></li><li><a href='#toc_64631cb97420723c00781e32dd422fb5'>Spaces after sentences</a><ul><li><a href='#toc_c314e391de494ccc4bd1f3feda09f193'>Option space-sentence:1</a></li><li><a href='#toc_f1d71b1e09b815f195186095799374e0'>Option space-sentence:2</a></li></ul></li></ul></li><li><a href='#toc_c8501eee9fb58f59b14b15544af342c9'>Line wrapping</a><ul><li><a href='#toc_2805ad100aef735376566fac096c6e3f'>Option wrap:inner-sentence</a></li><li><a href='#toc_5ebb96ae411dc4c4914e54928cfe9359'>Option wrap:no</a></li><li><a href='#toc_bfca7085e709a45fdb03482b01550dda'>Option wrap:space</a></li><li><a href='#toc_22f9afc6110c886a7d5cbabb2b466974'>Option wrap:sentence</a></li></ul></li><li><a href='#toc_ca0dbad92a874b2f69b549293387925e'>Code</a><ul><li><a href='#toc_2aa4f7d6968438f00c30a041b996f30b'>Dollar signs in shell code</a></li><li><a href='#toc_e1c1171c16c380fe751913e997d97ff1'>What to mark as code</a></li><li><a href='#toc_0aaf313e77b2054b1506ebc6eb60edb8'>Spelling and grammar</a></li></ul></li></ul></li><li><a href='#toc_f385ebef3c01db6bd5034abd9f974147'>Block elements</a><ul><li><a href='#toc_ee4e8c96014380f63c11e3ee5394b3af'>Line breaks</a></li><li><a href='#toc_883d7615c4d2de3fa1218f1298c46d0e'>Headers</a><ul><li><a href='#toc_539ebebced9e796a1543c48c1974f2db'>Option header:atx</a></li><li><a href='#toc_75bb025227227375335085dcb27e942f'>Option header:setex</a></li><li><a href='#toc_cd2a642785571ebb64b4c71cb235f779'>Top-level header</a></li><li><a href='#toc_96c424f963fdf08d2eba417dd6efd150'>Header case</a></li><li><a href='#toc_ce63a55b5dae9196edba7901f24209c9'>End of a header</a></li><li><a href='#toc_526ebc903ccb192f8bbc13cf2d9a0f0b'>Header length</a></li><li><a href='#toc_f322a106128aac2def6041a6ae3b7677'>Punctuation at the end of headers</a></li><li><a href='#toc_5092cf60b8ca20437bb6cda17b913ffb'>Header synonyms</a></li></ul></li><li><a href='#toc_d9418010ca129e22d7ef979b901a8b41'>Blockquotes</a></li><li><a href='#toc_691d1860ec58dd973e803e209697d065'>Lists</a><ul><li><a href='#toc_0235c996b43b3799573658df41ef82f2'>Marker</a><ul><li><a href='#toc_288d468c5e0969f26a310773eda65603'>Unordered</a><ul><li><a href='#toc_462e1efeb25c846d8e48994b8cb12b34'>Option list-marker:hyphen</a></li><li><a href='#toc_0343cf72eda58a0a0992690a613c3ea6'>Option list-marker:asterisk</a></li><li><a href='#toc_8b051936daae9f3d2c7f6fc0557bfdac'>Option list-marker:plus</a></li></ul></li><li><a href='#toc_26e09a1ee1517389c7b07f42df65561a'>Ordered</a></li></ul></li><li><a href='#toc_f506d9f908061e351ef33a74806de20c'>Spaces after list marker</a><ul><li><a href='#toc_12bb571fb0b0fe4da73ed20ca3887b2e'>Option list-space:mixed</a></li><li><a href='#toc_0b4c028d8e671c4e7798c430c07e8ffe'>Option list-space:1</a></li><li><a href='#toc_10e2abaea43cca114d1406d01deb3256'>Rationale: list-space mixed vs 1</a></li></ul></li><li><a href='#toc_45e514157322401cc6154f69bdd74379'>Indentation of content inside lists</a></li><li><a href='#toc_c792898f980021255ecca5afdf345739'>Empty lines inside lists</a></li><li><a href='#toc_86cb6dec44f0fd775034305dcda5bf01'>Empty lines around lists</a></li><li><a href='#toc_71c5367c9e9c4df2aed07c887865ce8d'>Case of first letter of list item</a></li><li><a href='#toc_0cf581888a1bbf9366aff8f6f8b3a017'>Punctuation at the end of list items</a></li></ul></li><li><a href='#toc_58252a77255e71effbcc9e34e1dbd4fa'>Definition lists</a></li><li><a href='#toc_e2905352b3de41df4b4b62046bb7976f'>Code blocks</a><ul><li><a href='#toc_6435eb1182477fd9ea04577b2938d772'>Option code:fenced</a></li><li><a href='#toc_c409443c453664764df3a8e8a0004c7e'>Option code:indented</a></li></ul></li><li><a href='#toc_2345f1d2bc314020e1b2d1d66561c0b3'>Horizontal rules</a></li><li><a href='#toc_651ae5789ab776f2fcaf80b5e62801dc'>Tables</a></li><li><a href='#toc_b54a6ed8b3bc121aaf7094d26690a6fa'>Separate consecutive elements</a></li></ul></li><li><a href='#toc_cd06f8e174cb1e0677d57564bf012811'>Span elements</a><ul><li><a href='#toc_bd908db5ccb07777ced8023dffc802f4'>Links</a><ul><li><a href='#toc_6af410dfc00476058ec329cd491a6fe4'>Reference-style links</a></li><li><a href='#toc_e6533cef5c69ed97dcf36e1bbfd86c8a'>Single or double quote titles</a></li></ul></li><li><a href='#toc_43268d52aef2fbd0ba6661b51da1001a'>Emphasis</a><ul><li><a href='#toc_114c3050111d8b8ddd830b99ccebd246'>Bold</a></li><li><a href='#toc_1d874710ccdcd46b95397049d2e7500c'>Italic</a></li><li><a href='#toc_f03df4621d26d644288db3b391436235'>Uppercase for emphasis</a></li><li><a href='#toc_fa79cf37de787f84b91e3c9c9a70915c'>Emphasis vs headers</a></li></ul></li><li><a href='#toc_2f93bc67c4ef49cf279bc95bd783fe91'>Automatic links</a><ul><li><a href='#toc_b54ac6912e117ab3682124487bebae99'>Automatic links without angle brackets</a></li><li><a href='#toc_eac488c16fd0abcf1f0af70ac7c55a4c'>Content of automatic links</a></li><li><a href='#toc_bea26ea847dd54a01fdc118f7f4b9b88'>Email automatic links</a></li></ul></li></ul></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="niu2-toc" data-style="fixed"></div>
+        </div>
+
+        <div class="niu2-footer">
+            <div id="body-footer" class="col-md-6 col-md-offset-2">
+                <hr/>
+                <p>
+                    Powered by <a href="https://github.com/getpelican/pelican">Pelican</a>, 
+                    <a href="https://github.com/mawenbao/niu-x2-sidebar">theme</a> built with <a href="https://github.com/twbs/bootstrap">Bootstrap3</a>
+                    by <a href="https://blog.mawenbao.com">Ma Wenbao</a>, icons by 
+                    <a href="https://fortawesome.github.io/Font-Awesome">Font Awesome</a>.
+                </p>
+                <p>
+                    ©
+                            2010-2017
+                    <a class="niu2-footer-link" href="https://sinoyster.github.io">Yuk Wong</a>
+                </p>
+                <p class="niu2-icons">
+                </p>
+            </div>
+        </div>
+
+        <div id="niu2-pygments" data-theme="github"></div>
+        <script type="text/javascript" src="https://sinoyster.github.io/theme/js/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="https://sinoyster.github.io/theme/js/niu2.min.js"></script>
+        <script type="text/javascript" src="https://sinoyster.github.io/theme/js/bootstrap.min.js"></script>
+        <script type="text/javascript">
+            onContentLoaded();
+        </script>
+    </body>
+</html>
