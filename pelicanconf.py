@@ -19,6 +19,9 @@ DEFAULT_DATE = 'fs'  # use filesystem's mtime
 LOCALE = ('zh_CN.utf8',)
 DEFAULT_LANG = u'zh_CN'
 
+ARTICLE_URL = 'articles/{date:%Y}/{date:%m}/{date:%d}/{slug}.html'
+ARTICLE_SAVE_AS = 'articles/{date:%Y}/{date:%m}/{date:%d}/{slug}.html'
+
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
 CATEGORY_FEED_ATOM = None
@@ -69,7 +72,7 @@ PLUGINS = [
     'gzip_cache',
     #'update_date',
     'extract_headings',
-    #'sitemap',
+    'sitemap',
     'summary',
     'render_math',
     'ipynb.markup',
@@ -77,3 +80,24 @@ PLUGINS = [
     #'niux2_hermit_player',
 ]
 UPDATEDATE_MODE = 'metadata'
+
+SITEMAP = {
+    'format': 'xml',
+    'priorities': {
+        'articles': 0.7,
+        'indexes': 0.5,
+        'pages': 0.5
+    },
+    'changefreqs': {
+        'articles': 'monthly',
+        'indexes': 'daily',
+        'pages': 'monthly'
+    }
+}
+
+######theme setting #######
+NIUX2_CATEGORY_MAP = {
+    "code": ("代码", "icon-code"),
+    "note": ("随笔", ""),
+    "blog": ("博客", ""),
+}

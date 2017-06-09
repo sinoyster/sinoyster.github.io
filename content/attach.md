@@ -1,7 +1,7 @@
 Title: Blog1 
 Date: 2010-12-03 10:20
 Modified: 2010-12-05 19:30
-Category: Data
+Category: blog
 sortorder: 0004
 Tags: pelican, publishing
 Slug: my-attach-post
