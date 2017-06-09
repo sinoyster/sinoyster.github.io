@@ -5,35 +5,35 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://sinoyster.github.io/</loc>
-<lastmod>2017-06-10T06:48:35-00:00</lastmod>
+<lastmod>2017-06-10T07:02:53-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://sinoyster.github.io/archives.html</loc>
-<lastmod>2017-06-10T06:48:35-00:00</lastmod>
+<lastmod>2017-06-10T07:02:53-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://sinoyster.github.io/tags.html</loc>
-<lastmod>2017-06-10T06:48:35-00:00</lastmod>
+<lastmod>2017-06-10T07:02:53-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://sinoyster.github.io/categories.html</loc>
-<lastmod>2017-06-10T06:48:35-00:00</lastmod>
+<lastmod>2017-06-10T07:02:53-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://sinoyster.github.io/archives_updatedate.html</loc>
-<lastmod>2017-06-10T06:48:35-00:00</lastmod>
+<lastmod>2017-06-10T07:02:53-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -50,13 +50,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <lastmod>2010-12-05T19:30:00+08:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
-</url>
-
-<url>
-<loc>https://sinoyster.github.io/articles/2017/05/19/markdown-syntax-guide.html</loc>
-<lastmod>2017-05-19T23:00:32+08:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.7</priority>
 </url>
 
 <url>
@@ -123,22 +116,15 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://sinoyster.github.io/category/blog.html</loc>
+<loc>https://sinoyster.github.io/articles/2010/01/01/md-syntax-guide.html</loc>
+<lastmod>2010-12-05T19:30:00+08:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.7</priority>
+</url>
+
+<url>
+<loc>https://sinoyster.github.io/category/demo.html</loc>
 <lastmod>2010-12-05T19:30:00+08:06</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>https://sinoyster.github.io/category/markdown.html</loc>
-<lastmod>2010-12-04T19:30:00+08:06</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>https://sinoyster.github.io/category/misc.html</loc>
-<lastmod>2017-05-19T23:00:32+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -151,35 +137,14 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://sinoyster.github.io/category/python.html</loc>
+<loc>https://sinoyster.github.io/tag/ce-shi.html</loc>
 <lastmod>2010-12-05T19:30:00+08:06</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>https://sinoyster.github.io/tag/markdown.html</loc>
-<lastmod>2010-12-04T19:30:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://sinoyster.github.io/tag/pelican.html</loc>
-<lastmod>2010-12-05T19:30:00+08:06</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>https://sinoyster.github.io/tag/pandas.html</loc>
-<lastmod>2010-12-04T19:30:00+08:06</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>https://sinoyster.github.io/tag/publishing.html</loc>
 <lastmod>2010-12-05T19:30:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
@@ -200,14 +165,21 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://sinoyster.github.io/author/alexis-metaireau.html</loc>
-<lastmod>2010-12-05T19:30:00+08:06</lastmod>
+<loc>https://sinoyster.github.io/tag/markdown.html</loc>
+<lastmod>2010-12-04T19:30:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://sinoyster.github.io/author/conan-doyle.html</loc>
+<loc>https://sinoyster.github.io/tag/pandas.html</loc>
+<lastmod>2010-12-04T19:30:00+08:06</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://sinoyster.github.io/tag/publishing.html</loc>
 <lastmod>2010-12-05T19:30:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
@@ -215,7 +187,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://sinoyster.github.io/author/yuk-wong.html</loc>
-<lastmod>2017-05-19T23:00:32+08:06</lastmod>
+<lastmod>2010-12-05T19:30:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
