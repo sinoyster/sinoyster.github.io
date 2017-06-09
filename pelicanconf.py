@@ -6,7 +6,6 @@ AUTHOR = 'Yuk Wong'
 SITENAME = "Yuk's Blog"
 SITEURL = 'http://localhost:8000'
 
-PATH = 'content'
 
 TIMEZONE = 'Asia/Shanghai'
 
@@ -19,8 +18,13 @@ DEFAULT_DATE = 'fs'  # use filesystem's mtime
 LOCALE = ('zh_CN.utf8',)
 DEFAULT_LANG = u'zh_CN'
 
+PATH = 'content'
+
+ARTICLE_PATHS = ['demo','2016']
 ARTICLE_URL = 'articles/{date:%Y}/{date:%m}/{date:%d}/{slug}.html'
 ARTICLE_SAVE_AS = 'articles/{date:%Y}/{date:%m}/{date:%d}/{slug}.html'
+
+STATIC_PATHS = ['images', 'pdfs']
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
@@ -60,7 +64,6 @@ JINJA_ENVIRONMENT = {
     'extensions': ['jinja2.ext.ExprStmtExtension',   ],
 }
 
-STATIC_PATHS = ['images', 'pdfs']
 
 TEMPLATE_PAGES = {
     "archives_updatedate.html": "archives_updatedate.html",
