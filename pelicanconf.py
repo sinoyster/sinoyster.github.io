@@ -24,7 +24,7 @@ ARTICLE_PATHS = ['demo','2016']
 ARTICLE_URL = 'articles/{date:%Y}/{date:%m}/{date:%d}/{slug}.html'
 ARTICLE_SAVE_AS = 'articles/{date:%Y}/{date:%m}/{date:%d}/{slug}.html'
 
-STATIC_PATHS = ['images', 'pdfs']
+STATIC_PATHS = ['images', 'pdfs', '2016']
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
