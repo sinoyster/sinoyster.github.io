@@ -110,14 +110,16 @@ Done: Processed &lt;span class="m"&gt;1&lt;/span&gt; article, &lt;span class="m"
     # 把 **username** 换成你注册的用户名&lt;/code&gt;
 &lt;/em&gt; Github Page会把仓库中master分支上的html显示在 https://username.github.io上&lt;/p&gt;
 &lt;h2 id="toc_9a8043dda17cb70a55608952c29dc6a3"&gt;博客的分支规划&lt;/h2&gt;
-&lt;p&gt;因为静态页面的发布只能通过项目的&lt;strong&gt;master&lt;/strong&gt;分支，所以需要对分支进行简单规划一下
-&lt;em&gt; &lt;strong&gt;master分支&lt;/strong&gt; 发布分支(github强制)，因为使用make github(内部使用ghp-import)发布，每次发布会删除重建此分支，所有手工编辑文件会被删除, 所以不能用此分支来进行文章编辑。注意要手工修改Makefile的&lt;strong&gt;GITHUB_PAGES_BRANCH=gh-pages
-&lt;/strong&gt;为 &lt;strong&gt;GITHUB_PAGES_BRANCH=master&lt;/strong&gt;
-&lt;/em&gt; &lt;strong&gt;edit分支&lt;/strong&gt; 是编辑远程主分支，所有文章编辑都merge到此分支， 在次分支通过运行&lt;strong&gt;make github&lt;/strong&gt;会自动的在master分支生成html并把这些静态的html推送到github 的master分支
-&lt;em&gt; &lt;strong&gt;e_xxxx&lt;/strong&gt; 是本地编辑子分支，每次新写文章的分支，写完merge到edit分支后可以删除，一般不推送到远程，这样可以多篇文章同时编辑，单独merge.
-&lt;/em&gt; &lt;strong&gt;pelican&lt;/strong&gt; 分支是Pelican配置主分支(远程)，纯配置，只含有一两个示例文档，调整配置测试无问题就可以merge到edit分支，同时也可以作为配置分享。
-* &lt;strong&gt;p_xxxx&lt;/strong&gt; 配置本地测试子分支，用于测试各种配置、插件和主题，测试稳定后可以合并到pelican分支
-代码如下：&lt;/p&gt;
+&lt;p&gt;因为静态页面的发布只能通过项目的&lt;strong&gt;master&lt;/strong&gt;分支，所以需要对分支进行简单规划一下:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;master分支&lt;/strong&gt; 发布分支(github强制)，因为使用make github(内部使用ghp-import)发布，每次发布会删除重建此分支，所有手工编辑文件会被删除, 所以不能用此分支来进行文章编辑。注意要手工修改Makefile的&lt;strong&gt;GITHUB_PAGES_BRANCH=gh-pages
+&lt;/strong&gt;为 &lt;strong&gt;GITHUB_PAGES_BRANCH=master&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;edit分支&lt;/strong&gt; 是编辑远程主分支，所有文章编辑都merge到此分支， 在次分支通过运行&lt;strong&gt;make github&lt;/strong&gt;会自动的在master分支生成html并把这些静态的html推送到github 的master分支&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;e_xxxx&lt;/strong&gt; 是本地编辑子分支，每次新写文章的分支，写完merge到edit分支后可以删除，一般不推送到远程，这样可以多篇文章同时编辑，单独merge.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;pelican&lt;/strong&gt; 分支是Pelican配置主分支(远程)，纯配置，只含有一两个示例文档，调整配置测试无问题就可以merge到edit分支，同时也可以作为配置分享。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;p_xxxx&lt;/strong&gt; 配置本地测试子分支，用于测试各种配置、插件和主题，测试稳定后可以合并到pelican分支&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;代码如下：&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;git checkout -b pelican
 git add content develop_server.sh pelicanconf.py publishconf.py 
 git commit -m &lt;span class="s1"&gt;'项目初始化'&lt;/span&gt;
