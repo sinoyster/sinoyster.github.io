@@ -105,7 +105,7 @@ cd /path/to/blog/output && python3 -m pelican.server
 ```
 浏览器打开http://localhost:8000
 
-![Markdown 语法测试](http://upload-images.jianshu.io/upload_images/1970525-0733806610ffd0cb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![Markdown 语法测试]({attach}markdown-syntax-test.png)
 
 ## 创建Github Pages 
 
@@ -125,13 +125,15 @@ Github Pages 可以方便Github用户或者项目快速部署静态网站，Gith
 * Github Page会把仓库中master分支上的html显示在 https://username.github.io上
 
 ## 博客的分支规划
-因为静态页面的发布只能通过项目的**master**分支，所以需要对分支进行简单规划一下
+因为静态页面的发布只能通过项目的**master**分支，所以需要对分支进行简单规划一下:
+
 * **master分支** 发布分支(github强制)，因为使用make github(内部使用ghp-import)发布，每次发布会删除重建此分支，所有手工编辑文件会被删除, 所以不能用此分支来进行文章编辑。注意要手工修改Makefile的**GITHUB_PAGES_BRANCH=gh-pages
 **为 **GITHUB_PAGES_BRANCH=master**
 * **edit分支** 是编辑远程主分支，所有文章编辑都merge到此分支， 在次分支通过运行**make github**会自动的在master分支生成html并把这些静态的html推送到github 的master分支
 * **e_xxxx** 是本地编辑子分支，每次新写文章的分支，写完merge到edit分支后可以删除，一般不推送到远程，这样可以多篇文章同时编辑，单独merge.
 * **pelican** 分支是Pelican配置主分支(远程)，纯配置，只含有一两个示例文档，调整配置测试无问题就可以merge到edit分支，同时也可以作为配置分享。
 * **p_xxxx** 配置本地测试子分支，用于测试各种配置、插件和主题，测试稳定后可以合并到pelican分支
+
 代码如下：
 ```bash
 git checkout -b pelican
