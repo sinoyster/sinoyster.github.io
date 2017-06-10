@@ -95,7 +95,7 @@ Done: Processed &lt;span class="m"&gt;1&lt;/span&gt; article, &lt;span class="m"
 &lt;span class="nb"&gt;cd&lt;/span&gt; /path/to/blog/output &lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt; python3 -m pelican.server
 &lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;浏览器打开http://localhost:8000&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Markdown 语法测试" src="http://upload-images.jianshu.io/upload_images/1970525-0733806610ffd0cb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"/&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Markdown 语法测试" src="https://sinoyster.github.io/articles/2016/01/08/markdown-syntax-test.png"/&gt;&lt;/p&gt;
 &lt;h2 id="toc_b0201fcca7bd4d7390a587558f22951f"&gt;创建Github Pages&lt;/h2&gt;
 &lt;p&gt;Github Pages 可以方便Github用户或者项目快速部署静态网站，Github Pages有两种方式
 &lt;em&gt; 一种是用户的对应域名是http://username.github.io
