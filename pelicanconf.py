@@ -21,11 +21,11 @@ DEFAULT_LANG = u'zh_CN'
 PATH = 'content'
 
 #ARTICLE_PATHS = ['demo','2016']
-ARTICLE_PATHS = ['2016']
+ARTICLE_PATHS = ['2016', '2017']
 ARTICLE_URL = 'articles/{date:%Y}/{date:%m}/{date:%d}/{slug}.html'
 ARTICLE_SAVE_AS = 'articles/{date:%Y}/{date:%m}/{date:%d}/{slug}.html'
 
-STATIC_PATHS = ['images', 'pdfs', '2016']
+STATIC_PATHS = ['images', 'pdfs', '2016', '2017']
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
