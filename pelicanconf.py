@@ -20,7 +20,8 @@ DEFAULT_LANG = u'zh_CN'
 
 PATH = 'content'
 
-ARTICLE_PATHS = ['demo','2016']
+#ARTICLE_PATHS = ['demo','2016']
+ARTICLE_PATHS = ['2016']
 ARTICLE_URL = 'articles/{date:%Y}/{date:%m}/{date:%d}/{slug}.html'
 ARTICLE_SAVE_AS = 'articles/{date:%Y}/{date:%m}/{date:%d}/{slug}.html'
 
