@@ -5,6 +5,7 @@ Tags: markdown, blog
 Slug: data-science-blog
 Authors: Yuk Wong
 
+# 搭建数据工作者的blog
 
 作为一个天天和数据打交道的人，没有一个高大上的博客是说不过去的，市面上的各种博客主要是适合文字工作者，作为一个数据工作者，首先博客要支持各种数学公式和图形，ipython notebook也是必须的，其次博客要能用markdown来写，支持Git进行版本控制。因为一直用Python，综合考虑下来，圈定Github Pages + Pelican。 Github是全球最大的同性交友社区，支持静态页面，用Git进行版本控制。Git就不在这里多说了，不懂的推荐[廖雪峰Git教程][LXF_Git]。[Pelican][Pelican]是Python写的静态网站生成器，支持众多的[扩展][pelican_theme]和[主题][pelican_theme]，包括我们下面用到的ipython-notebook和mathjax插件。
 
