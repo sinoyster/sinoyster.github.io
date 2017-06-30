@@ -5,35 +5,35 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://sinoyster.github.io/</loc>
-<lastmod>2017-06-30T10:45:36-00:00</lastmod>
+<lastmod>2017-06-30T10:48:32-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://sinoyster.github.io/archives.html</loc>
-<lastmod>2017-06-30T10:45:36-00:00</lastmod>
+<lastmod>2017-06-30T10:48:32-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://sinoyster.github.io/tags.html</loc>
-<lastmod>2017-06-30T10:45:36-00:00</lastmod>
+<lastmod>2017-06-30T10:48:32-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://sinoyster.github.io/categories.html</loc>
-<lastmod>2017-06-30T10:45:36-00:00</lastmod>
+<lastmod>2017-06-30T10:48:32-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://sinoyster.github.io/archives_updatedate.html</loc>
-<lastmod>2017-06-30T10:45:36-00:00</lastmod>
+<lastmod>2017-06-30T10:48:32-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -95,6 +95,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>https://sinoyster.github.io/tag/python.html</loc>
+<lastmod>2017-05-08T10:20:00+08:06</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
 <loc>https://sinoyster.github.io/tag/quant.html</loc>
 <lastmod>2017-05-08T10:20:00+08:06</lastmod>
 <changefreq>daily</changefreq>
@@ -102,15 +109,8 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://sinoyster.github.io/tag/markdown.html</loc>
+<loc>https://sinoyster.github.io/tag/blog.html</loc>
 <lastmod>2016-01-08T10:20:00+08:06</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>https://sinoyster.github.io/tag/python.html</loc>
-<lastmod>2017-05-08T10:20:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -123,7 +123,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://sinoyster.github.io/tag/blog.html</loc>
+<loc>https://sinoyster.github.io/tag/markdown.html</loc>
 <lastmod>2016-01-08T10:20:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>

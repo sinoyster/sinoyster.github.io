@@ -4,7 +4,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="keywords" content="linux">
-        <meta name="description" content="RHEL添加Centos源 添加yum代理 /etc/yum.conf proxy=http://10.102.66.2:30001 # The account details for yum connections proxy_username=sin proxy_password=sin1234 删除redhat自带软件包 [root@linuxprobe ~]# rpm -qa | grep yum yum-utils-1.1.31-24.el7.noarch yum-langpacks-0.4.2-3.el7.noarch yum-metadata-parser-1.1.4-10.el7.x86_64 yum-rhn-plugin-2.0.1-4.el7.noarch PackageKit-yum-0 …">
+        <meta name="description" content="RHEL添加Centos源 添加yum代理 /etc/yum.conf proxy=http://proxyip:port # The account details for yum connections proxy_username= proxy_password= 删除redhat自带软件包 [root@linuxprobe ~]# rpm -qa | grep yum yum-utils-1.1.31-24.el7.noarch yum-langpacks-0.4.2-3.el7.noarch yum-metadata-parser-1.1.4-10.el7.x86_64 yum-rhn-plugin-2.0.1-4.el7.noarch PackageKit-yum-0.8.9-11.el7.x86_64 yum-3 …">
         <title>RHEL添加Centos源 - Yuk's Blog</title>
         <link rel="shortcut icon" type="image/x-icon" href="/favicon.png">
         <link rel="stylesheet" href="https://sinoyster.github.io/theme/css/bootstrap.min.css" type="text/css" />
@@ -74,10 +74,10 @@
                     <h1 id="toc_2fb14a10ce2bc7804df2cac79e9c5ebc">RHEL添加Centos源</h1>
 <h2 id="toc_cb01e79128cdc5a5125d9eaaae587390">添加yum代理</h2>
 <p>/etc/yum.conf</p>
-<div class="highlight"><pre><span></span>proxy=http://10.102.66.2:30001
+<div class="highlight"><pre><span></span>proxy=http://proxyip:port
 # The account details for yum connections
-proxy_username=sin
-proxy_password=sin1234
+proxy_username=
+proxy_password=
 </pre></div>
 <h2 id="toc_4de863bc83cea42600be8ea7737b0efa">删除redhat自带软件包</h2>
 <div class="highlight"><pre><span></span>[root@linuxprobe ~]# rpm -qa | grep yum

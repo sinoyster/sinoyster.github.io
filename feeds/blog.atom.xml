@@ -322,10 +322,10 @@ git submodule add git@github.com:sinoyster/extract_headings.git plugins/extract_
 &lt;/script&gt;</content><category term="markdown"></category><category term="blog"></category></entry><entry><title>RHEL添加Centos源</title><link href="https://sinoyster.github.io/articles/2015/02/08/rhel-centos-yum.html" rel="alternate"></link><published>2015-02-08T10:20:00+08:00</published><updated>2015-02-08T10:20:00+08:00</updated><author><name>Yuk Wong</name></author><id>tag:sinoyster.github.io,2015-02-08:/articles/2015/02/08/rhel-centos-yum.html</id><summary type="html">&lt;h1 id="toc_2fb14a10ce2bc7804df2cac79e9c5ebc"&gt;RHEL添加Centos源&lt;/h1&gt;
 &lt;h2 id="toc_cb01e79128cdc5a5125d9eaaae587390"&gt;添加yum代理&lt;/h2&gt;
 &lt;p&gt;/etc/yum.conf&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;proxy=http://10.102.66.2:30001
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;proxy=http://proxyip:port
 # The account details for yum connections
-proxy_username=sin
-proxy_password=sin1234
+proxy_username=
+proxy_password=
 &lt;/pre&gt;&lt;/div&gt;
 &lt;h2 id="toc_4de863bc83cea42600be8ea7737b0efa"&gt;删除redhat自带软件包&lt;/h2&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;[root@linuxprobe ~]# rpm -qa | grep yum
@@ -333,13 +333,14 @@ yum-utils-1.1.31-24.el7.noarch
 yum-langpacks-0.4.2-3.el7.noarch
 yum-metadata-parser-1.1.4-10.el7.x86_64
 yum-rhn-plugin-2.0.1-4.el7.noarch
-PackageKit-yum-0 …&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;h1 id="toc_2fb14a10ce2bc7804df2cac79e9c5ebc"&gt;RHEL添加Centos源&lt;/h1&gt;
+PackageKit-yum-0.8.9-11.el7.x86_64
+yum-3 …&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;h1 id="toc_2fb14a10ce2bc7804df2cac79e9c5ebc"&gt;RHEL添加Centos源&lt;/h1&gt;
 &lt;h2 id="toc_cb01e79128cdc5a5125d9eaaae587390"&gt;添加yum代理&lt;/h2&gt;
 &lt;p&gt;/etc/yum.conf&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;proxy=http://10.102.66.2:30001
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;proxy=http://proxyip:port
 # The account details for yum connections
-proxy_username=sin
-proxy_password=sin1234
+proxy_username=
+proxy_password=
 &lt;/pre&gt;&lt;/div&gt;
 &lt;h2 id="toc_4de863bc83cea42600be8ea7737b0efa"&gt;删除redhat自带软件包&lt;/h2&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;[root@linuxprobe ~]# rpm -qa | grep yum
