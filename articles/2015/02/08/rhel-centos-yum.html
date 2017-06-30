@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="linux">
+        <meta name="description" content="RHEL添加Centos源 添加yum代理 /etc/yum.conf proxy=http://10.102.66.2:30001 # The account details for yum connections proxy_username=sin proxy_password=sin1234 删除redhat自带软件包 [root@linuxprobe ~]# rpm -qa | grep yum yum-utils-1.1.31-24.el7.noarch yum-langpacks-0.4.2-3.el7.noarch yum-metadata-parser-1.1.4-10.el7.x86_64 yum-rhn-plugin-2.0.1-4.el7.noarch PackageKit-yum-0 …">
+        <title>RHEL添加Centos源 - Yuk's Blog</title>
+        <link rel="shortcut icon" type="image/x-icon" href="/favicon.png">
+        <link rel="stylesheet" href="https://sinoyster.github.io/theme/css/bootstrap.min.css" type="text/css" />
+        <link rel="stylesheet" href="https://sinoyster.github.io/theme/font-icons/style.min.css" type="text/css" />
+        <link rel="stylesheet" href="https://sinoyster.github.io/theme/css/niu2.min.css" type="text/css" />
+        <link rel="canonical" href="https://sinoyster.github.io/articles/2015/02/08/rhel-centos-yum.html" />
+        <script type="text/javascript">window.onload=function(){};</script>
+        <!--[if lt IE 9]>
+            <script src="https://sinoyster.github.io/theme/js/html5shiv.js"></script>
+            <script src="https://sinoyster.github.io/theme/js/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body> 
+        <div id="body-header">
+            <div class="navbar navbar-inverse navbar-fixed-top">
+                <div class="col-md-12">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="https://sinoyster.github.io">
+                            <i class="icon-home"></i>Yuk's Blog
+                        </a>
+                    </div>
+                    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+                        <ul class="nav navbar-nav">
+                        <li><a href="https://sinoyster.github.io/tags.html">
+                                <i class="icon-tag"></i>Tag</a>
+                        </li>
+                        <li><a href="https://sinoyster.github.io/archives.html">
+                                <i class="icon-archive"></i>Archive
+                            </a>
+                        </li>
+                        <!-- category dropdown list -->
+                        <li class="dropdown">
+                           <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <i class="icon-folder-open"></i>Category<b class="caret"></b>
+                           </a>
+                           <ul class="dropdown-menu">
+                               <li><a href="https://sinoyster.github.io/category/blog.html">
+                                      <i class=""></i>博客
+                                      (3)</a></li>
+                               <li><a href="https://sinoyster.github.io/category/note.html">
+                                      <i class=""></i>随笔
+                                      (1)</a></li>
+                           </ul>
+                        </li>
+                        <!--  self defined dropdown list -->
+                        </ul>
+                        
+                        <!-- right nav bar -->
+                        <ul class="nav navbar-nav navbar-right">
+                        <!-- google custom search -->
+                       </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <div id="body-content">
+            <div class="col-md-8 col-md-offset-2">
+            </div>
+            <div id="niu2-left-container" class="col-md-6 col-md-offset-2">
+                <div id="niu2-main-content">
+                    <h1 id="toc_2fb14a10ce2bc7804df2cac79e9c5ebc">RHEL添加Centos源</h1>
+<h2 id="toc_cb01e79128cdc5a5125d9eaaae587390">添加yum代理</h2>
+<p>/etc/yum.conf</p>
+<div class="highlight"><pre><span></span>proxy=http://10.102.66.2:30001
+# The account details for yum connections
+proxy_username=sin
+proxy_password=sin1234
+</pre></div>
+<h2 id="toc_4de863bc83cea42600be8ea7737b0efa">删除redhat自带软件包</h2>
+<div class="highlight"><pre><span></span>[root@linuxprobe ~]# rpm -qa | grep yum
+yum-utils-1.1.31-24.el7.noarch
+yum-langpacks-0.4.2-3.el7.noarch
+yum-metadata-parser-1.1.4-10.el7.x86_64
+yum-rhn-plugin-2.0.1-4.el7.noarch
+PackageKit-yum-0.8.9-11.el7.x86_64
+yum-3.4.3-118.el7.noarch
+
+[root@linuxprobe ~]# rpm -e yum-3.4.3-118.el7.noarch --nodeps
+[root@linuxprobe ~]# rpm -e yum-utils-1.1.31-24.el7.noarch --nodeps
+[root@linuxprobe ~]# rpm -e yum-rhn-plugin-2.0.1-4.el7.noarch --nodeps
+[root@linuxprobe ~]# rpm -e yum-metadata-parser-1.1.4-10.el7.x86_64 --nodeps
+[root@linuxprobe ~]# rpm -e yum-langpacks-0.4.2-3.el7.noarch --nodeps
+[root@linuxprobe ~]# rpm -e PackageKit-yum-0.8.9-11.el7.x86_64 --nodeps
+</pre></div>
+<h2 id="toc_86753c4843ad386aa2a2750049bdb32a">下载对应的CentOS软件包</h2>
+<div class="highlight"><pre><span></span>[root@Linuxprobe ~]# wget http://mirrors.163.com/centos/7/os/x86_64/Packages/yum-3.4.3-118.el7.centos.noarch.rpm
+--2016-01-17 20:43:15--  http://mirrors.163.com/centos/7/os/x86_64/Packages/yum-3.4.3-118.el7.centos.noarch.rpm
+Resolving mirrors.163.com (mirrors.163.com)... 123.58.173.185, 123.58.173.186
+Connecting to mirrors.163.com (mirrors.163.com)|123.58.173.185|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2016-01-17 20:43:15 ERROR 404: Not Found.   //如果找不到，是安装包更新了，你可以到这个网站http://mirrors.163.com/centos/7/os/x86_64/Packages/复制下载链接，然后再下载下来；
+
+[root@linuxprobe ~]# wget http://mirrors.163.com/centos/7/os/x86_64/Packages/yum-3.4.3-132.el7.centos.0.1.noarch.rpm
+[root@linuxprobe ~]# wget http://mirrors.163.com/centos/7/os/x86_64/Packages/yum-metadata-parser-1.1.4-10.el7.x86_64.rpm
+[root@linuxprobe ~]# wget http://mirrors.163.com/centos/7/os/x86_64/Packages/yum-utils-1.1.31-34.el7.noarch.rpm 
+[root@linuxprobe ~]# wget http://mirrors.163.com/centos/7/os/x86_64/Packages/yum-updateonboot-1.1.31-34.el7.noarch.rpm
+[root@linuxprobe ~]# wget http://mirrors.163.com/centos/7/os/x86_64/Packages/yum-plugin-fastestmirror-1.1.31-34.el7.noarch.rpm
+
+[root@linuxprobe ~]# ls
+yum-3.4.3-132.el7.centos.0.1.noarch.rpm
+yum-metadata-parser-1.1.4-10.el7.x86_64.rpm
+yum-plugin-fastestmirror-1.1.31-34.el7.noarch.rpm
+yum-updateonboot-1.1.31-34.el7.noarch.rpm
+yum-utils-1.1.31-34.el7.noarch.rpm
+</pre></div>
+<h2 id="toc_e655a410ff21cd07e7a0150491e04371">安装</h2>
+<div class="highlight"><pre><span></span>[root@Linuxprobe ~]# rpm -ivh yum-*
+warning: yum-3.4.3-132.el7.centos.0.1.noarch.rpm: Header V3 RSA/SHA256 Signature, key ID f4a80eb5: NOKEY
+Preparing...                          ################################# [100%]
+Updating / installing...
+1:yum-metadata-parser-1.1.4-10.el7    ################################# [ 20%]
+2:yum-plugin-fastestmirror-1.1.31-3   ################################# [ 40%]
+3:yum-3.4.3-132.el7.centos.0.1        ################################# [ 60%]
+4:yum-updateonboot-1.1.31-34.el7      ################################# [ 80%]
+5:yum-utils-1.1.31-34.el7             ################################# [100%]
+</pre></div>
+<h2 id="toc_b42b046e58d617f174011949bef5a70a">新建repo 配置文件</h2>
+<div class="highlight"><pre><span></span><span class="x">[root@linuxprobe ~]</span><span class="err">#</span><span class="x"> vim /etc/yum.repos.d/CentOS-Base.repo</span>
+<span class="cp">#</span><span class="nf">CentOS</span><span class="x">-Base.repo</span>
+<span class="err">#</span><span class="x"></span>
+<span class="err">#</span><span class="x"> The mirror system uses the connecting IP address of the client and the</span>
+<span class="err">#</span><span class="x"> update status of each mirror to pick mirrors that are updated to and</span>
+<span class="err">#</span><span class="x"> geographically close to the client.  You should use this for CentOS updates</span>
+<span class="err">#</span><span class="x"> unless you are manually picking other mirrors.</span>
+<span class="err">#</span><span class="x"></span>
+<span class="err">#</span><span class="x"> If the mirrorlist= does not work for you, as a fall back you can try the</span>
+<span class="err">#</span><span class="x"> remarked out baseurl= line instead.</span>
+<span class="err">#</span><span class="x"></span>
+<span class="err">#</span><span class="x"></span>
+<span class="x">[base]</span>
+<span class="x">name=CentOS-</span><span class="p">$</span><span class="x">7 - Base - 163.com</span>
+<span class="cp">#</span><span class="nf">mirrorlist</span><span class="x">=http://mirrorlist.centos.org/?release=</span><span class="p">$</span><span class="x">7&amp;arch=</span><span class="p">$</span><span class="nv">basearch</span><span class="x">&amp;repo=os</span>
+<span class="x">baseurl=http://mirrors.163.com/centos/7/os/</span><span class="p">$</span><span class="nv">basearch</span><span class="x">/</span>
+<span class="x">gpgcheck=1</span>
+<span class="x">gpgkey=http://mirrors.163.com/centos/RPM-GPG-KEY-CentOS-7</span>
+
+<span class="cp">#</span><span class="nf">released</span><span class="x"> updates</span>
+<span class="x">[updates]</span>
+<span class="x">name=CentOS-</span><span class="p">$</span><span class="x">7 - Updates - 163.com</span>
+<span class="cp">#</span><span class="nf">mirrorlist</span><span class="x">=http://mirrorlist.centos.org/?release=</span><span class="p">$</span><span class="x">7&amp;arch=</span><span class="p">$</span><span class="nv">basearch</span><span class="x">&amp;repo=updates</span>
+<span class="x">baseurl=http://mirrors.163.com/centos/7/updates/</span><span class="p">$</span><span class="nv">basearch</span><span class="x">/</span>
+<span class="x">gpgcheck=1</span>
+<span class="x">gpgkey=http://mirrors.163.com/centos/RPM-GPG-KEY-CentOS-7</span>
+
+<span class="cp">#</span><span class="nf">additional</span><span class="x"> packages that may be useful</span>
+<span class="x">[extras]</span>
+<span class="x">name=CentOS-</span><span class="p">$</span><span class="x">7 - Extras - 163.com</span>
+<span class="cp">#</span><span class="nf">mirrorlist</span><span class="x">=http://mirrorlist.centos.org/?release=</span><span class="p">$</span><span class="x">7&amp;arch=</span><span class="p">$</span><span class="nv">basearch</span><span class="x">&amp;repo=extras</span>
+<span class="x">baseurl=http://mirrors.163.com/centos/7/extras/</span><span class="p">$</span><span class="nv">basearch</span><span class="x">/</span>
+<span class="x">gpgcheck=1</span>
+<span class="x">gpgkey=http://mirrors.163.com/centos/RPM-GPG-KEY-CentOS-7</span>
+
+<span class="cp">#</span><span class="nf">additional</span><span class="x"> packages that extend functionality of existing packages</span>
+<span class="x">[centosplus]</span>
+<span class="x">name=CentOS-</span><span class="p">$</span><span class="x">7 - Plus - 163.com</span>
+<span class="x">baseurl=http://mirrors.163.com/centos/7/centosplus/</span><span class="p">$</span><span class="nv">basearch</span><span class="x">/</span>
+<span class="x">gpgcheck=1</span>
+<span class="x">enabled=0</span>
+<span class="x">gpgkey=http://mirrors.163.com/centos/RPM-GPG-KEY-CentOS-7</span>
+</pre></div>
+<h2 id="toc_649ba34689c1a75baf3a6e2b664bc69b">测试并安装</h2>
+<div class="highlight"><pre><span></span>[root@linuxprobe ~]# yum clean all 
+
+[root@Linuxprobe ~]# yum -y install w3m
+</pre></div>
+                </div>
+                <div id="content-comments">
+                </div>
+
+            </div>
+            <div class="niu2-right-container col-md-2 with-left-border">
+                <div id="niu2-sidebar-meta" class="niu2-sidebar">
+                    <div class="niu2-sidebar-label"><i class="icon-calendar"></i>Published:</div>
+                    <div class="niu2-sidebar-value">2015-02-08 10:20</div>
+                    <div class="niu2-sidebar-label"><i class=""></i>Category:</div>
+                    <div class="niu2-sidebar-value"><a href="https://sinoyster.github.io/category/blog.html">博客</a></div>
+                    <div class="niu2-sidebar-label"><i class="icon-tag"></i>Tag:</div>
+                    <div class="niu2-sidebar-inter-value niu2-sidebar-tag"><a href="https://sinoyster.github.io/tag/linux.html">linux</a><sup>1</sup></div>
+                </div>
+
+                <div id="niu2-sidebar-toc" class="niu2-sidebar with-left-border" data-status="closed">
+                    <div class="niu2-sidebar-label">
+                        <i id="niu2-sidebar-toc-ctrl" class="icon-open-tocs"></i>TOC
+                    </div>
+                    <ul id="niu2-sidebar-toc-list">
+                        <li><a href='#toc_2fb14a10ce2bc7804df2cac79e9c5ebc'>RHEL添加Centos源</a><ul><li><a href='#toc_cb01e79128cdc5a5125d9eaaae587390'>添加yum代理</a></li><li><a href='#toc_4de863bc83cea42600be8ea7737b0efa'>删除redhat自带软件包</a></li><li><a href='#toc_86753c4843ad386aa2a2750049bdb32a'>下载对应的CentOS软件包</a></li><li><a href='#toc_e655a410ff21cd07e7a0150491e04371'>安装</a></li><li><a href='#toc_b42b046e58d617f174011949bef5a70a'>新建repo 配置文件</a></li><li><a href='#toc_649ba34689c1a75baf3a6e2b664bc69b'>测试并安装</a></li></ul></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="niu2-toc" data-style="fixed"></div>
+        </div>
+
+        <div class="niu2-footer">
+            <div id="body-footer" class="col-md-6 col-md-offset-2">
+                <hr/>
+                <p>
+                    Powered by <a href="https://github.com/getpelican/pelican">Pelican</a>, 
+                    <a href="https://github.com/mawenbao/niu-x2-sidebar">theme</a> built with <a href="https://github.com/twbs/bootstrap">Bootstrap3</a>
+                    by <a href="https://blog.mawenbao.com">Ma Wenbao</a>, icons by 
+                    <a href="https://fortawesome.github.io/Font-Awesome">Font Awesome</a>.
+                </p>
+                <p>
+                    ©
+                            2015-2017
+                    <a class="niu2-footer-link" href="https://sinoyster.github.io">Yuk Wong</a>
+                </p>
+                <p class="niu2-icons">
+                </p>
+            </div>
+        </div>
+
+        <div id="niu2-pygments" data-theme="github"></div>
+        <script type="text/javascript" src="https://sinoyster.github.io/theme/js/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="https://sinoyster.github.io/theme/js/niu2.min.js"></script>
+        <script type="text/javascript" src="https://sinoyster.github.io/theme/js/bootstrap.min.js"></script>
+        <script type="text/javascript">
+            onContentLoaded();
+        </script>
+    </body>
+</html>

@@ -1,5 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Yuk's Blog</title><link href="https://sinoyster.github.io/" rel="alternate"></link><link href="https://sinoyster.github.io/feeds/all.atom.xml" rel="self"></link><id>https://sinoyster.github.io/</id><updated>2016-01-08T10:20:00+08:00</updated><entry><title>搭建数据工作者的blog</title><link href="https://sinoyster.github.io/articles/2016/01/08/data-science-blog.html" rel="alternate"></link><published>2016-01-08T10:20:00+08:00</published><updated>2016-01-08T10:20:00+08:00</updated><author><name>Yuk Wong</name></author><id>tag:sinoyster.github.io,2016-01-08:/articles/2016/01/08/data-science-blog.html</id><summary type="html">&lt;p&gt;作为一个天天和数据打交道的人，没有一个高大上的博客是说不过去的，市面上的各种博客主要是适合文字工作者，作为一个数据工作者，首先博客要支持各种数学公式和图形，ipython notebook也是必须的，其次博客要能用markdown来写，支持Git进行版本控制。因为一直用Python，综合考虑下来，圈定Github Pages + Pelican。 Github是全球最大的同性交友社区，支持静态页面，用Git进行版本控制。Git就不在这里多说了，不懂的推荐&lt;a href="http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000" title="廖雪峰Git教程"&gt;廖雪峰Git教程&lt;/a&gt;。&lt;a href="http://blog.getpelican.com/" title="Pelican"&gt;Pelican&lt;/a&gt;是Python写的静态网站生成器，支持众多的&lt;a href="https://github.com/getpelican/pelican-themes" title="pelican-themes"&gt;扩展&lt;/a&gt;和&lt;a href="https://github.com/getpelican/pelican-themes" title="pelican-themes"&gt;主题&lt;/a&gt;，包括我们下面用到的ipython-notebook和mathjax插件。&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Yuk's Blog</title><link href="https://sinoyster.github.io/" rel="alternate"></link><link href="https://sinoyster.github.io/feeds/all.atom.xml" rel="self"></link><id>https://sinoyster.github.io/</id><updated>2017-05-08T10:20:00+08:00</updated><entry><title>上市公司公告挖掘实践-零</title><link href="https://sinoyster.github.io/articles/2017/05/08/company-statment-miner-0.html" rel="alternate"></link><published>2017-05-08T10:20:00+08:00</published><updated>2017-05-08T10:20:00+08:00</updated><author><name>Yuk Wong</name></author><id>tag:sinoyster.github.io,2017-05-08:/articles/2017/05/08/company-statment-miner-0.html</id><summary type="html">&lt;h1 id="toc_e6ccc8d53a95ababed1d448981c68f63"&gt;上市公司公告挖掘-零&lt;/h1&gt;
+&lt;p&gt;最近和朋友搞一个文本挖掘的项目，需要对上市公司的公告进行文本挖掘分析处理, 
+本文不打算讲解太多这方面的理论，主要是利用主流的工具快速的构建原型系统&lt;/p&gt;
+&lt;p&gt;初步计划分四个部分：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;原始数据获取&lt;/li&gt;
+&lt;li&gt;数据清洗&lt;/li&gt;
+&lt;li&gt;文本挖掘&lt;/li&gt;
+&lt;li&gt;分析量化评价&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="toc_5803b58911221ad3ccd001ff4d3e56cb"&gt;原始数据获取&lt;/h2&gt;
+&lt;p&gt;上市公司的公告官方发布渠道是&lt;a href="www.cninfo.com" title="巨潮资讯"&gt;巨潮资讯&lt;/a&gt;, 板块分 沪市、深市:主板、中小版、创业版，&lt;/p&gt;
+&lt;p&gt;查询条件可以按:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;代码/简称/拼音&lt;/li&gt;
+&lt;li&gt;行业&lt;/li&gt;
+&lt;li&gt;板块&lt;/li&gt;
+&lt;li&gt;公告类别&lt;/li&gt;
+&lt;li&gt;开始结束日期查询&lt;/li&gt;
+&lt;/ul&gt;</summary><content type="html">&lt;h1 id="toc_e6ccc8d53a95ababed1d448981c68f63"&gt;上市公司公告挖掘-零&lt;/h1&gt;
+&lt;p&gt;最近和朋友搞一个文本挖掘的项目，需要对上市公司的公告进行文本挖掘分析处理, 
+本文不打算讲解太多这方面的理论，主要是利用主流的工具快速的构建原型系统&lt;/p&gt;
+&lt;p&gt;初步计划分四个部分：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;原始数据获取&lt;/li&gt;
+&lt;li&gt;数据清洗&lt;/li&gt;
+&lt;li&gt;文本挖掘&lt;/li&gt;
+&lt;li&gt;分析量化评价&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="toc_5803b58911221ad3ccd001ff4d3e56cb"&gt;原始数据获取&lt;/h2&gt;
+&lt;p&gt;上市公司的公告官方发布渠道是&lt;a href="www.cninfo.com" title="巨潮资讯"&gt;巨潮资讯&lt;/a&gt;, 板块分 沪市、深市:主板、中小版、创业版，&lt;/p&gt;
+&lt;p&gt;查询条件可以按:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;代码/简称/拼音&lt;/li&gt;
+&lt;li&gt;行业&lt;/li&gt;
+&lt;li&gt;板块&lt;/li&gt;
+&lt;li&gt;公告类别&lt;/li&gt;
+&lt;li&gt;开始结束日期查询&lt;/li&gt;
+&lt;/ul&gt;</content><category term="python"></category><category term="quant"></category></entry><entry><title>搭建数据工作者的blog</title><link href="https://sinoyster.github.io/articles/2016/01/08/data-science-blog.html" rel="alternate"></link><published>2016-01-08T10:20:00+08:00</published><updated>2016-01-08T10:20:00+08:00</updated><author><name>Yuk Wong</name></author><id>tag:sinoyster.github.io,2016-01-08:/articles/2016/01/08/data-science-blog.html</id><summary type="html">&lt;h1 id="toc_02944354ca28ecfc8f1fd0d5f1c94332"&gt;搭建数据工作者的blog&lt;/h1&gt;
+&lt;p&gt;作为一个天天和数据打交道的人，没有一个高大上的博客是说不过去的，市面上的各种博客主要是适合文字工作者，作为一个数据工作者，首先博客要支持各种数学公式和图形，ipython notebook也是必须的，其次博客要能用markdown来写，支持Git进行版本控制。因为一直用Python，综合考虑下来，圈定Github Pages + Pelican。 Github是全球最大的同性交友社区，支持静态页面，用Git进行版本控制。Git就不在这里多说了，不懂的推荐&lt;a href="http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000" title="廖雪峰Git教程"&gt;廖雪峰Git教程&lt;/a&gt;。&lt;a href="http://blog.getpelican.com/" title="Pelican"&gt;Pelican&lt;/a&gt;是Python写的静态网站生成器，支持众多的&lt;a href="https://github.com/getpelican/pelican-themes" title="pelican-themes"&gt;扩展&lt;/a&gt;和&lt;a href="https://github.com/getpelican/pelican-themes" title="pelican-themes"&gt;主题&lt;/a&gt;，包括我们下面用到的ipython-notebook和mathjax插件。&lt;/p&gt;
 &lt;h2 id="toc_45a6145e6d28da258a2ae31a1f887c54"&gt;首先安装Pelican环境&lt;/h2&gt;
 &lt;h3 id="toc_2c4faee8878a9b157b6951078db24351"&gt;1、安装Python和Pip环境&lt;/h3&gt;
 &lt;p&gt;搞数据的大多都使用&lt;a href="https://www.continuum.io/anaconda-overview" title="Anaconda"&gt;anaconda&lt;/a&gt;的python发行版，下载对应&lt;a href="https://www.continuum.io/downloads"&gt;平台&lt;/a&gt;的anaconda包，并安装&lt;/p&gt;
@@ -7,8 +46,8 @@
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;pip install pelican
 &lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;初始化 pelican&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;~$ mkdir &lt;span class="nb"&gt;cd&lt;/span&gt; /path/to/blog
-~$ &lt;span class="nb"&gt;cd …&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;p&gt;作为一个天天和数据打交道的人，没有一个高大上的博客是说不过去的，市面上的各种博客主要是适合文字工作者，作为一个数据工作者，首先博客要支持各种数学公式和图形，ipython notebook也是必须的，其次博客要能用markdown来写，支持Git进行版本控制。因为一直用Python，综合考虑下来，圈定Github Pages + Pelican。 Github是全球最大的同性交友社区，支持静态页面，用Git进行版本控制。Git就不在这里多说了，不懂的推荐&lt;a href="http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000" title="廖雪峰Git教程"&gt;廖雪峰Git教程&lt;/a&gt;。&lt;a href="http://blog.getpelican.com/" title="Pelican"&gt;Pelican&lt;/a&gt;是Python写的静态网站生成器，支持众多的&lt;a href="https://github.com/getpelican/pelican-themes" title="pelican-themes"&gt;扩展&lt;/a&gt;和&lt;a href="https://github.com/getpelican/pelican-themes" title="pelican-themes"&gt;主题&lt;/a&gt;，包括我们下面用到的ipython-notebook和mathjax插件。&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;~$ mkdir &lt;span class="nb"&gt;cd&lt;/span&gt; /path/to/blog …&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;h1 id="toc_02944354ca28ecfc8f1fd0d5f1c94332"&gt;搭建数据工作者的blog&lt;/h1&gt;
+&lt;p&gt;作为一个天天和数据打交道的人，没有一个高大上的博客是说不过去的，市面上的各种博客主要是适合文字工作者，作为一个数据工作者，首先博客要支持各种数学公式和图形，ipython notebook也是必须的，其次博客要能用markdown来写，支持Git进行版本控制。因为一直用Python，综合考虑下来，圈定Github Pages + Pelican。 Github是全球最大的同性交友社区，支持静态页面，用Git进行版本控制。Git就不在这里多说了，不懂的推荐&lt;a href="http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000" title="廖雪峰Git教程"&gt;廖雪峰Git教程&lt;/a&gt;。&lt;a href="http://blog.getpelican.com/" title="Pelican"&gt;Pelican&lt;/a&gt;是Python写的静态网站生成器，支持众多的&lt;a href="https://github.com/getpelican/pelican-themes" title="pelican-themes"&gt;扩展&lt;/a&gt;和&lt;a href="https://github.com/getpelican/pelican-themes" title="pelican-themes"&gt;主题&lt;/a&gt;，包括我们下面用到的ipython-notebook和mathjax插件。&lt;/p&gt;
 &lt;h2 id="toc_45a6145e6d28da258a2ae31a1f887c54"&gt;首先安装Pelican环境&lt;/h2&gt;
 &lt;h3 id="toc_2c4faee8878a9b157b6951078db24351"&gt;1、安装Python和Pip环境&lt;/h3&gt;
 &lt;p&gt;搞数据的大多都使用&lt;a href="https://www.continuum.io/anaconda-overview" title="Anaconda"&gt;anaconda&lt;/a&gt;的python发行版，下载对应&lt;a href="https://www.continuum.io/downloads"&gt;平台&lt;/a&gt;的anaconda包，并安装&lt;/p&gt;
@@ -280,4 +319,122 @@ git submodule add git@github.com:sinoyster/extract_headings.git plugins/extract_
         "}";
     (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
 }
-&lt;/script&gt;</content><category term="markdown"></category><category term="blog"></category></entry></feed>
+&lt;/script&gt;</content><category term="markdown"></category><category term="blog"></category></entry><entry><title>Celery 分布式异步任务调度神器</title><link href="https://sinoyster.github.io/articles/2015/04/08/celery-1.html" rel="alternate"></link><published>2015-04-08T10:20:00+08:00</published><updated>2015-04-08T10:20:00+08:00</updated><author><name>Yuk Wong</name></author><id>tag:sinoyster.github.io,2015-04-08:/articles/2015/04/08/celery-1.html</id><summary type="html">&lt;h1 id="toc_10bd3cb5cdb2ee14e0dea642d4863a89"&gt;分布式一部任务调度神器&lt;/h1&gt;</summary><content type="html">&lt;h1 id="toc_10bd3cb5cdb2ee14e0dea642d4863a89"&gt;分布式一部任务调度神器&lt;/h1&gt;</content><category term="python"></category></entry><entry><title>RHEL添加Centos源</title><link href="https://sinoyster.github.io/articles/2015/02/08/rhel-centos-yum.html" rel="alternate"></link><published>2015-02-08T10:20:00+08:00</published><updated>2015-02-08T10:20:00+08:00</updated><author><name>Yuk Wong</name></author><id>tag:sinoyster.github.io,2015-02-08:/articles/2015/02/08/rhel-centos-yum.html</id><summary type="html">&lt;h1 id="toc_2fb14a10ce2bc7804df2cac79e9c5ebc"&gt;RHEL添加Centos源&lt;/h1&gt;
+&lt;h2 id="toc_cb01e79128cdc5a5125d9eaaae587390"&gt;添加yum代理&lt;/h2&gt;
+&lt;p&gt;/etc/yum.conf&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;proxy=http://10.102.66.2:30001
+# The account details for yum connections
+proxy_username=sin
+proxy_password=sin1234
+&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id="toc_4de863bc83cea42600be8ea7737b0efa"&gt;删除redhat自带软件包&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;[root@linuxprobe ~]# rpm -qa | grep yum
+yum-utils-1.1.31-24.el7.noarch
+yum-langpacks-0.4.2-3.el7.noarch
+yum-metadata-parser-1.1.4-10.el7.x86_64
+yum-rhn-plugin-2.0.1-4.el7.noarch
+PackageKit-yum-0 …&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;h1 id="toc_2fb14a10ce2bc7804df2cac79e9c5ebc"&gt;RHEL添加Centos源&lt;/h1&gt;
+&lt;h2 id="toc_cb01e79128cdc5a5125d9eaaae587390"&gt;添加yum代理&lt;/h2&gt;
+&lt;p&gt;/etc/yum.conf&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;proxy=http://10.102.66.2:30001
+# The account details for yum connections
+proxy_username=sin
+proxy_password=sin1234
+&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id="toc_4de863bc83cea42600be8ea7737b0efa"&gt;删除redhat自带软件包&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;[root@linuxprobe ~]# rpm -qa | grep yum
+yum-utils-1.1.31-24.el7.noarch
+yum-langpacks-0.4.2-3.el7.noarch
+yum-metadata-parser-1.1.4-10.el7.x86_64
+yum-rhn-plugin-2.0.1-4.el7.noarch
+PackageKit-yum-0.8.9-11.el7.x86_64
+yum-3.4.3-118.el7.noarch
+
+[root@linuxprobe ~]# rpm -e yum-3.4.3-118.el7.noarch --nodeps
+[root@linuxprobe ~]# rpm -e yum-utils-1.1.31-24.el7.noarch --nodeps
+[root@linuxprobe ~]# rpm -e yum-rhn-plugin-2.0.1-4.el7.noarch --nodeps
+[root@linuxprobe ~]# rpm -e yum-metadata-parser-1.1.4-10.el7.x86_64 --nodeps
+[root@linuxprobe ~]# rpm -e yum-langpacks-0.4.2-3.el7.noarch --nodeps
+[root@linuxprobe ~]# rpm -e PackageKit-yum-0.8.9-11.el7.x86_64 --nodeps
+&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id="toc_86753c4843ad386aa2a2750049bdb32a"&gt;下载对应的CentOS软件包&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;[root@Linuxprobe ~]# wget http://mirrors.163.com/centos/7/os/x86_64/Packages/yum-3.4.3-118.el7.centos.noarch.rpm
+--2016-01-17 20:43:15--  http://mirrors.163.com/centos/7/os/x86_64/Packages/yum-3.4.3-118.el7.centos.noarch.rpm
+Resolving mirrors.163.com (mirrors.163.com)... 123.58.173.185, 123.58.173.186
+Connecting to mirrors.163.com (mirrors.163.com)|123.58.173.185|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2016-01-17 20:43:15 ERROR 404: Not Found.   //如果找不到，是安装包更新了，你可以到这个网站http://mirrors.163.com/centos/7/os/x86_64/Packages/复制下载链接，然后再下载下来；
+
+[root@linuxprobe ~]# wget http://mirrors.163.com/centos/7/os/x86_64/Packages/yum-3.4.3-132.el7.centos.0.1.noarch.rpm
+[root@linuxprobe ~]# wget http://mirrors.163.com/centos/7/os/x86_64/Packages/yum-metadata-parser-1.1.4-10.el7.x86_64.rpm
+[root@linuxprobe ~]# wget http://mirrors.163.com/centos/7/os/x86_64/Packages/yum-utils-1.1.31-34.el7.noarch.rpm 
+[root@linuxprobe ~]# wget http://mirrors.163.com/centos/7/os/x86_64/Packages/yum-updateonboot-1.1.31-34.el7.noarch.rpm
+[root@linuxprobe ~]# wget http://mirrors.163.com/centos/7/os/x86_64/Packages/yum-plugin-fastestmirror-1.1.31-34.el7.noarch.rpm
+
+[root@linuxprobe ~]# ls
+yum-3.4.3-132.el7.centos.0.1.noarch.rpm
+yum-metadata-parser-1.1.4-10.el7.x86_64.rpm
+yum-plugin-fastestmirror-1.1.31-34.el7.noarch.rpm
+yum-updateonboot-1.1.31-34.el7.noarch.rpm
+yum-utils-1.1.31-34.el7.noarch.rpm
+&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id="toc_e655a410ff21cd07e7a0150491e04371"&gt;安装&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;[root@Linuxprobe ~]# rpm -ivh yum-*
+warning: yum-3.4.3-132.el7.centos.0.1.noarch.rpm: Header V3 RSA/SHA256 Signature, key ID f4a80eb5: NOKEY
+Preparing...                          ################################# [100%]
+Updating / installing...
+1:yum-metadata-parser-1.1.4-10.el7    ################################# [ 20%]
+2:yum-plugin-fastestmirror-1.1.31-3   ################################# [ 40%]
+3:yum-3.4.3-132.el7.centos.0.1        ################################# [ 60%]
+4:yum-updateonboot-1.1.31-34.el7      ################################# [ 80%]
+5:yum-utils-1.1.31-34.el7             ################################# [100%]
+&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id="toc_b42b046e58d617f174011949bef5a70a"&gt;新建repo 配置文件&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="x"&gt;[root@linuxprobe ~]&lt;/span&gt;&lt;span class="err"&gt;#&lt;/span&gt;&lt;span class="x"&gt; vim /etc/yum.repos.d/CentOS-Base.repo&lt;/span&gt;
+&lt;span class="cp"&gt;#&lt;/span&gt;&lt;span class="nf"&gt;CentOS&lt;/span&gt;&lt;span class="x"&gt;-Base.repo&lt;/span&gt;
+&lt;span class="err"&gt;#&lt;/span&gt;&lt;span class="x"&gt;&lt;/span&gt;
+&lt;span class="err"&gt;#&lt;/span&gt;&lt;span class="x"&gt; The mirror system uses the connecting IP address of the client and the&lt;/span&gt;
+&lt;span class="err"&gt;#&lt;/span&gt;&lt;span class="x"&gt; update status of each mirror to pick mirrors that are updated to and&lt;/span&gt;
+&lt;span class="err"&gt;#&lt;/span&gt;&lt;span class="x"&gt; geographically close to the client.  You should use this for CentOS updates&lt;/span&gt;
+&lt;span class="err"&gt;#&lt;/span&gt;&lt;span class="x"&gt; unless you are manually picking other mirrors.&lt;/span&gt;
+&lt;span class="err"&gt;#&lt;/span&gt;&lt;span class="x"&gt;&lt;/span&gt;
+&lt;span class="err"&gt;#&lt;/span&gt;&lt;span class="x"&gt; If the mirrorlist= does not work for you, as a fall back you can try the&lt;/span&gt;
+&lt;span class="err"&gt;#&lt;/span&gt;&lt;span class="x"&gt; remarked out baseurl= line instead.&lt;/span&gt;
+&lt;span class="err"&gt;#&lt;/span&gt;&lt;span class="x"&gt;&lt;/span&gt;
+&lt;span class="err"&gt;#&lt;/span&gt;&lt;span class="x"&gt;&lt;/span&gt;
+&lt;span class="x"&gt;[base]&lt;/span&gt;
+&lt;span class="x"&gt;name=CentOS-&lt;/span&gt;&lt;span class="p"&gt;$&lt;/span&gt;&lt;span class="x"&gt;7 - Base - 163.com&lt;/span&gt;
+&lt;span class="cp"&gt;#&lt;/span&gt;&lt;span class="nf"&gt;mirrorlist&lt;/span&gt;&lt;span class="x"&gt;=http://mirrorlist.centos.org/?release=&lt;/span&gt;&lt;span class="p"&gt;$&lt;/span&gt;&lt;span class="x"&gt;7&amp;amp;arch=&lt;/span&gt;&lt;span class="p"&gt;$&lt;/span&gt;&lt;span class="nv"&gt;basearch&lt;/span&gt;&lt;span class="x"&gt;&amp;amp;repo=os&lt;/span&gt;
+&lt;span class="x"&gt;baseurl=http://mirrors.163.com/centos/7/os/&lt;/span&gt;&lt;span class="p"&gt;$&lt;/span&gt;&lt;span class="nv"&gt;basearch&lt;/span&gt;&lt;span class="x"&gt;/&lt;/span&gt;
+&lt;span class="x"&gt;gpgcheck=1&lt;/span&gt;
+&lt;span class="x"&gt;gpgkey=http://mirrors.163.com/centos/RPM-GPG-KEY-CentOS-7&lt;/span&gt;
+
+&lt;span class="cp"&gt;#&lt;/span&gt;&lt;span class="nf"&gt;released&lt;/span&gt;&lt;span class="x"&gt; updates&lt;/span&gt;
+&lt;span class="x"&gt;[updates]&lt;/span&gt;
+&lt;span class="x"&gt;name=CentOS-&lt;/span&gt;&lt;span class="p"&gt;$&lt;/span&gt;&lt;span class="x"&gt;7 - Updates - 163.com&lt;/span&gt;
+&lt;span class="cp"&gt;#&lt;/span&gt;&lt;span class="nf"&gt;mirrorlist&lt;/span&gt;&lt;span class="x"&gt;=http://mirrorlist.centos.org/?release=&lt;/span&gt;&lt;span class="p"&gt;$&lt;/span&gt;&lt;span class="x"&gt;7&amp;amp;arch=&lt;/span&gt;&lt;span class="p"&gt;$&lt;/span&gt;&lt;span class="nv"&gt;basearch&lt;/span&gt;&lt;span class="x"&gt;&amp;amp;repo=updates&lt;/span&gt;
+&lt;span class="x"&gt;baseurl=http://mirrors.163.com/centos/7/updates/&lt;/span&gt;&lt;span class="p"&gt;$&lt;/span&gt;&lt;span class="nv"&gt;basearch&lt;/span&gt;&lt;span class="x"&gt;/&lt;/span&gt;
+&lt;span class="x"&gt;gpgcheck=1&lt;/span&gt;
+&lt;span class="x"&gt;gpgkey=http://mirrors.163.com/centos/RPM-GPG-KEY-CentOS-7&lt;/span&gt;
+
+&lt;span class="cp"&gt;#&lt;/span&gt;&lt;span class="nf"&gt;additional&lt;/span&gt;&lt;span class="x"&gt; packages that may be useful&lt;/span&gt;
+&lt;span class="x"&gt;[extras]&lt;/span&gt;
+&lt;span class="x"&gt;name=CentOS-&lt;/span&gt;&lt;span class="p"&gt;$&lt;/span&gt;&lt;span class="x"&gt;7 - Extras - 163.com&lt;/span&gt;
+&lt;span class="cp"&gt;#&lt;/span&gt;&lt;span class="nf"&gt;mirrorlist&lt;/span&gt;&lt;span class="x"&gt;=http://mirrorlist.centos.org/?release=&lt;/span&gt;&lt;span class="p"&gt;$&lt;/span&gt;&lt;span class="x"&gt;7&amp;amp;arch=&lt;/span&gt;&lt;span class="p"&gt;$&lt;/span&gt;&lt;span class="nv"&gt;basearch&lt;/span&gt;&lt;span class="x"&gt;&amp;amp;repo=extras&lt;/span&gt;
+&lt;span class="x"&gt;baseurl=http://mirrors.163.com/centos/7/extras/&lt;/span&gt;&lt;span class="p"&gt;$&lt;/span&gt;&lt;span class="nv"&gt;basearch&lt;/span&gt;&lt;span class="x"&gt;/&lt;/span&gt;
+&lt;span class="x"&gt;gpgcheck=1&lt;/span&gt;
+&lt;span class="x"&gt;gpgkey=http://mirrors.163.com/centos/RPM-GPG-KEY-CentOS-7&lt;/span&gt;
+
+&lt;span class="cp"&gt;#&lt;/span&gt;&lt;span class="nf"&gt;additional&lt;/span&gt;&lt;span class="x"&gt; packages that extend functionality of existing packages&lt;/span&gt;
+&lt;span class="x"&gt;[centosplus]&lt;/span&gt;
+&lt;span class="x"&gt;name=CentOS-&lt;/span&gt;&lt;span class="p"&gt;$&lt;/span&gt;&lt;span class="x"&gt;7 - Plus - 163.com&lt;/span&gt;
+&lt;span class="x"&gt;baseurl=http://mirrors.163.com/centos/7/centosplus/&lt;/span&gt;&lt;span class="p"&gt;$&lt;/span&gt;&lt;span class="nv"&gt;basearch&lt;/span&gt;&lt;span class="x"&gt;/&lt;/span&gt;
+&lt;span class="x"&gt;gpgcheck=1&lt;/span&gt;
+&lt;span class="x"&gt;enabled=0&lt;/span&gt;
+&lt;span class="x"&gt;gpgkey=http://mirrors.163.com/centos/RPM-GPG-KEY-CentOS-7&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id="toc_649ba34689c1a75baf3a6e2b664bc69b"&gt;测试并安装&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;[root@linuxprobe ~]# yum clean all 
+
+[root@Linuxprobe ~]# yum -y install w3m
+&lt;/pre&gt;&lt;/div&gt;</content><category term="linux"></category></entry></feed>

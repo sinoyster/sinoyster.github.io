@@ -4,7 +4,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="keywords" content="markdown, blog">
-        <meta name="description" content="作为一个天天和数据打交道的人，没有一个高大上的博客是说不过去的，市面上的各种博客主要是适合文字工作者，作为一个数据工作者，首先博客要支持各种数学公式和图形，ipython notebook也是必须的，其次博客要能用markdown来写，支持Git进行版本控制。因为一直用Python，综合考虑下来，圈定Github Pages + Pelican。 Github是全球最大的同性交友社区，支持静态页面，用Git进行版本控制。Git就不在这里多说了，不懂的推荐廖雪峰Git教程。Pelican是Python写的静态网站生成器，支持众多的扩展和主题，包括我们下面用到的ipython-notebook和mathjax插件。 首先安装Pelican环境 1、安装Python和Pip环境 搞数据的大多都使用anaconda的python发行版，下载对应平台的anaconda包，并安装 2、安装pelican并初始化 pip install pelican 初始化 pelican ~$ mkdir cd /path/to/blog ~$ cd …">
+        <meta name="description" content="搭建数据工作者的blog 作为一个天天和数据打交道的人，没有一个高大上的博客是说不过去的，市面上的各种博客主要是适合文字工作者，作为一个数据工作者，首先博客要支持各种数学公式和图形，ipython notebook也是必须的，其次博客要能用markdown来写，支持Git进行版本控制。因为一直用Python，综合考虑下来，圈定Github Pages + Pelican。 Github是全球最大的同性交友社区，支持静态页面，用Git进行版本控制。Git就不在这里多说了，不懂的推荐廖雪峰Git教程。Pelican是Python写的静态网站生成器，支持众多的扩展和主题，包括我们下面用到的ipython-notebook和mathjax插件。 首先安装Pelican环境 1、安装Python和Pip环境 搞数据的大多都使用anaconda的python发行版，下载对应平台的anaconda包，并安装 2、安装pelican并初始化 pip install pelican 初始化 pelican ~$ mkdir cd /path/to/blog …">
         <title>搭建数据工作者的blog - Yuk's Blog</title>
         <link rel="shortcut icon" type="image/x-icon" href="/favicon.png">
         <link rel="stylesheet" href="https://sinoyster.github.io/theme/css/bootstrap.min.css" type="text/css" />
@@ -48,6 +48,9 @@
                            <ul class="dropdown-menu">
                                <li><a href="https://sinoyster.github.io/category/blog.html">
                                       <i class=""></i>博客
+                                      (3)</a></li>
+                               <li><a href="https://sinoyster.github.io/category/note.html">
+                                      <i class=""></i>随笔
                                       (1)</a></li>
                            </ul>
                         </li>
@@ -65,11 +68,11 @@
 
         <div id="body-content">
             <div class="col-md-8 col-md-offset-2">
-                <h1 id="content-heading">搭建数据工作者的blog</h1>
             </div>
             <div id="niu2-left-container" class="col-md-6 col-md-offset-2">
                 <div id="niu2-main-content">
-                    <p>作为一个天天和数据打交道的人，没有一个高大上的博客是说不过去的，市面上的各种博客主要是适合文字工作者，作为一个数据工作者，首先博客要支持各种数学公式和图形，ipython notebook也是必须的，其次博客要能用markdown来写，支持Git进行版本控制。因为一直用Python，综合考虑下来，圈定Github Pages + Pelican。 Github是全球最大的同性交友社区，支持静态页面，用Git进行版本控制。Git就不在这里多说了，不懂的推荐<a href="http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000" title="廖雪峰Git教程">廖雪峰Git教程</a>。<a href="http://blog.getpelican.com/" title="Pelican">Pelican</a>是Python写的静态网站生成器，支持众多的<a href="https://github.com/getpelican/pelican-themes" title="pelican-themes">扩展</a>和<a href="https://github.com/getpelican/pelican-themes" title="pelican-themes">主题</a>，包括我们下面用到的ipython-notebook和mathjax插件。</p>
+                    <h1 id="toc_02944354ca28ecfc8f1fd0d5f1c94332">搭建数据工作者的blog</h1>
+<p>作为一个天天和数据打交道的人，没有一个高大上的博客是说不过去的，市面上的各种博客主要是适合文字工作者，作为一个数据工作者，首先博客要支持各种数学公式和图形，ipython notebook也是必须的，其次博客要能用markdown来写，支持Git进行版本控制。因为一直用Python，综合考虑下来，圈定Github Pages + Pelican。 Github是全球最大的同性交友社区，支持静态页面，用Git进行版本控制。Git就不在这里多说了，不懂的推荐<a href="http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000" title="廖雪峰Git教程">廖雪峰Git教程</a>。<a href="http://blog.getpelican.com/" title="Pelican">Pelican</a>是Python写的静态网站生成器，支持众多的<a href="https://github.com/getpelican/pelican-themes" title="pelican-themes">扩展</a>和<a href="https://github.com/getpelican/pelican-themes" title="pelican-themes">主题</a>，包括我们下面用到的ipython-notebook和mathjax插件。</p>
 <h2 id="toc_45a6145e6d28da258a2ae31a1f887c54">首先安装Pelican环境</h2>
 <h3 id="toc_2c4faee8878a9b157b6951078db24351">1、安装Python和Pip环境</h3>
 <p>搞数据的大多都使用<a href="https://www.continuum.io/anaconda-overview" title="Anaconda">anaconda</a>的python发行版，下载对应<a href="https://www.continuum.io/downloads">平台</a>的anaconda包，并安装</p>
@@ -363,8 +366,7 @@ git submodule add git@github.com:sinoyster/extract_headings.git plugins/extract_
                         <i id="niu2-sidebar-toc-ctrl" class="icon-open-tocs"></i>TOC
                     </div>
                     <ul id="niu2-sidebar-toc-list">
-                        <li><a href="#content-heading">搭建数据工作者的blog</a></li>
-                        <li><a href='#toc_45a6145e6d28da258a2ae31a1f887c54'>首先安装Pelican环境</a><ul><li><a href='#toc_2c4faee8878a9b157b6951078db24351'>1、安装Python和Pip环境</a></li><li><a href='#toc_1b58a4794faae5a8d0071433579a2065'>2、安装pelican并初始化</a></li><li><a href='#toc_e643e396188c6505795c15483c55173a'>编辑一篇测试文档</a></li></ul></li><li><a href='#toc_b0201fcca7bd4d7390a587558f22951f'>创建Github Pages</a></li><li><a href='#toc_9a8043dda17cb70a55608952c29dc6a3'>博客的分支规划</a></li><li><a href='#toc_fec3f4fd8c0131bc306c97ab8f48ed0f'>插件和主题安装</a></li><li><a href='#toc_3d66cacb79bb990638536b427760fed0'>数学公式的支持</a></li><li><a href='#toc_c30802389f6b66d3ff120e95b7e4f44b'>jupyter notebook支持</a></li><li><a href='#toc_9970ad07468267e2f309f1467c75bb80'>主题</a></li><li><a href='#toc_3d7ae0bc155c1176e80c7dbd4c397a5c'>其他配置调整</a></li><li><a href='#toc_74f9c38df856a7270a9ba70400d1c4d6'>Markdown编辑器支持</a></li><li><a href='#toc_b95c48e2a16da1487303051c9bd3ff7f'>社会化分享</a></li><li><a href='#toc_55374d7b243cbee29176a641b5887bbf'>评论</a></li><li><a href='#toc_4a750309a127a41692f8510684f60d2b'>Docker （TODO）</a></li><li><a href='#toc_7b0245d9d89961d2526d8e33ad0dc922'>独立域名配置</a></li><li><a href='#toc_2f313f9ba3159ee97638c70b32b721f5'>图片处理</a></li>
+                        <li><a href='#toc_02944354ca28ecfc8f1fd0d5f1c94332'>搭建数据工作者的blog</a><ul><li><a href='#toc_45a6145e6d28da258a2ae31a1f887c54'>首先安装Pelican环境</a><ul><li><a href='#toc_2c4faee8878a9b157b6951078db24351'>1、安装Python和Pip环境</a></li><li><a href='#toc_1b58a4794faae5a8d0071433579a2065'>2、安装pelican并初始化</a></li><li><a href='#toc_e643e396188c6505795c15483c55173a'>编辑一篇测试文档</a></li></ul></li><li><a href='#toc_b0201fcca7bd4d7390a587558f22951f'>创建Github Pages</a></li><li><a href='#toc_9a8043dda17cb70a55608952c29dc6a3'>博客的分支规划</a></li><li><a href='#toc_fec3f4fd8c0131bc306c97ab8f48ed0f'>插件和主题安装</a></li><li><a href='#toc_3d66cacb79bb990638536b427760fed0'>数学公式的支持</a></li><li><a href='#toc_c30802389f6b66d3ff120e95b7e4f44b'>jupyter notebook支持</a></li><li><a href='#toc_9970ad07468267e2f309f1467c75bb80'>主题</a></li><li><a href='#toc_3d7ae0bc155c1176e80c7dbd4c397a5c'>其他配置调整</a></li><li><a href='#toc_74f9c38df856a7270a9ba70400d1c4d6'>Markdown编辑器支持</a></li><li><a href='#toc_b95c48e2a16da1487303051c9bd3ff7f'>社会化分享</a></li><li><a href='#toc_55374d7b243cbee29176a641b5887bbf'>评论</a></li><li><a href='#toc_4a750309a127a41692f8510684f60d2b'>Docker （TODO）</a></li><li><a href='#toc_7b0245d9d89961d2526d8e33ad0dc922'>独立域名配置</a></li><li><a href='#toc_2f313f9ba3159ee97638c70b32b721f5'>图片处理</a></li></ul></li>
                     </ul>
                 </div>
             </div>
@@ -382,7 +384,7 @@ git submodule add git@github.com:sinoyster/extract_headings.git plugins/extract_
                 </p>
                 <p>
                     ©
-                            2016
+                            2015-2017
                     <a class="niu2-footer-link" href="https://sinoyster.github.io">Yuk Wong</a>
                 </p>
                 <p class="niu2-icons">
